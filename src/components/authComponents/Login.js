@@ -2,17 +2,21 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../stylesheet/logo.png';
 import firebase from '../../firebase';
+import {useDispatch} from 'react-redux';
+import { addUser } from "../../actions/user";
 
 const Login = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const dispatch = useDispatch();
 
   const sighInWithFirebase = (event, email, password) => {
     event.preventDefault();
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
           const user = userCredential.user;
+          dispatch(addUser(user));
           console.log("User signed in: ", user);
       }).catch(error => {
         console.log(error);
