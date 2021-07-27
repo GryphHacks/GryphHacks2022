@@ -1,7 +1,7 @@
 import { GET_SUMMARY } from "../actions/types";
-import _ from 'lodash';
+// import _ from 'lodash';
 
-export default (state=[], action) => {
+const apiReducer = (state=[], action) => {
   switch(action.type) {
     case GET_SUMMARY:
       return { ...state, data:action.payload }
@@ -9,3 +9,5 @@ export default (state=[], action) => {
       return state;
   }
 }
+
+export default apiReducer;
