@@ -25,6 +25,10 @@ const Register = () => {
       })
       .catch(error => {
         console.log(error);
+        //Alert error if passwords no not match
+        if (password !== confirmPassword) {
+          alert("Passwords do not match");
+        }
       });
   }
 
