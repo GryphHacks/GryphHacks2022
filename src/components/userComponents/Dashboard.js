@@ -2,6 +2,7 @@ import React from 'react';
 import {useSelector} from 'react-redux';
 import { useHistory } from "react-router-dom";
 import firebase from '../../firebase';
+import "firebase/auth";
 
 const Dashboard = () => {
   const name = useSelector(state => state.user.name);
@@ -10,12 +11,15 @@ const Dashboard = () => {
   const signOutWithFireBase = (e) => {
     e.preventDefault();
     firebase.auth().signOut().then(() => {
-      // Sign-out successful.
       console.log('Log out successful.')
       history.push('/')
     }).catch((error) => {
-      // An error happened.
       console.log(error)
+    });
+
+    // extra check to confirm logout status
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (!user) console.log('There is no logged in user.');
     });
   }
 
