@@ -20,7 +20,7 @@ const App = () => {
         <div className="container" style={{marginTop: '400px'}}>
           <Route path='/register' exact component={Register} />
           <Route path='/login' exact component={Login} />
-          <Route path='/dashboard' exact component={Dashboard} />
+          <Route path='/dashboard' exact component={Dashboard}/>
         </div>
       </BrowserRouter>
     </div>

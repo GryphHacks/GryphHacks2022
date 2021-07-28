@@ -1,34 +1,16 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
-import firebase from '../../firebase';
+import {useSelector} from 'react-redux';
 
 const Dashboard = () => {
-  const history = useHistory();
+  const name = useSelector(state => state.user.name);
 
-  const signOutWithFireBase = (e) => {
-    e.preventDefault();
-    firebase.auth().signOut().then(() => {
-      // Sign-out successful.
-      console.log('Log out successful.')
-      history.push('/')
-    }).catch((error) => {
-      // An error happened.
-      console.log(error)
-    });
-  }
-
-  return (
+  return(
     <div>
-      <div style={{textAlign:'center'}}>
-        <h2>Dashboard</h2>
-      </div>
-      <div className="row box">
-        <form onSubmit={(e) => signOutWithFireBase(e)} className="col">
-          <button type="submit" className="btn btn-primary">Logout</button>
-        </form>
-      </div>
+      <h1 style={{textAlign:'center'}}>
+        {name}
+      </h1>
     </div>
-  )
-}
+  );
+};
 
 export default Dashboard
