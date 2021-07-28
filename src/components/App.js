@@ -9,7 +9,6 @@ import Register from './authComponents/Register';
 import Login from './authComponents/Login';
 import Dashboard from './userComponents/Dashboard';
 
-
 const App = () => {
 
   return (
