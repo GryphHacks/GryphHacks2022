@@ -1,16 +1,20 @@
 import { Link } from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
+import { useHistory } from "react-router-dom";
 import { logOut } from '../actions/user';
 import firebase from '../firebase';
 
 const Navigation = () => {
-
   const isAuthenticated = useSelector(state => state.user.isAuthenticated );
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const logOutWithFirebase = () => {
       firebase.auth().signOut().then(function() {
+        // log out successful
         dispatch(logOut());
+        console.log('Log out successful.')
+        history.push('/')
       }).catch(function(error) {
         console.log(error)
       }); 
@@ -41,7 +45,7 @@ const Navigation = () => {
             }
             { isAuthenticated &&
               <li className="nav-item">
-                <button className='nav-link' onClick={() => logOutWithFirebase() } >Log Out</button>
+                <button className='nav-link' onClick={() => logOutWithFirebase()} >Log Out</button>
               </li>
             }
           </ul>
