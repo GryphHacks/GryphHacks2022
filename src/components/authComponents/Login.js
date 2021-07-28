@@ -27,7 +27,7 @@ const Login = () => {
     <div className="row box">
       <form onSubmit={(e) => sighInWithFirebase(e, email, password)} className="col">
         <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">Email</label>
+          <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
           <input 
           type="email" 
           className="form-control" 
@@ -37,7 +37,7 @@ const Login = () => {
           />
         </div>
         <div className="mb-3">
-          <label for="password1" className="form-label">Password</label>
+          <label htmlFor="password1" className="form-label">Password</label>
           <input 
           type="password" 
           className="form-control" 
