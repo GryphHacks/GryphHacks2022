@@ -1,4 +1,4 @@
-import { ADD_USER } from "./types";
+import { ADD_USER, LOG_OUT } from "./types";
 
 export const addUser = (user) => {
     return {
@@ -6,5 +6,11 @@ export const addUser = (user) => {
         payload: {
            user: user
         }
+    };
+};
+
+export const logOut = () => {
+    return {
+        type: LOG_OUT
     };
 };

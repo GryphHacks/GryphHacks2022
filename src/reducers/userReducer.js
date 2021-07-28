@@ -1,12 +1,19 @@
-const userReducer =  (state = {name: "NO NAME"}, action) => {
+import { LOG_OUT } from "../actions/types";
+
+const userReducer =  (state = {isAuthenticated: false}, action) => {
 
     switch (action.type) {
         case 'ADD_USER' :
             const user = action.payload.user;
             return {
+                isAuthenticated: true,
                 name: user.email,
                 email: user.email,
                 
+            };
+        case LOG_OUT:
+            return {
+                isAuthenticated:false
             };
         default:
             return state;
