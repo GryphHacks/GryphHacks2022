@@ -17,6 +17,7 @@ const Register = () => {
         firebaseApp.firestore().collection("Users").doc(firebaseApp.auth().currentUser.uid)
           .set({ displayName, email })
             .then(() => {
+              // registration successful
               console.log("New user added to database");
             })
             .catch(error => {

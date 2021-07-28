@@ -16,6 +16,7 @@ const Login = () => {
     event.preventDefault();
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
+          // log in successful
           const user = userCredential.user;
           dispatch(addUser(user));
           console.log("User signed in: ", user);

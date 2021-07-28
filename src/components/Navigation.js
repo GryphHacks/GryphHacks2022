@@ -3,8 +3,6 @@ import {useSelector, useDispatch} from 'react-redux';
 import { logOut } from '../actions/user';
 import firebase from '../firebase';
 
-
-
 const Navigation = () => {
 
   const isAuthenticated = useSelector(state => state.user.isAuthenticated );
@@ -14,9 +12,8 @@ const Navigation = () => {
       firebase.auth().signOut().then(function() {
         dispatch(logOut());
       }).catch(function(error) {
-        // An error happened.
-      });
-      
+        console.log(error)
+      }); 
   };
 
   return (
