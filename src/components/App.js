@@ -7,6 +7,7 @@ import Landing from './Landing';
 import Navigation from './Navigation';
 import Register from './authComponents/Register';
 import Login from './authComponents/Login';
+import Dashboard from './userComponents/Dashboard';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <div className="container" style={{marginTop: '400px'}}>
           <Route path='/register' exact component={Register} />
           <Route path='/login' exact component={Login} />
+          <Route path='/dashboard' exact component={Dashboard} />
         </div>
       </BrowserRouter>
     </div>
