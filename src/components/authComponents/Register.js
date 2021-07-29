@@ -14,6 +14,9 @@ const Register = () => {
     firebaseApp.auth().createUserWithEmailAndPassword(email, password)
       .then(userCredential => {
         console.log(userCredential);
+        userCredential.user.updateProfile({
+          displayName: displayName
+        })
         firebaseApp.firestore().collection("Users").doc(firebaseApp.auth().currentUser.uid)
           .set({ displayName, email })
             .then(() => {
