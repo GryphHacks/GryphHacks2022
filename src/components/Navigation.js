@@ -33,6 +33,12 @@ const Navigation = () => {
               <Link to="/" className="nav-link">Home</Link>
             </li>
             <li className="nav-item">
+              <Link to='/faq' className="nav-link">FAQ</Link>
+            </li>
+            <li className="nav-item">
+              <Link to='/contact' className="nav-link">Contact Us</Link>
+            </li>
+            <li className="nav-item">
               <Link to='/login' className="nav-link">Login</Link>
             </li>
             <li className="nav-item">
