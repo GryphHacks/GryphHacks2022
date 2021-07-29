@@ -1,12 +1,16 @@
-import React from 'react';
+import {useSelector} from 'react-redux';
+import "firebase/auth";
 
-class Dashboard extends React.Component {
+const Dashboard = () => {
+  const name = useSelector(state => state.user.name);
 
-  render() {
-    return(
-      <div>Dashboard</div>
-    )
-  }
-}
+  return(
+    <div>
+      <h1 style={{textAlign:'center'}}>
+        {name}
+      </h1>
+    </div>
+  );
+};
 
 export default Dashboard;

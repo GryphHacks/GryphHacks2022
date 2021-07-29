@@ -1,26 +1,59 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import {useSelector, useDispatch} from 'react-redux';
+import { useHistory } from "react-router-dom";
+import { logOut } from '../actions/user';
+import firebase from '../firebase';
 
 const Navigation = () => {
+  const isAuthenticated = useSelector(state => state.user.isAuthenticated );
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  const logOutWithFirebase = () => {
+      firebase.auth().signOut().then(function() {
+        // log out successful
+        dispatch(logOut());
+        console.log('Log out successful.')
+        history.push('/')
+      }).catch(function(error) {
+        console.log(error)
+      }); 
+  };
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top float-right">
-      <div class="container-fluid">
-        <Link to='/' class="navbar-brand">GryphHacks</Link>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top float-right">
+      <div className="container-fluid">
+        <Link to='/' className="navbar-brand">GryphHacks</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link to="/" class="nav-link">Home</Link>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">Home</Link>
             </li>
-            <li class="nav-item">
-              <Link to='/login' class="nav-link">Login</Link>
+            <li className="nav-item">
+              <Link to='/faq' className="nav-link">FAQ</Link>
             </li>
-            <li class="nav-item">
-              <Link to='/register' class="nav-link">Register</Link>
+            <li className="nav-item">
+              <Link to='/contact' className="nav-link">Contact Us</Link>
             </li>
+            <li className="nav-item">
+              <Link to='/login' className="nav-link">Login</Link>
+            </li>
+            <li className="nav-item">
+              <Link to='/register' className="nav-link">Register</Link>
+            </li>
+            { isAuthenticated &&
+              <li className="nav-item">
+                <Link to='/dashboard' className="nav-link">Dashboard</Link>
+              </li>
+            }
+            { isAuthenticated &&
+              <li className="nav-item">
+                <button className='nav-link' onClick={() => logOutWithFirebase()} >Log Out</button>
+              </li>
+            }
           </ul>
         </div>
       </div>
