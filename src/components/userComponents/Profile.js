@@ -1,12 +1,10 @@
 import React from 'react';
 
-class Profile extends React.Component {
+const Profile = () => {
 
-  render() {
     return(
       <div>Profile</div>
-    )
-  }
-}
+    );
+};
 
 export default Profile;

@@ -14,9 +14,13 @@ const Register = () => {
     firebaseApp.auth().createUserWithEmailAndPassword(email, password)
       .then(userCredential => {
         console.log(userCredential);
+        userCredential.user.updateProfile({
+          displayName: displayName
+        })
         firebaseApp.firestore().collection("Users").doc(firebaseApp.auth().currentUser.uid)
           .set({ displayName, email })
             .then(() => {
+              // registration successful
               console.log("New user added to database");
             })
             .catch(error => {
@@ -32,7 +36,7 @@ const Register = () => {
     <div className="row box">
       <form className="col" onSubmit={(e) => createUser(e, email, password)}>
         <div className="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
           <input
             name="name"
             value={displayName}
@@ -43,8 +47,8 @@ const Register = () => {
             onChange={e => setDisplayName(e.target.value)}
           />
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
+        <div className="mb-3">
+          <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
           <input
             name="email"
             value={email}
@@ -55,8 +59,8 @@ const Register = () => {
             onChange={e => setEmail(e.target.value)}
           />
         </div>
-        <div class="mb-3">
-          <label for="password1" class="form-label">Password</label>
+        <div className="mb-3">
+          <label htmlFor="password1" className="form-label">Password</label>
           <input
             name="password"
             value={password}
@@ -67,7 +71,7 @@ const Register = () => {
           />
         </div>
         <div className="mb-3">
-          <label for="password2" class="form-label">Confirm password</label>
+          <label htmlFor="password2" className="form-label">Confirm password</label>
           <input
             name="confirmPassword"
             value={confirmPassword}
@@ -86,9 +90,6 @@ const Register = () => {
       </div>
     </div>
   );
-
 }
-
-
 
 export default Register;
