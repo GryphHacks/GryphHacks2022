@@ -57,6 +57,7 @@ const Register = () => {
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             onChange={e => setDisplayName(e.target.value)}
+            required
           />
         </div>
         <div className="mb-3">
@@ -69,6 +70,7 @@ const Register = () => {
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             onChange={e => setEmail(e.target.value)}
+            required
           />
         </div>
         <div className="mb-3">
@@ -80,6 +82,7 @@ const Register = () => {
             className="form-control"
             id="exampleInputPassword1"
             onChange={e => setPassword(e.target.value)}
+            required
           />
         </div>
         <div className="mb-3">
@@ -91,6 +94,7 @@ const Register = () => {
             className="form-control"
             id="exampleInputPassword1"
             onChange={e => setConfirmPassword(e.target.value)}
+            required
           />
         </div>
         <button type="submit" className="btn btn-primary">Join Us!</button>
