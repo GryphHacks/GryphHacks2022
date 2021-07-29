@@ -23,7 +23,11 @@ const Login = () => {
           history.push('/dashboard')
       }).catch(error => {
         console.log(error);
+
+      });      
+
       });
+
   }
 
   return (
