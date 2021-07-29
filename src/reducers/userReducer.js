@@ -7,7 +7,7 @@ const userReducer =  (state = {isAuthenticated: false}, action) => {
             const user = action.payload.user;
             return {
                 isAuthenticated: true,
-                name: user.email,
+                name: user.displayName,
                 email: user.email,
                 
             };
