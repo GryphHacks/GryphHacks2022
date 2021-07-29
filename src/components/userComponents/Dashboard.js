@@ -1,9 +1,7 @@
-import React from 'react';
 import {useSelector} from 'react-redux';
 
 const Dashboard = () => {
   const name = useSelector(state => state.user.name);
-
 
   return(
     <div>
