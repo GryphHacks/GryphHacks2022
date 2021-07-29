@@ -1,4 +1,5 @@
 import {useSelector} from 'react-redux';
+import "firebase/auth";
 
 const Dashboard = () => {
   const name = useSelector(state => state.user.name);
