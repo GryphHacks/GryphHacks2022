@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../stylesheet/logo.png';
 import firebase from '../../firebase';
 import { useHistory } from "react-router-dom";
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import { addUser } from "../../actions/user";
 
@@ -23,32 +23,27 @@ const Login = () => {
           history.push('/dashboard')
       }).catch(error => {
         console.log(error);
-
-      });      
-
       });
-
   }
-
   return (
     <div className="row box">
       <form onSubmit={(e) => signInWithFirebase(e, email, password)} className="col">
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
-          <input 
-          type="email" 
-          className="form-control" 
-          id="exampleInputEmail1" 
-          aria-describedby="emailHelp" 
-          onChange={e => setEmail(e.target.value)}
+          <input
+            type="email"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            onChange={e => setEmail(e.target.value)}
           />
         </div>
         <div className="mb-3">
           <label htmlFor="password1" className="form-label">Password</label>
-          <input 
-            type="password" 
-            className="form-control" 
-            id="exampleInputPassword1" 
+          <input
+            type="password"
+            className="form-control"
+            id="exampleInputPassword1"
             onChange={e => setPassword(e.target.value)}
           />
         </div>

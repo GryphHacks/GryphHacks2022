@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import Logo from '../stylesheet/logo.png'
 import firebaseApp from '../../firebase';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { addUser } from '../../actions/user';
 
 const Register = () => {
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const dispatch = useDispatch();
+  const history = useHistory();
 
   const createUser = (event, email, password) => {
     console.log("here");
@@ -16,7 +21,10 @@ const Register = () => {
         console.log(userCredential);
         userCredential.user.updateProfile({
           displayName: displayName
-        })
+        }).then(() => {
+          dispatch(addUser(userCredential.user));
+        });
+        history.push('/dashboard');
         firebaseApp.firestore().collection("Users").doc(firebaseApp.auth().currentUser.uid)
           .set({ displayName, email })
             .then(() => {
