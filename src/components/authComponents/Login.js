@@ -5,7 +5,6 @@ import firebase from 'firebase/app';
 import { useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { AiFillGoogleCircle } from 'react-icons/ai';
-
 import { addUser } from "../../actions/user";
 
 const Login = () => {
