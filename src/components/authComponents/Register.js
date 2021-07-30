@@ -16,6 +16,10 @@ const Register = () => {
   const createUser = (event, email, password) => {
     console.log("here");
     event.preventDefault();
+    //Alert error if passwords no not match
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+    }
     firebaseApp.auth().createUserWithEmailAndPassword(email, password)
       .then(userCredential => {
         console.log(userCredential);
@@ -37,10 +41,6 @@ const Register = () => {
       })
       .catch(error => {
         console.log(error);
-        //Alert error if passwords no not match
-        if (password !== confirmPassword) {
-          alert("Passwords do not match");
-        }
       });
   }
 
