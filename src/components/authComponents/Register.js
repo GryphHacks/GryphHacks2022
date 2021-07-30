@@ -18,6 +18,11 @@ const Register = () => {
   const createUser = (event, email, password) => {
     console.log("here");
     event.preventDefault();
+    //Alert error if passwords no not match
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
     firebaseApp.auth().createUserWithEmailAndPassword(email, password)
       .then(userCredential => {
         console.log(userCredential);
@@ -68,59 +73,61 @@ const Register = () => {
 
   return (
     <div className="row box">
-      <div className="col">
-        <AiFillGoogleCircle onClick={(e) => signInWithGoogle()} style={{ color: 'red', height: '40px', width: '40px', cursor: 'pointer' }} />
-        <hr />
-        <form onSubmit={(e) => createUser(e, email, password)}>
-          <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
-            <input
-              name="name"
-              value={displayName}
-              type="text"
-              className="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              onChange={e => setDisplayName(e.target.value)}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
-            <input
-              name="email"
-              value={email}
-              type="email"
-              className="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              onChange={e => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="password1" className="form-label">Password</label>
-            <input
-              name="password"
-              value={password}
-              type="password"
-              className="form-control"
-              id="exampleInputPassword1"
-              onChange={e => setPassword(e.target.value)}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="password2" className="form-label">Confirm password</label>
-            <input
-              name="confirmPassword"
-              value={confirmPassword}
-              type="password"
-              className="form-control"
-              id="exampleInputPassword1"
-              onChange={e => setConfirmPassword(e.target.value)}
-            />
-          </div>
-          <button type="submit" className="btn btn-primary">Join Us!</button>
-        </form>
-      </div>
+      <form className="col" onSubmit={(e) => createUser(e, email, password)}>
+      <AiFillGoogleCircle onClick={(e) => signInWithGoogle()} style={{ color: 'red', height: '40px', width: '40px', cursor: 'pointer' }} />
+      <hr />
+        <div className="mb-3">
+          <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
+          <input
+            name="name"
+            value={displayName}
+            type="text"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            onChange={e => setDisplayName(e.target.value)}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
+          <input
+            name="email"
+            value={email}
+            type="email"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            onChange={e => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="password1" className="form-label">Password</label>
+          <input
+            name="password"
+            value={password}
+            type="password"
+            className="form-control"
+            id="exampleInputPassword1"
+            onChange={e => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="password2" className="form-label">Confirm password</label>
+          <input
+            name="confirmPassword"
+            value={confirmPassword}
+            type="password"
+            className="form-control"
+            id="exampleInputPassword1"
+            onChange={e => setConfirmPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">Join Us!</button>
+      </form>
       <div className="col">
         <div>
           <img src={Logo} className="img-responsive" alt="logo" style={{ marginTop: '-50px' }} />
