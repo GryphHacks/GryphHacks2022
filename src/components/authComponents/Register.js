@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Logo from '../stylesheet/logo.png'
 import firebaseApp from '../../firebase';
+import firebase from 'firebase/app';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { addUser } from '../../actions/user';
+import { AiFillGoogleCircle } from 'react-icons/ai';
 
 const Register = () => {
   const [displayName, setDisplayName] = useState('');
@@ -31,16 +33,40 @@ const Register = () => {
         history.push('/dashboard');
         firebaseApp.firestore().collection("Users").doc(firebaseApp.auth().currentUser.uid)
           .set({ displayName, email })
-            .then(() => {
-              // registration successful
-              console.log("New user added to database");
-            })
-            .catch(error => {
-              console.log("Error writing to database: ", error);
-            })
+          .then(() => {
+            // registration successful
+            console.log("New user added to database");
+          })
+          .catch(error => {
+            console.log("Error writing to database: ", error);
+          })
       })
       .catch(error => {
         console.log(error);
+      });
+  }
+
+  const signInWithGoogle = () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+      .then(res => {
+        const userCredential = res.credential;
+        // Google token
+        const token = userCredential.accessToken;
+        // Signed-in user info
+        const user = res.user;
+        console.log(user);
+        dispatch(addUser(user));
+        history.push('/dashboard');
+      }).catch(error => {
+        // Handle Errors here.
+        // NOTE: Do not remove these unused variables. They should pop out on the screen. A ticket will be created to render these errors.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
       });
   }
 
