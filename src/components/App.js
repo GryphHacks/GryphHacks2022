@@ -1,6 +1,7 @@
 // Branch - Muhammad testing pull requests
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
+import createBrowserHistory from '../history';
 import './stylesheet/app.css';
 
 import Landing from './Landing';
@@ -15,7 +16,7 @@ const App = () => {
 
   return (
     <div>
-      <BrowserRouter>
+      <Router history={createBrowserHistory}>
         <Navigation />
         <Route path='/' exact component={Landing} />
         <div className="container" style={{marginTop: '400px'}}>
@@ -25,7 +26,7 @@ const App = () => {
           <Route path='/faq' exact component={FAQ} />
           <Route path='/contact' exact component={Contact}/>
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
   )
 }
