@@ -74,6 +74,7 @@ const Register = () => {
     <div className="row box">
       <form className="col" onSubmit={(e) => createUser(e, email, password)}>
       <AiFillGoogleCircle onClick={(e) => signInWithGoogle()} style={{ color: 'red', height: '40px', width: '40px', cursor: 'pointer' }} />
+      <hr />
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
           <input
