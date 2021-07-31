@@ -1,16 +1,17 @@
 // Branch - Muhammad testing pull requests
 import React from 'react';
-import { Router, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import createBrowserHistory from '../history';
 import './stylesheet/app.css';
 
-import Landing from './Landing';
+import Landing from './pageComponents/Landing';
 import Navigation from './Navigation';
 import Register from './authComponents/Register';
 import Login from './authComponents/Login';
+import PrivateRoute from './authComponents/PrivateRoute';
 import Dashboard from './userComponents/Dashboard';
-import FAQ from './userComponents/FAQ';
-import Contact from './userComponents/Contact';
+import FAQ from './pageComponents/FAQ';
+import Contact from './pageComponents/Contact';
 
 const App = () => {
 
@@ -18,13 +19,15 @@ const App = () => {
     <div>
       <Router history={createBrowserHistory}>
         <Navigation />
-        <Route path='/' exact component={Landing} />
         <div className="container" style={{marginTop: '400px'}}>
-          <Route path='/register' exact component={Register} />
-          <Route path='/login' exact component={Login} />
-          <Route path='/dashboard' exact component={Dashboard}/>
-          <Route path='/faq' exact component={FAQ} />
-          <Route path='/contact' exact component={Contact}/>
+          <Switch>
+            <Route path='/' exact component={Landing} />
+            <Route path='/register' exact component={Register} />
+            <Route path='/login' exact component={Login} />
+            <PrivateRoute path='/dashboard' component={Dashboard}/>
+            <Route path='/faq' exact component={FAQ} />
+            <Route path='/contact' exact component={Contact}/>
+          </Switch>
         </div>
       </Router>
     </div>
