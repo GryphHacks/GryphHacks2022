@@ -80,6 +80,8 @@ const Login = () => {
           </div>
           <button type="submit" className="btn btn-primary">Login</button>
         </form>
+        <hr/>
+        <p>Don't have an account?<a href="/register">Click here to register!</a></p>
       </div>
       <div className="col">
         <div>
