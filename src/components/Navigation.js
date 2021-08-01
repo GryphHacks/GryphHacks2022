@@ -36,6 +36,9 @@ const Navigation = () => {
               <Link to='/faq' className="nav-link">FAQ</Link>
             </li>
             <li className="nav-item">
+              <Link to='/schedule' className="nav-link">Schedule</Link>
+            </li>
+            <li className="nav-item">
               <Link to='/contact' className="nav-link">Contact Us</Link>
             </li>
             { !isAuthenticated &&
@@ -55,7 +58,7 @@ const Navigation = () => {
             }
             { isAuthenticated &&
               <li className="nav-item">
-                <button className='nav-link' onClick={() => logOutWithFirebase()} >Log Out</button>
+                <button className='nav-link' onClick={() => logOutWithFirebase()}>Log Out</button>
               </li>
             }
           </ul>

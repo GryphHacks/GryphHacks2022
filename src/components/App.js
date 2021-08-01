@@ -12,6 +12,7 @@ import PrivateRoute from './authComponents/PrivateRoute';
 import Dashboard from './userComponents/Dashboard';
 import FAQ from './pageComponents/FAQ';
 import Contact from './pageComponents/Contact';
+import Schedule from './pageComponents/Schedule';
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
             <PrivateRoute path='/dashboard' component={Dashboard}/>
             <Route path='/faq' exact component={FAQ} />
             <Route path='/contact' exact component={Contact}/>
+            <Route path='/schedule' exact component={Schedule}/>
           </Switch>
         </div>
       </Router>
