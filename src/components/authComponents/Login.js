@@ -10,6 +10,7 @@ import { addUser } from "../../actions/user";
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const isEnabled = email.length > 0 && password.length > 0; //disable Login button if empty fields
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -53,6 +54,17 @@ const Login = () => {
   }
 
 
+  var errorMessage = null;
+  if (!isEnabled) {
+    errorMessage = (
+      <div>
+        <br/>
+        <p style={{ color:'red' }}>Error: fill in all fields.</p>
+      </div>
+    )
+  }
+
+
   return (
     <div className="row box">
       <div className="col">
@@ -78,7 +90,8 @@ const Login = () => {
               onChange={e => setPassword(e.target.value)}
             />
           </div>
-          <button type="submit" className="btn btn-primary">Login</button>
+          <button type="submit" className="btn btn-primary" disabled={!isEnabled}>Login</button>
+          {errorMessage}
         </form>
         <hr/>
         <p>Don't have an account?<a href="/register">Click here to register!</a></p>
