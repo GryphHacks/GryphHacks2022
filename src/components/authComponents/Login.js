@@ -9,6 +9,7 @@ import { addUser } from "../../actions/user";
 
 const Login = () => {
   const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
   const [password, setPassword] = useState('');
   const isEnabled = email.length > 0 || password.length > 0; //disable Login button if empty fields
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ const Login = () => {
 
 
   const signInWithFirebase = (event, email, password) => {
+    handleErrors();
     event.preventDefault();
     firebaseApp.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
@@ -57,6 +59,8 @@ const Login = () => {
   const handleErrors = () => {
     if (isEnabled) { // if at least one field contains user input
       if (email.length === 0) {
+        setError("Error: Enter your email address.");
+
         errorMessage = (
           <div>
             <br/>
@@ -101,11 +105,16 @@ const Login = () => {
               onChange={e => setPassword(e.target.value)}
             />
           </div>
-          <button type="submit" onClick={handleErrors()} disabled={!isEnabled} className="btn btn-primary">Login</button>
-          {errorMessage}
+          <button type="submit" className="btn btn-primary">Login</button>
+          <p style={{ color:'red' }}>{error}</p>
         </form>
         <hr/>
-        <p>Don't have an account?<a href="/register">Click here to register!</a></p>
+        { hasError && 
+          <div>
+            <br/>
+            <p>Don't have an account?<a href="/register">Click here to register!</a></p>
+          </div> 
+        }
       </div>
       <div className="col">
         <div>
