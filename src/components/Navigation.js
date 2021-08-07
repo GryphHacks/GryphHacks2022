@@ -36,6 +36,9 @@ const Navigation = () => {
               <Link to='/faq' className="nav-link">FAQ</Link>
             </li>
             <li className="nav-item">
+              <Link to='/shop' className="nav-link">Shop</Link>
+            </li>
+            <li className="nav-item">
               <Link to='/schedule' className="nav-link">Schedule</Link>
             </li>
             <li className="nav-item">
