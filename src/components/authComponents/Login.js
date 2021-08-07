@@ -74,6 +74,7 @@ const Login = () => {
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
             <input
+              required
               type="email"
               className="form-control"
               id="exampleInputEmail1"
@@ -84,6 +85,7 @@ const Login = () => {
           <div className="mb-3">
             <label htmlFor="password1" className="form-label">Password</label>
             <input
+              required
               type="password"
               className="form-control"
               id="exampleInputPassword1"
@@ -91,7 +93,6 @@ const Login = () => {
             />
           </div>
           <button type="submit" className="btn btn-primary" disabled={!isEnabled}>Login</button>
-          {errorMessage}
         </form>
         <hr/>
         <p>Don't have an account?<a href="/register">Click here to register!</a></p>
