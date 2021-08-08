@@ -127,6 +127,7 @@ const Register = () => {
           />
         </div>
         <button type="submit" className="btn btn-primary">Join Us!</button>
+        <button type="submit" style = {{ marginLeft: '20px'}} className="btn btn-primary">Login</button>
       </form>
       <div className="col">
         <div>
