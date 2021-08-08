@@ -4,18 +4,22 @@ import firebaseApp from '../../firebase';
 import firebase from 'firebase/app';
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
-import { AiFillGoogleCircle } from 'react-icons/ai';
+import { AiFillExclamationCircle, AiFillGoogleCircle } from 'react-icons/ai';
 import { addUser } from "../../actions/user";
 
 const Login = () => {
   const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
   const [password, setPassword] = useState('');
+  const [hasError, setHasError] = useState(false);
   const dispatch = useDispatch();
   const history = useHistory();
 
 
   const signInWithFirebase = (event, email, password) => {
     event.preventDefault();
+    handleErrors();
+    if (hasError) return;
     firebaseApp.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // log in successful
@@ -52,6 +56,17 @@ const Login = () => {
       });
   }
 
+  const handleErrors = () => {
+    if (email.length === 0) {
+      setHasError(true);
+      setError("Error: Enter your email address.");
+    } else if (password.length === 0) {
+      setHasError(true);
+      setError("Error: Enter your password.");
+    } else {
+      setHasError(false);
+    }
+  }
 
   return (
     <div className="row box">
@@ -62,6 +77,7 @@ const Login = () => {
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
             <input
+              required
               type="email"
               className="form-control"
               id="exampleInputEmail1"
@@ -72,6 +88,7 @@ const Login = () => {
           <div className="mb-3">
             <label htmlFor="password1" className="form-label">Password</label>
             <input
+              required
               type="password"
               className="form-control"
               id="exampleInputPassword1"
@@ -83,6 +100,14 @@ const Login = () => {
           </div>
           <button type="submit" className="btn btn-primary">Login</button>
         </form>
+        <hr/>
+        { hasError && 
+          <div>
+            <br/>
+            <p style={{ color:'red' }}>{error}</p>
+          </div> 
+        }
+        <p>Don't have an account?<a href="/register">Click here to register!</a></p>
       </div>
       <div className="col">
         <div>

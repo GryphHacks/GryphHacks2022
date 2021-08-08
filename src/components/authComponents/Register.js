@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../stylesheet/logo.png'
 import firebaseApp from '../../firebase';
 import firebase from 'firebase/app';
+import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { addUser } from '../../actions/user';
@@ -127,6 +128,8 @@ const Register = () => {
           />
         </div>
         <button type="submit" className="btn btn-primary">Join Us!</button>
+        <hr/>
+        <p>or <Link to='/login' className="nav-Link">Login here!</Link></p>
       </form>
       <div className="col">
         <div>
