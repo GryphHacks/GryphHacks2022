@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../stylesheet/logo.png'
 import firebaseApp from '../../firebase';
 import firebase from 'firebase/app';
+import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { addUser } from '../../actions/user';
@@ -127,7 +128,7 @@ const Register = () => {
           />
         </div>
         <button type="submit" className="btn btn-primary">Join Us!</button>
-        <button type="submit" style = {{ marginLeft: '20px'}} className="btn btn-primary">Login</button>
+        <Link to='/login' className = "nav-Link"><button style={{ marginLeft: '20px'}} className="btn btn-primary">Login</button></Link>
       </form>
       <div className="col">
         <div>
