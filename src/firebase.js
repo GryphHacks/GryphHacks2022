@@ -3,13 +3,13 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 var firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: "gryphhacks.firebaseapp.com",
-  projectId: "gryphhacks",
-  storageBucket: "gryphhacks.appspot.com",
-  messagingSenderId: process.env.REACT_APP_SENDER_ID,
-  appId: process.env.REACT_APP_ID,
-  measurementId: process.env.REACT_APP_MEASUREMENT_ID
+  apiKey: "AIzaSyCzgUeyHFdmnrovyxZq7mcWwfTojNYeEGI",
+  authDomain: "gryphhack-backend.firebaseapp.com",
+  projectId: "gryphhack-backend",
+  storageBucket: "gryphhack-backend.appspot.com",
+  messagingSenderId: "644674990974",
+  appId: "1:644674990974:web:0cdcd46354ec562e5a792f",
+  measurementId: "G-S3VV4X58PR"
 };
 // Initialize Firebase
 export default !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
