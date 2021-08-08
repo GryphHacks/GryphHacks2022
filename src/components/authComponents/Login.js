@@ -11,13 +11,15 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
-  const isEnabled = email.length > 0 || password.length > 0; //disable Login button if empty fields
+  const [hasError, setHasError] = useState(false);
   const dispatch = useDispatch();
   const history = useHistory();
 
 
   const signInWithFirebase = (event, email, password) => {
     handleErrors();
+    if (hasError) return;
+
     event.preventDefault();
     firebaseApp.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
@@ -55,26 +57,15 @@ const Login = () => {
       });
   }
 
-  var errorMessage = null;
   const handleErrors = () => {
-    if (isEnabled) { // if at least one field contains user input
-      if (email.length === 0) {
-        setError("Error: Enter your email address.");
-
-        errorMessage = (
-          <div>
-            <br/>
-            <p style={{ color:'red' }}>Error: Enter your email address.</p>
-          </div>
-        )
-      } else if (password.length === 0) {
-        errorMessage = (
-          <div>
-            <br/>
-            <p style={{ color:'red' }}>Error: Enter your password.</p>
-          </div>
-        )
-      }
+    if (email.length === 0) {
+      setHasError(true);
+      setError("Error: Enter your email address.");
+    } else if (password.length === 0) {
+      setHasError(true);
+      setError("Error: Enter your password.");
+    } else {
+      setHasError(false);
     }
   }
 
@@ -106,15 +97,15 @@ const Login = () => {
             />
           </div>
           <button type="submit" className="btn btn-primary">Login</button>
-          <p style={{ color:'red' }}>{error}</p>
         </form>
         <hr/>
         { hasError && 
           <div>
             <br/>
-            <p>Don't have an account?<a href="/register">Click here to register!</a></p>
+            <p style={{ color:'red' }}>{error}</p>
           </div> 
         }
+        <p>Don't have an account?<a href="/register">Click here to register!</a></p>
       </div>
       <div className="col">
         <div>
