@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../stylesheet/logo.png';
 import firebaseApp from '../../firebase';
 import firebase from 'firebase/app';
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { AiFillGoogleCircle } from 'react-icons/ai';
 import { addUser } from "../../actions/user";
@@ -79,7 +79,7 @@ const Login = () => {
             />
           </div>
           <div className="mb-3">
-            <a href='/forgotpassword'>Forgot your password?</a>
+            <Link to='/forgotpassword'>Forgot your password?</Link>
           </div>
           <button type="submit" className="btn btn-primary">Login</button>
         </form>

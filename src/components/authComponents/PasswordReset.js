@@ -4,21 +4,33 @@ import React, { useState } from 'react';
 const PasswordReset = () => {
 
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [message, setMessage] = useState('');
+  const [success, setSuccess] = useState(false) // This was just so I could 
 
   const sendPasswordResetEmail = (event, email) => {
     event.preventDefault();
     firebase.auth().sendPasswordResetEmail(email)
     .then(() => {
       // Password reset email sent!
-      setSubmitted(true)
+      setSuccess(true)
+      setMessage('Success! Please check your inbox for a password reset email.');
     })
     .catch((error) => {
-      // TODO - add 
-      console.log(error);
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      // ..
+      // Catch error and give appropriate error message
+      setSuccess(false)
+
+      console.log(error)
+
+      switch (error.code) {
+        case "auth/user-not-found":
+          setMessage('An account could not be found for the provided email address.');
+          break;
+        case "auth/invalid-email":
+          setMessage('Invalid email?')
+          break; 
+        default:
+          setMessage('An unknown error occurred, please try again.');
+      }
     });
   }
 
@@ -27,7 +39,6 @@ const PasswordReset = () => {
       <h3>Forgot your password?</h3>
       <p>Enter your email address below and we'll send you a link to reset your password!</p>
       <form onSubmit={(e) => sendPasswordResetEmail(e, email)}>
-        <label>Email Address</label>
         <input 
           type="email"
           placeholder="example@email.com"
@@ -37,8 +48,7 @@ const PasswordReset = () => {
         <button type="submit" className="btn btn-primary">Reset Password</button>
       </form>
       <br/>
-      {submitted && <div style={{color:'green'}}>Success! Please check your inbox for a password reset email.</div>}
-      {!submitted && <div style={{color:'red'}}>An account could not be found for the provided email address.</div>}
+      <p style={success ? {color: 'green'} : {color: 'red'}}>{ message }</p>
     </div>
   );
 }
