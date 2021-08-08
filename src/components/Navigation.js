@@ -43,6 +43,9 @@ const Navigation = () => {
             <li className="nav-item">
               <Link to='/contact' className="nav-link">Contact Us</Link>
             </li>
+            <li className="nav-item">
+              <Link to='/about' className="nav-link">About Us</Link>
+            </li>
             { !isAuthenticated &&
             <li className="nav-item">
               <Link to='/login' className="nav-link">Login</Link>
