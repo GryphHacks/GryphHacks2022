@@ -128,7 +128,7 @@ const Register = () => {
           />
         </div>
         <button type="submit" className="btn btn-primary">Join Us!</button>
-        <Link to='/login' className = "nav-Link"><button style={{ marginLeft: '20px'}} className="btn btn-primary">Login</button></Link>
+        <Link to='/login' className="nav-Link"><button style={{ marginLeft: '20px'}} className="btn btn-primary">Login</button></Link>
       </form>
       <div className="col">
         <div>
