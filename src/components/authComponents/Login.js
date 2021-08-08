@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../stylesheet/logo.png';
 import firebaseApp from '../../firebase';
 import firebase from 'firebase/app';
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { AiFillExclamationCircle, AiFillGoogleCircle } from 'react-icons/ai';
 import { addUser } from "../../actions/user";
@@ -95,6 +95,9 @@ const Login = () => {
               onChange={e => setPassword(e.target.value)}
             />
           </div>
+          <div className="mb-3">
+            <Link to='/forgotpassword'>Forgot your password?</Link>
+          </div>
           <button type="submit" className="btn btn-primary">Login</button>
         </form>
         <hr/>
@@ -104,7 +107,7 @@ const Login = () => {
             <p style={{ color:'red' }}>{error}</p>
           </div> 
         }
-        <p>Don't have an account?<a href="/register">Click here to register!</a></p>
+        <p>Don't have an account? <a href="/register">Click here to register!</a></p>
       </div>
       <div className="col">
         <div>
