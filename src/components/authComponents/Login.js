@@ -17,10 +17,9 @@ const Login = () => {
 
 
   const signInWithFirebase = (event, email, password) => {
+    event.preventDefault();
     handleErrors();
     if (hasError) return;
-
-    event.preventDefault();
     firebaseApp.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // log in successful
