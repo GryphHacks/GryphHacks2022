@@ -5,7 +5,7 @@ const PasswordReset = () => {
 
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [success, setSuccess] = useState(false) // This was just so I could 
+  const [success, setSuccess] = useState(false) // This was just so I could toggle message colours
 
   const sendPasswordResetEmail = (event, email) => {
     event.preventDefault();
@@ -26,9 +26,10 @@ const PasswordReset = () => {
           setMessage('An account could not be found for the provided email address.');
           break;
         case "auth/invalid-email":
-          setMessage('Invalid email?')
+          setMessage('Please enter a valid email address.')
           break; 
         default:
+          // What other errors should I be worried about?
           setMessage('An unknown error occurred, please try again.');
       }
     });
