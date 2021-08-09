@@ -17,7 +17,7 @@ const Register = () => {
   const history = useHistory();
 
   const createUser = (event, email, password) => {
-    console.log("here");
+    console.log("Registration successful!");
     event.preventDefault();
     //Alert error if passwords no not match
     if (password !== confirmPassword) {

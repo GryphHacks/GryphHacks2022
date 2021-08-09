@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { logOut } from '../actions/user';
 import firebase from '../firebase';
 
@@ -43,6 +42,9 @@ const Navigation = () => {
             </li>
             <li className="nav-item">
               <Link to='/contact' className="nav-link">Contact Us</Link>
+            </li>
+            <li className="nav-item">
+              <Link to='/about' className="nav-link">About Us</Link>
             </li>
             { !isAuthenticated &&
             <li className="nav-item">

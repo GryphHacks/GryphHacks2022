@@ -14,7 +14,9 @@ import FAQ from './pageComponents/FAQ';
 import Contact from './pageComponents/Contact';
 import Schedule from './pageComponents/Schedule';
 import NotFound from './pageComponents/NotFound';
+import PasswordReset from './authComponents/PasswordReset';
 import Shop from './pageComponents/Shop';
+import About from './pageComponents/About';
 
 const App = () => {
 
@@ -31,7 +33,9 @@ const App = () => {
             <Route path='/faq' exact component={FAQ} />
             <Route path='/contact' exact component={Contact}/>
             <Route path='/schedule' exact component={Schedule}/>
+            <Route path='/forgotpassword' exact component={PasswordReset}/>
             <Route path='/shop' exact component={Shop}/>
+            <Route path='/about' exact component={About}/>
             <Route component={NotFound}/>
           </Switch>
         </div>
