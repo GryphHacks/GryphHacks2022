@@ -17,6 +17,7 @@ import NotFound from './pageComponents/NotFound';
 import PasswordReset from './authComponents/PasswordReset';
 import Shop from './pageComponents/Shop';
 import About from './pageComponents/About';
+import Sponsor from './pageComponents/Sponsor';
 
 const App = () => {
 
@@ -36,6 +37,7 @@ const App = () => {
             <Route path='/forgotpassword' exact component={PasswordReset}/>
             <Route path='/shop' exact component={Shop}/>
             <Route path='/about' exact component={About}/>
+            <Route path='/sponsor' exact component={Sponsor}/>
             <Route component={NotFound}/>
           </Switch>
         </div>
