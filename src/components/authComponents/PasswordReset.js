@@ -18,9 +18,7 @@ const PasswordReset = () => {
     .catch((error) => {
       // Catch error and give appropriate error message
       setSuccess(false)
-
-      console.log(error)
-
+      
       switch (error.code) {
         case "auth/user-not-found":
           setMessage('An account could not be found for the provided email address.');
