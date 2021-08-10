@@ -1,4 +1,4 @@
-import Question from "./Question";
+import Question from "./GeneralComponents.js/Question";
 const FAQ = () => {
     const faq = [
         {
