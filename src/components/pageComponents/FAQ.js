@@ -1,4 +1,5 @@
 import Question from "./GeneralComponents.js/Question";
+import QuestionList from "./GeneralComponents.js/QuestionList";
 const FAQ = () => {
     const faq = [
         {
@@ -13,16 +14,18 @@ const FAQ = () => {
             question:"Where do I sign up for GryphHacks",
             answer:"Website"
         },
+        {
+            question:"Where do I sign up for GryphHacks",
+            answer:"Website"
+        },
+
 
     ]
     return (
         <div>
             <h1>Frequently Asked Questions!</h1>
             <br></br>
-    
-            {faq.map( ({question,answer}) => (
-          <Question question={question} answer={answer} />
-        ))}
+            <QuestionList data = {faq}/>
         </div>
     )
 }
