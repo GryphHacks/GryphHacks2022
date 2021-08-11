@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { IconName } from "react-icons/fa";
 import {FaChevronDown,FaChevronUp} from "react-icons/fa"
 const Question = ({question,answer}) => {
     const [isClicked,setClicked] = useState(false)

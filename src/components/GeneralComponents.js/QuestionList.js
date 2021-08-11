@@ -14,8 +14,7 @@ const QuestionList = ({data}) => {
 
 const columns ={
     display: "grid",
-    gridTemplateColumns: "auto auto"    
-   
+    gridTemplateColumns: "auto auto",
   }
   
 export default QuestionList
