@@ -1,0 +1,21 @@
+/* Contact component - form */
+#contact-form {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+}
+.form-group {
+  padding-bottom: 10px;
+}
+#name-form {
+  display: flex;
+  flex-direction: row;
+}
+#first-name-form {
+  margin-right: auto;
+  width: 48%;
+}
+#last-name-form {
+  width: 48%;
+}
