@@ -1,4 +1,5 @@
-import QuestionList from "./GeneralComponents.js/QuestionList";
+import QuestionList from "../GeneralComponents.js/QuestionList";
+
 const FAQ = () => {
     const faq = [
         {
