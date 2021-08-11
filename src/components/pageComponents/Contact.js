@@ -1,6 +1,6 @@
 import { first, last } from "lodash";
 import { useState } from "react";
-import SocialBar from "../GeneralComponents.js/SocialBar"
+import SocialBar from "../GeneralComponents/SocialBar"
 
 const Contact = () => {
   const [firstName, setFirstName] = useState('');

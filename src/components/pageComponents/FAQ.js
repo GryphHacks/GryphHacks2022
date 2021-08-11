@@ -1,4 +1,4 @@
-import QuestionList from "../GeneralComponents.js/QuestionList";
+import QuestionList from "../GeneralComponents/QuestionList";
 
 const FAQ = () => {
   const faq = [
@@ -13,6 +13,7 @@ const FAQ = () => {
     {
       question:"Will Hack the North 2021 happen in person or virtually?",
       answer:"Hack the North 2021 will be a virtual-first event, but we may introduce some in-person aspects for hackers located in the Waterloo Region depending on the public health guidelines around COVID-19 when the event takes place in September. Stay tuned to hear the latest updates by following our social media channels and signing up for our mailing list!"
+        
     },
     {
       question:"Who Can Participate?",
