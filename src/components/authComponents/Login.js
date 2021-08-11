@@ -9,8 +9,8 @@ import { addUser } from "../../actions/user";
 
 const Login = () => {
   const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const [hasError, setHasError] = useState(false);
   const dispatch = useDispatch();
   const history = useHistory();
@@ -18,8 +18,9 @@ const Login = () => {
 
   const signInWithFirebase = (event, email, password) => {
     event.preventDefault();
-    handleErrors();
+    handleErrors(); // empty fields
     if (hasError) return;
+
     firebaseApp.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // log in successful
@@ -100,13 +101,14 @@ const Login = () => {
           </div>
           <button type="submit" className="btn btn-primary">Login</button>
         </form>
-        <hr/>
+        {/* prevent users from logging in with empty fields even if they remove 'required' field in local browser */}
         { hasError && 
           <div>
             <br/>
             <p style={{ color:'red' }}>{error}</p>
           </div> 
         }
+        <hr/>
         <p>Don't have an account? <a href="/register">Click here to register!</a></p>
       </div>
       <div className="col">
