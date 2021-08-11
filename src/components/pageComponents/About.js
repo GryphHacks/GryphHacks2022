@@ -1,23 +1,74 @@
-import TeamMember from "../GeneralComponents/TeamMember";
+import TeamMemberList from "../GeneralComponents/TeamMemberList";
+import SocialBar from "../GeneralComponents/SocialBar"
+import TeamInfo from "../GeneralComponents/TeamInfo";
 
 const About = () => {
-    const member = {
-        name:"Andrew Linington",
-        title:"System Administrator",
-        image:"images/sampleImage.jpeg",
-        social: {
-            linkedin:"https://daveceddia.com/react-image-tag/"
-        }
-    }
-
-
-
+    const members = [
+        {
+            name:"Andrew Linington",
+            title:"System Administrator",
+            image:"images/sampleImage.jpeg",
+            social: {
+                linkedin:"https://daveceddia.com/react-image-tag/"
+            }
+        },
+        {
+            name:"Andrew Linington",
+            title:"System Administrator",
+            image:"images/sampleImage.jpeg",
+            social: {
+                linkedin:"https://daveceddia.com/react-image-tag/"
+            }
+        },
+        {
+            name:"Andrew Linington",
+            title:"System Administrator",
+            image:"images/sampleImage.jpeg",
+            social: {
+                linkedin:"https://daveceddia.com/react-image-tag/"
+            }
+        },
+        {
+            name:"Andrew Linington",
+            title:"System Administrator",
+            image:"images/sampleImage.jpeg",
+            social: {
+                linkedin:"https://daveceddia.com/react-image-tag/"
+            }
+        },
+        {
+            name:"Andrew Linington",
+            title:"System Administrator",
+            image:"images/sampleImage.jpeg",
+            social: {
+                linkedin:"https://daveceddia.com/react-image-tag/"
+            }
+        },
+        {
+            name:"Andrew Linington",
+            title:"System Administrator",
+            image:"images/sampleImage.jpeg",
+            social: {
+                linkedin:"https://daveceddia.com/react-image-tag/"
+            }
+        },
+        {
+            name:"Andrew Linington",
+            title:"System Administrator",
+            image:"images/sampleImage.jpeg",
+            social: {
+                linkedin:"https://daveceddia.com/react-image-tag/"
+            }
+        },
+    ]
 
     return (
         <div>
-            <h2>About Us</h2>
+            <TeamInfo/>
             <br/>
-            <TeamMember member = {member}/>
+            <TeamMemberList data = {members}/>
+            <br/>
+            <SocialBar/>
         </div>
     )
 };

@@ -4,12 +4,11 @@ const Question = ({question,answer}) => {
     const [isClicked,setClicked] = useState(false)
     return (
         <div>
-                <div onClick = {()=>setClicked(!isClicked)}>
-                    <h6> {isClicked ? <FaChevronUp/>:<FaChevronDown/>} {question} </h6>
-                </div>
-                {isClicked && <div>{answer}</div>}
-         
-                <br></br>
+            <div onClick = {()=>setClicked(!isClicked)}>
+                <h6> {isClicked ? <FaChevronUp/>:<FaChevronDown/>} {question} </h6>
+            </div>
+            {isClicked && <div>{answer}</div>}
+            <br/>
         </div>
     )
 }

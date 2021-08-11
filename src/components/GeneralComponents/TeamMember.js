@@ -1,7 +1,6 @@
 import { FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
 
-const TeamMember = (props) => {
-    const member = props.member;
+const TeamMember = ({member}) => {
     return (
         <div>
             <img width="200" height="200" alt={member.name + "'s Profile image"} src={member.image}/>
@@ -16,6 +15,7 @@ const TeamMember = (props) => {
                 {member.social.twitter && <a href = {member.social.twitter} style={linkStyle}><FaTwitter size = {28} textDecoration={'none'}/></a>}
                 {member.social.linkedin && <a href = {member.social.linkedin} style={linkStyle}><FaLinkedin size = {28} textDecoration={'none'}/></a>}
             </div>
+            <br/>
         </div>
     )
 };
