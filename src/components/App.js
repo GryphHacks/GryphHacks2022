@@ -25,7 +25,7 @@ const App = () => {
     <div>
       <Router history={createBrowserHistory}>
         <Navigation />
-        <div className="container" style={{marginTop: '100px'}}>
+        <div className="container" style={{marginTop: '50px'}}>
           <Switch>
             <Route path='/' exact component={Landing} />
             <Route path='/register' exact component={Register} />
