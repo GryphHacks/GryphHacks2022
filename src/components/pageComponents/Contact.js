@@ -1,4 +1,4 @@
-import SocialBar from "./GeneralComponents.js/SocialBar"
+import SocialBar from "../GeneralComponents/SocialBar"
 
 const Contact = () => {
     return (
