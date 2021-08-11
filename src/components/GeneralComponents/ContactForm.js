@@ -1,6 +1,5 @@
 import { first, last } from "lodash";
 import { useState } from "react";
-import SocialBar from "../GeneralComponents/SocialBar";
 
 const ContactForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -37,8 +36,6 @@ const ContactForm = () => {
 
   return (
     <div>
-      <h1>Get in touch!</h1>
-      <br />
       <form
         id="contact-form"
         onSubmit={(e) => handleSubmit(e, firstName, lastName, email, message)}
@@ -95,9 +92,6 @@ const ContactForm = () => {
         )}
       </form>
       <br />
-      <br />
-      <br />
-      <SocialBar />
     </div>
   );
 };

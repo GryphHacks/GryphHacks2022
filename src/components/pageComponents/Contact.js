@@ -1,5 +1,6 @@
 import { first, last } from "lodash";
 import SocialBar from "../GeneralComponents/SocialBar"
+import ContactForm from "../GeneralComponents/ContactForm";
 
 const Contact = () => {
 
@@ -7,6 +8,7 @@ const Contact = () => {
     <div>
       <h1>Contact Us!</h1>
       <br/><br/>
+      <ContactForm />      
       <SocialBar />
     </div>
   );
