@@ -1,18 +1,26 @@
 import Question from "./Question"
-const QuestionList = ({data}) => {
+const QuestionList = ({leftData,rightData}) => {
     return (
-        <div>
+        <div >
              <div style = {columns}>
-                {data.map( ({question,answer}) => (
-                <Question question={question} answer={answer}/>
-                ))}
+                 <div>
+                    {leftData.map( ({question,answer}) => (
+                    <Question  question={question} answer={answer}/>
+                    ))}
+                 </div>
+                 <div>
+                    {rightData.map( ({question,answer}) => (
+                    <Question  question={question} answer={answer}/>
+                    ))}
+                 </div>
             </div>  
+            
         </div>
     )
 }
 const columns ={
     display: "grid",
-    gridTemplateColumns: "50% 50%",
+    gridTemplateColumns: "50% 50% ",
   }
   
 export default QuestionList
