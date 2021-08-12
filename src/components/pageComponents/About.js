@@ -13,6 +13,6 @@ const About = () => {
             <SocialBar/>
         </div>
     )
-};
+}
 
 export default About;
