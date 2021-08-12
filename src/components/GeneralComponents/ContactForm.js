@@ -1,4 +1,4 @@
-import { first, last } from "lodash";
+import { first, last, startCase } from "lodash";
 import { useState } from "react";
 
 const ContactForm = () => {
@@ -79,11 +79,9 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-        <br />
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-        <br />
         {hasError && (
           <div>
             <br />
