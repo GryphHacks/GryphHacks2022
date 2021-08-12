@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
+
 const Question = ({ question, answer }) => {
   const [isClicked, setClicked] = useState(false);
   return (
@@ -9,8 +10,7 @@ const Question = ({ question, answer }) => {
         <h6> {isClicked ? <FaChevronUp /> : <FaChevronDown />} {question} </h6>
       </div>
       {isClicked && <div>{answer}</div>}
-
-      <br></br>
+      <br/>
     </div>
   );
 };
