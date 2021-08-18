@@ -1,9 +1,9 @@
 const Sponsor = () => {
-    return (
-        <div>
-            <p>Sponsor</p>
-        </div>
-    )
+  return (
+    <div>
+      <p>Sponsor</p>
+    </div>
+  )
 }
 
 export default Sponsor
