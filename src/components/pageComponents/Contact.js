@@ -1,5 +1,5 @@
 import SocialBar from "./SocialBar";
-import NewsletterSignUp from "./NewsletterSignUp";
+import NewsletterSignUp from "../GeneralComponents/NewsletterSignUp";
 
 const Contact = () => {
     return (

@@ -1,5 +1,6 @@
 import firebaseApp from '../../firebase';
 import React, { useState } from 'react';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 const NewsletterSignUp = () => {
 
@@ -20,18 +21,25 @@ const NewsletterSignUp = () => {
     }
 
     return (
-        <div>
-            <form onSubmit={(e) => newsletterSignUp(e, email)}>
-                <input 
-                    type="email"
-                    placeholder="example@email.com"
-                    onChange={e => setEmail(e.target.value)}
-                    required
-                />
-                <button type="submit" className="btn btn-primary">Sign Up</button>
-            </form>
-        </div>
+        <>
+            <p>Sign up for our newsletter!</p>
+            <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+        </>
     )
+
+    // return (
+    //     <div>
+    //         <form onSubmit={(e) => newsletterSignUp(e, email)}>
+    //             <input 
+    //                 type="email"
+    //                 placeholder="example@email.com"
+    //                 onChange={e => setEmail(e.target.value)}
+    //                 required
+    //             />
+    //             <button type="submit" className="btn btn-primary">Sign Up</button>
+    //         </form>
+    //     </div>
+    // )
 }
 
 export default NewsletterSignUp

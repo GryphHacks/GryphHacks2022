@@ -1,4 +1,4 @@
-import NewsletterSignUp from "./NewsletterSignUp";
+import NewsletterSignUp from "../GeneralComponents/NewsletterSignUp";
 
 const Landing = () => {
   return (
