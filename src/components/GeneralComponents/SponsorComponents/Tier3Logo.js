@@ -1,7 +1,6 @@
 const Tier3Logo = ({tier3Sponsor}) => {
     const tier3 = {
-        display:"grid",
-        paddingLeft:"20%",
+        display:"inline-grid",
         alignItems:"center",
         gridTemplateColumns:"auto auto",
     }
