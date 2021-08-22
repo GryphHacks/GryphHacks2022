@@ -28,4 +28,9 @@
   padding: 50px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.in-footer {
+  margin-right: 50px;
 }
