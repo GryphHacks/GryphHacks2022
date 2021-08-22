@@ -1,7 +1,9 @@
+import SocialBar from "./SocialBar"
+
 const Footer = () => {
   return (
-    <div>
-      <p>Footer</p>
+    <div id="footer">
+      <SocialBar/>
     </div>
   )
 }

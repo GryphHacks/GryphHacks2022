@@ -20,3 +20,12 @@
 #last-name-form {
   width: 48%;
 }
+
+/* Footer component */
+#footer {
+  background-color: #a60909;
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
