@@ -1,0 +1,82 @@
+{
+
+"1":[
+    {
+        "name":"Amazon",
+        "tier":1,
+        "logo":"images/sponsor/amazon.png",
+        "link":"https://www.aboutamazon.com/"
+    },
+    {
+        "name":"Microsoft",
+        "tier":1,
+        "logo":"images/sponsor/microsoft.png",
+        "link":"https://www.microsoft.com/en-ca/about/"
+    },
+    {
+        "name":"Netflix",
+        "tier":1,
+        "logo":"images/sponsor/netflix.png",
+        "link":"https://www.netflix.com/ca/"
+    },
+    {
+        "name":"Scotiabank",
+        "tier":1,
+        "logo":"images/sponsor/scotiabank.png",
+        "link":"https://www.scotiabank.com/ca/en/about.html"
+    },
+    {
+        "name":"CTRL V",
+        "tier":1,
+        "logo":"images/sponsor/ctrlV.png",
+        "link":"https://www.ctrlv.ca/"
+    }
+],
+
+"2":[
+    {
+        "name":"Facebook",
+        "tier":2,
+        "logo":"images/sponsor/facebook.png",
+        "link":"https://about.facebook.com/",
+        "sponsorImage":"images/sponsor/facebook2.png",
+        "sponsorMessage":"CEO of Facebook Mark Zuckerburg"
+    },
+    {
+        "name":"Arctic Wolf",
+        "tier":2,
+        "logo":"images/sponsor/arcticWolf.png",
+        "link":"https://arcticwolf.com/",
+        "sponsorImage":"images/sponsor/arcticWolf2.png",
+        "sponsorMessage":"Arctic Wolf is a company about Cybersecurity"
+    },
+    {
+        "name":"Oracle",
+        "tier":2,
+        "logo":"images/sponsor/oracle.png",
+        "link":"https://www.oracle.com/ca-en/corporate/",
+        "sponsorImage":"images/sponsor/oracle2.png",
+        "sponsorMessage":"Oracle is a Database software and technology"
+    }
+],
+"3":[
+    {
+        "name":"Apple",
+        "tier":3,
+        "logo":"images/sponsor/apple.png",
+        "link":"https://www.apple.com/ca/business/",
+        "sponsorImage":"images/sponsor/apple2.png",
+        "sponsorMessage":"Tim Cook the current CEO of Apple"
+    },
+    {
+        "name":"Google",
+        "tier":3,
+        "logo":"images/sponsor/google.png",
+        "link":"https://about.google/",
+        "sponsorImage":"images/sponsor/google2.png",
+        "sponsorMessage":"Sundar Pichai is the CEO of Google"
+    }     
+
+]
+    
+}
