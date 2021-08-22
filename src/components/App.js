@@ -18,6 +18,7 @@ import PasswordReset from './authComponents/PasswordReset';
 import Shop from './pageComponents/Shop';
 import About from './pageComponents/About';
 import Sponsor from './pageComponents/Sponsor';
+import Footer from './GeneralComponents/Footer';
 
 const App = () => {
 
@@ -42,6 +43,7 @@ const App = () => {
           </Switch>
         </div>
       </Router>
+      <Footer />
     </div>
   )
 }
