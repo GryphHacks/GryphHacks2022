@@ -1,0 +1,60 @@
+[
+    {
+        "name":"Andrew Linington",
+        "title":"System Administrator",
+        "image":"images/sampleImage.jpeg",
+        "social": {
+            "linkedin":"https://daveceddia.com/react-image-tag/",
+            "instagram": "https://daveceddia.com/react-image-tag/",
+            "twitter": "https://daveceddia.com/react-image-tag/"
+        }
+    },
+    {
+        "name":"Andrew Linington",
+        "title":"System Administrator",
+        "image":"images/sampleImage.jpeg",
+        "social": {
+            "linkedin":"https://daveceddia.com/react-image-tag/"
+        }
+    },
+    {
+        "name":"Andrew Linington",
+        "title":"System Administrator",
+        "image":"images/sampleImage.jpeg",
+        "social": {
+            "linkedin":"https://daveceddia.com/react-image-tag/"
+        }
+    },
+    {
+        "name":"Andrew Linington",
+        "title":"System Administrator",
+        "image":"images/sampleImage.jpeg",
+        "social": {
+            "linkedin":"https://daveceddia.com/react-image-tag/"
+        }
+    },
+    {
+        "name":"Andrew Linington",
+        "title":"System Administrator",
+        "image":"images/sampleImage.jpeg",
+        "social": {
+            "linkedin":"https://daveceddia.com/react-image-tag/"
+        }
+    },
+    {
+        "name":"Andrew Linington",
+        "title":"System Administrator",
+        "image":"images/sampleImage.jpeg",
+        "social": {
+            "linkedin":"https://daveceddia.com/react-image-tag/"
+        }
+    },
+    {
+        "name":"Andrew Linington",
+        "title":"System Administrator",
+        "image":"images/sampleImage.jpeg",
+        "social": {
+            "linkedin":"https://daveceddia.com/react-image-tag/"
+        }
+    }
+]
