@@ -1,53 +1,38 @@
-import firebaseApp from '../../firebase';
-import React, { useState } from 'react';
-import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import React from 'react';
+import { useState } from 'react';
 
-const NewsletterSignUp = () => {
+const NewsletterSignUp = ({ status, message, onValidated }) => {
 
     const [email, setEmail] = useState('');
 
-    const newsletterSignUp = (event, email) => {
-
+    const newsletterSignUp = (event) => {
         event.preventDefault();
-
-        firebaseApp.firestore().collection("MailingList").doc().set({ email })
-        .then(() => {
-            console.log("Email added to mailing list");
-        })
-        .catch(error => {
-            console.log("Error writing to database: ", error);
-        })
-
+        email &&
+        email.indexOf("@") > -1 &&
+        onValidated({ MERGE0: email });
+        // console.log(onValidated)
     }
 
     return (
         <>
-            <p>Sign up for our newsletter!</p>
-            <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+            <h3>Sign up for our newsletter!</h3>
+            <form onSubmit={(e) => newsletterSignUp(e)}>
+                <input 
+                    type="email"
+                    placeholder="example@email.com"
+                    onChange={e => setEmail(e.target.value)}
+                    required
+                />
+                <button label="subscribe" type="submit" className="btn btn-primary">Subscribe</button>
+            </form>
+            <p>{ status, message }</p>
+
+            {/* Mailchimp anti spam forms -- prevents bot sign ups */}
         </>
     )
-
-    // return (
-    //     <div>
-    //         <form onSubmit={(e) => newsletterSignUp(e, email)}>
-    //             <input 
-    //                 type="email"
-    //                 placeholder="example@email.com"
-    //                 onChange={e => setEmail(e.target.value)}
-    //                 required
-    //             />
-    //             <button type="submit" className="btn btn-primary">Sign Up</button>
-    //         </form>
-    //     </div>
-    // )
+    // {status === "sending" && <p>Brrrr sending...</p>}
+    // {status === "error" && <p>{message}</p>}
+    // {status === "success" && <p style={{ color: "green" }}>Subscribed !</p>}
 }
 
-export default NewsletterSignUp
-
-// QuerySnapshot query = await FirebaseFirestore.instance.collection('users').where('email',isEqualTo:email).get();
-// if (query.docs.length==0){
-//    //Go to the sign up screen
-// }
-// else {
-//    //Go to the login screen
-// }
+export default NewsletterSignUp;

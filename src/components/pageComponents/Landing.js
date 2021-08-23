@@ -5,8 +5,12 @@ const Landing = () => {
   return (
     <div style={{textAlign:'center'}}>
       <h2>Landing</h2>
+      <br/>
+      <br/>
       <NewsletterSignUp/>
-       <LogoShowcase/>
+      <br/>
+      <br/>
+      <LogoShowcase/>
     </div>
   );
 };
