@@ -1,22 +1,23 @@
-import React from 'react';
 import { useState } from 'react';
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-const NewsletterSignUp = ({ status, message, onValidated }) => {
+const CustomForm = ({ status, message, onValidated }) => {
 
     const [email, setEmail] = useState('');
+    const [error, setError] = useState(false);
 
-    const newsletterSignUp = (event) => {
+    const handleSubscribe = (event) => {
         event.preventDefault();
         email &&
         email.indexOf("@") > -1 &&
-        onValidated({ MERGE0: email });
-        // console.log(onValidated)
+        onValidated({ MERGE0 : email });
+        console.log(onValidated)
     }
 
     return (
         <>
             <h3>Sign up for our newsletter!</h3>
-            <form onSubmit={(e) => newsletterSignUp(e)}>
+            <form onSubmit={(e) => handleSubscribe(e)}>
                 <input 
                     type="email"
                     placeholder="example@email.com"
@@ -25,14 +26,33 @@ const NewsletterSignUp = ({ status, message, onValidated }) => {
                 />
                 <button label="subscribe" type="submit" className="btn btn-primary">Subscribe</button>
             </form>
-            <p>{ status, message }</p>
+            
+            {/* TODO - Add in MailChimp antispam fields at some point */}
 
-            {/* Mailchimp anti spam forms -- prevents bot sign ups */}
+            {/* {status === "sending" && <p>Brrrr sending...</p>}
+            {status === "error" && <p>{message}</p>}
+            {status === "success" && <p style={{ color: "green" }}>Subscribed !</p>} */}
         </>
     )
-    // {status === "sending" && <p>Brrrr sending...</p>}
-    // {status === "error" && <p>{message}</p>}
-    // {status === "success" && <p style={{ color: "green" }}>Subscribed !</p>}
+
+}
+
+const NewsletterSignUp = () => {
+
+    return (
+        <div>
+            <MailchimpSubscribe 
+                url={process.env.REACT_APP_MAILCHIMP_URL}
+                render={({ subscribe, status, message }) => (
+                    <CustomForm
+                        status={status}
+                        message={message}
+                        onValidated={formData => subscribe(formData)}
+                    />
+                )}
+            />
+        </div>
+    )
 }
 
 export default NewsletterSignUp;
