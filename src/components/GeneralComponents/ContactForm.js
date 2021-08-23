@@ -1,5 +1,6 @@
 import { first, has, last, startCase } from "lodash";
 import { useState } from "react";
+import {store} from "react-notifications-component"
 
 const ContactForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -8,22 +9,35 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [hasError, setHasError] = useState(false);
   const [error, setError] = useState("");
-  const [wasSent, setWasSent] = useState(false);
 
   const handleSubmit = async (e, firstName, lastName, email, message) => {
     e.preventDefault();
     try {
-      await handleErrors(e, firstName, lastName, email, message);
-      setWasSent(true);
-      alert("Message sent successfully!")
+      await handleErrors(firstName, lastName, email, message);
+      displayNotification();
       document.querySelector("form").reset();
     } catch(e) {
       setError(e.message); //get message property of Error object
-      setWasSent(false);
+      console.log(error)
     }
   };
+
+  const displayNotification = () => {
+    store.addNotification({
+      title: "CONTACT US",
+      message: "Message successfully sent!",
+      type: "success", // 'default', 'success', 'info', 'warning'
+      container: "top-right", // where to position the notifications
+      animationIn: ["animated", "fadeIn"],
+      animationOut: ["animated", "fadeOut"],
+      dismiss: {
+        duration: 2000,
+        touch: true,
+      },
+    });
+  }
   
-  //try throwing error, and catching in parent (handleSubmit) function
+  //throw error and catch in parent (handleSubmit) function
   const handleErrors = async (firstName, lastName, email, message) => {
     if (firstName.length === 0) {
       setHasError(true);
@@ -39,7 +53,7 @@ const ContactForm = () => {
       throw new Error("Error: Enter a message.");
     } else {
       setHasError(false);
-      setError(""); //error will be empty only when it hasn't been set
+      setError("");
     }
   };
 
@@ -97,12 +111,6 @@ const ContactForm = () => {
             <p style={{ color: "red" }}>{error}</p>
           </div>
         )}
-        {/* {wasSent && (
-          <div>
-            <br />
-            <p style={{ color: "red" }}>Message sent successfully!</p>
-          </div>
-        )} */}
       </form>
       <br />
     </div>
