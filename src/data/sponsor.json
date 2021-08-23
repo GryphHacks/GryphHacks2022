@@ -1,31 +1,31 @@
 {
 
 "1":[
-    {
+    {   "id1":1,
         "name":"Amazon",
         "tier":1,
         "logo":"images/sponsor/amazon.png",
         "link":"https://www.aboutamazon.com/"
     },
-    {
+    {   "id1":2,
         "name":"Microsoft",
         "tier":1,
         "logo":"images/sponsor/microsoft.png",
         "link":"https://www.microsoft.com/en-ca/about/"
     },
-    {
+    {   "id1":3,
         "name":"Netflix",
         "tier":1,
         "logo":"images/sponsor/netflix.png",
         "link":"https://www.netflix.com/ca/"
     },
-    {
+    {   "id1":4,
         "name":"Scotiabank",
         "tier":1,
         "logo":"images/sponsor/scotiabank.png",
         "link":"https://www.scotiabank.com/ca/en/about.html"
     },
-    {
+    {   "id1":5,
         "name":"CTRL V",
         "tier":1,
         "logo":"images/sponsor/ctrlV.png",
@@ -34,7 +34,7 @@
 ],
 
 "2":[
-    {
+    {   "id2":1,
         "name":"Facebook",
         "tier":2,
         "logo":"images/sponsor/facebook.png",
@@ -42,7 +42,7 @@
         "sponsorImage":"images/sponsor/facebook2.png",
         "sponsorMessage":"CEO of Facebook Mark Zuckerburg"
     },
-    {
+    {   "id2":2,
         "name":"Arctic Wolf",
         "tier":2,
         "logo":"images/sponsor/arcticWolf.png",
@@ -50,7 +50,7 @@
         "sponsorImage":"images/sponsor/arcticWolf2.png",
         "sponsorMessage":"Arctic Wolf is a company about Cybersecurity"
     },
-    {
+    {   "id2":3,
         "name":"Oracle",
         "tier":2,
         "logo":"images/sponsor/oracle.png",
@@ -60,7 +60,7 @@
     }
 ],
 "3":[
-    {
+    {   "id3":1,
         "name":"Apple",
         "tier":3,
         "logo":"images/sponsor/apple.png",
@@ -68,7 +68,7 @@
         "sponsorImage":"images/sponsor/apple2.png",
         "sponsorMessage":"Tim Cook the current CEO of Apple"
     },
-    {
+    {   "id3":2,
         "name":"Google",
         "tier":3,
         "logo":"images/sponsor/google.png",
