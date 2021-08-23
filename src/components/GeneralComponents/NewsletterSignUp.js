@@ -4,14 +4,26 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 const CustomForm = ({ status, message, onValidated }) => {
 
     const [email, setEmail] = useState('');
-    const [error, setError] = useState(false);
+    const [errorMsg, setErrorMsg] = useState('');
+    const [status, ]
 
     const handleSubscribe = (event) => {
         event.preventDefault();
-        email &&
-        email.indexOf("@") > -1 &&
+        setErrorMsg('')
+
+        console.log("before validated: ", status, message)
+        if (!email) {
+            setErrorMsg('Please enter a valid email address.')
+            return
+        }
+        // email &&
+        // email.indexOf("@") > -1 &&
         onValidated({ MERGE0 : email });
-        console.log(onValidated)
+        console.log("after validated: ", status, message)
+        
+
+        console.log(status, message)
+        setErrorMsg('')
     }
 
     return (
@@ -19,19 +31,19 @@ const CustomForm = ({ status, message, onValidated }) => {
             <h3>Sign up for our newsletter!</h3>
             <form onSubmit={(e) => handleSubscribe(e)}>
                 <input 
-                    type="email"
+                    // type="email"
                     placeholder="example@email.com"
                     onChange={e => setEmail(e.target.value)}
-                    required
+                    // required
                 />
                 <button label="subscribe" type="submit" className="btn btn-primary">Subscribe</button>
             </form>
             
             {/* TODO - Add in MailChimp antispam fields at some point */}
 
-            {/* {status === "sending" && <p>Brrrr sending...</p>}
-            {status === "error" && <p>{message}</p>}
-            {status === "success" && <p style={{ color: "green" }}>Subscribed !</p>} */}
+            {status === "sending" ? <p>Sending...</p> : null}
+            {status === "error" && <p style={{ color: "red" }}>{ errorMsg }</p>}
+            {status === "success" && <p style={{ color: "green" }}>Successfully subscribed! :)</p>}
         </>
     )
 
