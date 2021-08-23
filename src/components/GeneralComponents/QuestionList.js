@@ -10,13 +10,13 @@ const QuestionList = ({leftData,rightData}) => {
     <div>
       <div style = {columns}>
         <div>
-        {leftData.map( ({question,answer}) => (
-            <Question question={question} answer={answer}/>
+        {leftData.map( ({idL,question,answer}) => (
+            <Question key = {idL} question={question} answer={answer}/>
           ))}
         </div>
         <div>
-        {rightData.map( ({question,answer}) => (
-            <Question question={question} answer={answer}/>
+        {rightData.map( ({idR,question,answer}) => (
+            <Question key = {idR} question={question} answer={answer}/>
           ))}
         </div>
       </div>
