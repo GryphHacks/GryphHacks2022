@@ -7,23 +7,20 @@ const ContactForm = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [hasError, setHasError] = useState(false);
-  const [error, setError] = useState("");
 
   const handleSubmit = async (e, firstName, lastName, email, message) => {
     e.preventDefault();
     try {
       await handleErrors(firstName, lastName, email, message);
-      displayNotification(1);
+      displayNotification("success");
       document.querySelector("form").reset();
     } catch(e) {
-      setError(e.message); //get message property of Error object
-      displayNotification(0)
+      displayNotification(e.message)
     }
   };
 
-  const displayNotification = (success) => {
-    if (success) {
+  const displayNotification = (errorMessage) => {
+    if (errorMessage === "success") {
       store.addNotification({
         title: "SUCCESS",
         message: "Message successfully sent!",
@@ -39,7 +36,7 @@ const ContactForm = () => {
     } else {
       store.addNotification({
         title: "ERROR",
-        message: "Please complete the form.",
+        message: errorMessage,
         type: "danger", // 'default', 'success', 'info', 'warning', 'danger'
         container: "top-right", // where to position the notifications
         animationIn: ["animated", "fadeIn"],
@@ -55,20 +52,13 @@ const ContactForm = () => {
   //throw error and catch in parent (handleSubmit) function
   const handleErrors = async (firstName, lastName, email, message) => {
     if (firstName.length === 0) {
-      setHasError(true);
       throw new Error("Enter your first name.");
     } else if (lastName.length === 0) {
-      setHasError(true);
       throw new Error("Enter your last name.");
     } else if (email.length === 0) {
-      setHasError(true);
       throw new Error("Enter your email.");
     } else if (message.length === 0) {
-      setHasError(true);
       throw new Error("Enter a message.");
-    } else {
-      setHasError(false);
-      setError("");
     }
   };
 
@@ -120,12 +110,6 @@ const ContactForm = () => {
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-        {/* {hasError && (
-          <div>
-            <br />
-            <p style={{ color: "red" }}>{error}</p>
-          </div>
-        )} */}
       </form>
       <br />
     </div>
