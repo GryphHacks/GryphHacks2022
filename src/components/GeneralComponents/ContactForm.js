@@ -14,43 +14,58 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       await handleErrors(firstName, lastName, email, message);
-      displayNotification();
+      displayNotification(1);
       document.querySelector("form").reset();
     } catch(e) {
       setError(e.message); //get message property of Error object
-      console.log(error)
+      displayNotification(0)
     }
   };
 
-  const displayNotification = () => {
-    store.addNotification({
-      title: "CONTACT US",
-      message: "Message successfully sent!",
-      type: "success", // 'default', 'success', 'info', 'warning'
-      container: "top-right", // where to position the notifications
-      animationIn: ["animated", "fadeIn"],
-      animationOut: ["animated", "fadeOut"],
-      dismiss: {
-        duration: 2000,
-        touch: true,
-      },
-    });
+  const displayNotification = (success) => {
+    if (success) {
+      store.addNotification({
+        title: "SUCCESS",
+        message: "Message successfully sent!",
+        type: "success", // 'default', 'success', 'info', 'warning', 'danger'
+        container: "top-right", // where to position the notifications
+        animationIn: ["animated", "fadeIn"],
+        animationOut: ["animated", "fadeOut"],
+        dismiss: {
+          duration: 2000,
+          touch: true,
+        },
+      });
+    } else {
+      store.addNotification({
+        title: "ERROR",
+        message: "Please complete the form.",
+        type: "danger", // 'default', 'success', 'info', 'warning', 'danger'
+        container: "top-right", // where to position the notifications
+        animationIn: ["animated", "fadeIn"],
+        animationOut: ["animated", "fadeOut"],
+        dismiss: {
+          duration: 2000,
+          touch: true,
+        },
+      });
+    }
   }
   
   //throw error and catch in parent (handleSubmit) function
   const handleErrors = async (firstName, lastName, email, message) => {
     if (firstName.length === 0) {
       setHasError(true);
-      throw new Error("Error: Enter your first name.");
+      throw new Error("Enter your first name.");
     } else if (lastName.length === 0) {
       setHasError(true);
-      throw new Error("Error: Enter your last name.");
+      throw new Error("Enter your last name.");
     } else if (email.length === 0) {
       setHasError(true);
-      throw new Error("Error: Enter your email.");
+      throw new Error("Enter your email.");
     } else if (message.length === 0) {
       setHasError(true);
-      throw new Error("Error: Enter a message.");
+      throw new Error("Enter a message.");
     } else {
       setHasError(false);
       setError("");
@@ -105,12 +120,12 @@ const ContactForm = () => {
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-        {hasError && (
+        {/* {hasError && (
           <div>
             <br />
             <p style={{ color: "red" }}>{error}</p>
           </div>
-        )}
+        )} */}
       </form>
       <br />
     </div>
