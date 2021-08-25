@@ -1,3 +1,13 @@
+/* General */
+/*
+input:focus {
+    outline: none;
+}
+input:invalid {
+    border: 1px solid #FF0000;
+}
+*/
+
 /* Contact component - form */
 #contact-form {
   width: 75%;
@@ -24,13 +34,15 @@
 /* Footer component */
 #footer {
   background-color: #a60909;
+  color: white;
   margin-top: 50px;
   padding: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
+  height: 125px;
 }
-
 .in-footer {
   margin-right: 50px;
 }

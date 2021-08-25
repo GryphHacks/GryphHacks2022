@@ -24,8 +24,8 @@ const ContactForm = () => {
       store.addNotification({
         title: "SUCCESS",
         message: "Message successfully sent!",
-        type: "success", // 'default', 'success', 'info', 'warning', 'danger'
-        container: "top-right", // where to position the notifications
+        type: "success", 
+        container: "top-right", // notification placement
         animationIn: ["animated", "fadeIn"],
         animationOut: ["animated", "fadeOut"],
         dismiss: {
@@ -37,8 +37,8 @@ const ContactForm = () => {
       store.addNotification({
         title: "ERROR",
         message: errorMessage,
-        type: "danger", // 'default', 'success', 'info', 'warning', 'danger'
-        container: "top-right", // where to position the notifications
+        type: "danger",
+        container: "top-right", // notification placement
         animationIn: ["animated", "fadeIn"],
         animationOut: ["animated", "fadeOut"],
         dismiss: {
