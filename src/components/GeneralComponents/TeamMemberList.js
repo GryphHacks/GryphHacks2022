@@ -8,7 +8,7 @@ const TeamMemberList = ({data}) => {
     return (
         <div style = {columns}>
             {data.map((member) => (
-                <TeamMember member={member}/>
+                <TeamMember key = {member.id} member={member}/>
             ))}
         </div>
     )

@@ -14,8 +14,8 @@ const Tier2Logo = ({tier2Sponsor}) => {
     return (
         <div>
             <div style = {tier2}>
-                {tier2Sponsor.map( ({logo}) => (
-                <img src = {logo} style = {img}/>
+                {tier2Sponsor.map( ({id2,logo}) => (
+                <img  key = {id2} src = {logo} style = {img}/>
                  ))}
             </div>
         </div>
