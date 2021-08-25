@@ -63,13 +63,11 @@ const CustomForm = ({ status, message, onValidated }) => {
 
     return (
         <>
-            <h3>Sign up for our newsletter!</h3>
+            <h4>Sign up for our newsletter!</h4>
             <form onSubmit={(e) => handleSubscribe(e)}>
                 <input 
-                    // type="email"
                     placeholder="example@email.com"
                     onChange={e => setEmail(e.target.value)}
-                    // required
                 />
                 <button label="subscribe" type="submit" className="btn btn-primary">Subscribe</button>
             </form>
