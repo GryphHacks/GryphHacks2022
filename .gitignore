@@ -25,3 +25,4 @@ yarn-error.log*
 
 # generated files from code editor
 .vscode/
+.vscode/launch.json
