@@ -7,7 +7,7 @@ const Speakers = () => {
         <div  style = {columns}>
             {
                 speakersList.map((speaker) => (
-                    <GuestCard id={"speaker_" + speaker.id} member={speaker} />
+                    <GuestCard key={"speaker_" + speaker.id} member={speaker} />
                 ))
             }
         </div>
