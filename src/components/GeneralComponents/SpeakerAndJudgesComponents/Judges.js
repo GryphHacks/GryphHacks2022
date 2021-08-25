@@ -6,7 +6,7 @@ const Judges = () => {
     return (
         <div  style = {columns}>
             {judgesList.map((judge) => (
-                <GuestCard id={"judge_" + judge.id} member={judge} />
+                <GuestCard key={"judge_" + judge.id} member={judge} />
             ))
             }
         </div>
