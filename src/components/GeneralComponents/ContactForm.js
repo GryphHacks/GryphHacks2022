@@ -18,7 +18,6 @@ const ContactForm = () => {
       document.querySelector("form").reset();
     } catch(e) {
       displayNotification(e.message);
-      console.log(e)
     }
   };
 
@@ -52,7 +51,7 @@ const ContactForm = () => {
     } else {
       store.addNotification({
         title: "ERROR",
-        message: "errorMessage",
+        message: errorMessage,
         type: "danger",
         container: "top-right", // notification placement
         animationIn: ["animated", "fadeIn"],
