@@ -1,6 +1,7 @@
 import { first, has, last, startCase } from "lodash";
 import { useState } from "react";
-import {store} from "react-notifications-component"
+import { store } from "react-notifications-component";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -12,43 +13,15 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       await handleErrors(firstName, lastName, email, message);
+      sendEmail(e);
       displayNotification("success");
       document.querySelector("form").reset();
     } catch(e) {
-      displayNotification(e.message)
+      displayNotification(e.message);
+      console.log(e)
     }
   };
 
-  const displayNotification = (errorMessage) => {
-    if (errorMessage === "success") {
-      store.addNotification({
-        title: "SUCCESS",
-        message: "Message successfully sent!",
-        type: "success", 
-        container: "top-right", // notification placement
-        animationIn: ["animated", "fadeIn"],
-        animationOut: ["animated", "fadeOut"],
-        dismiss: {
-          duration: 2000,
-          touch: true,
-        },
-      });
-    } else {
-      store.addNotification({
-        title: "ERROR",
-        message: errorMessage,
-        type: "danger",
-        container: "top-right", // notification placement
-        animationIn: ["animated", "fadeIn"],
-        animationOut: ["animated", "fadeOut"],
-        dismiss: {
-          duration: 2000,
-          touch: true,
-        },
-      });
-    }
-  }
-  
   //throw error and catch in parent (handleSubmit) function
   const handleErrors = async (firstName, lastName, email, message) => {
     if (firstName.length === 0) {
@@ -60,6 +33,57 @@ const ContactForm = () => {
     } else if (message.length === 0) {
       throw new Error("Enter a message.");
     }
+  };
+
+  const displayNotification = (errorMessage) => {
+    if (errorMessage === "success") {
+      store.addNotification({
+        title: "SUCCESS",
+        message: "Message successfully sent!",
+        type: "success",
+        container: "top-right", // notification placement
+        animationIn: ["animated", "fadeIn"],
+        animationOut: ["animated", "fadeOut"],
+        dismiss: {
+          duration: 2000,
+          touch: true,
+        },
+      });
+    } else {
+      store.addNotification({
+        title: "ERROR",
+        message: "errorMessage",
+        type: "danger",
+        container: "top-right", // notification placement
+        animationIn: ["animated", "fadeIn"],
+        animationOut: ["animated", "fadeOut"],
+        dismiss: {
+          duration: 2000,
+          touch: true,
+        },
+      });
+    }
+  };
+
+  //integrating EmailJS
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // parameters: "YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID"
+    // e.target is whatever the user is submitting through the form
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SID,
+        process.env.REACT_APP_EMAILJS_TID,
+        e.target,
+        process.env.REACT_APP_EMAILJS_UID
+      )
+      .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -75,6 +99,7 @@ const ContactForm = () => {
               required
               type="text"
               className="form-control"
+              name="firstName"
               onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
@@ -84,6 +109,7 @@ const ContactForm = () => {
               required
               type="text"
               className="form-control"
+              name="lastName"
               onChange={(e) => setLastName(e.target.value)}
             />
           </div>
@@ -94,6 +120,7 @@ const ContactForm = () => {
             required
             type="email"
             className="form-control"
+            name="email"
             aria-describedby="emailHelp"
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -103,6 +130,7 @@ const ContactForm = () => {
           <textarea
             required
             className="form-control"
+            name="message"
             rows="5"
             onChange={(e) => setMessage(e.target.value)}
           />

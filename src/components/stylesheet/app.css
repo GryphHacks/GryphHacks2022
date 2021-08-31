@@ -1,13 +1,3 @@
-/* General */
-/*
-input:focus {
-    outline: none;
-}
-input:invalid {
-    border: 1px solid #FF0000;
-}
-*/
-
 /* Contact component - form */
 #contact-form {
   width: 75%;
