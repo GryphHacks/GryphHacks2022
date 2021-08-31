@@ -11,8 +11,6 @@ const Contact = () => {
       <br />
       <ContactForm />
       <SocialBar />
-      <br/>
-      <NewsletterSignUp/>
     </div>
   );
 }

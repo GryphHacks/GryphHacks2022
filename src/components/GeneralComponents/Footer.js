@@ -1,4 +1,5 @@
 import SocialBar from "./SocialBar"
+import NewsletterSignUp from "./NewsletterSignUp";
 
 const Footer = () => {
   return (
@@ -6,8 +7,9 @@ const Footer = () => {
       <div className="in-footer">
         <SocialBar />
       </div>
-      <p className="in-footer">Newsletter component</p>
-      <p className="in-footer">Something else</p>
+      <div className="in-footer">
+        <NewsletterSignUp />
+      </div>
     </div>
   );
 }
