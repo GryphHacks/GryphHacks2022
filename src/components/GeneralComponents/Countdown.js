@@ -4,11 +4,11 @@ import '../stylesheet/countdown.css'
 const Countdown = () => {
 
     // unary operator returns date as a number (epoch/time in milliseconds)
-    const targetDate = +new Date("2021-09-01T00:39:00.000-04:00")
+    const eventDate = +new Date("2022-05-01T16:30:00.000-04:00")
 
     const calculateTimeRemaining = () => {
 
-        let difference = targetDate - +new Date();
+        let difference = eventDate - +new Date();
         let timeRemaining = {};
 
         if (difference > 0) {
@@ -32,14 +32,17 @@ const Countdown = () => {
         return () => clearTimeout(timer);
     });
 
-    const countdownComponents = [];
+    const countdownComponents = []; 
+    // Create array from time remaining to keep track of each value
     Object.keys(timeRemaining).forEach((dateType) => {
 
         let value = timeRemaining[dateType];
 
         if (timeRemaining[dateType] < 10) {
+            // Prefix single digits with a 0 for the aesthetic lol
             value = "0" + timeRemaining[dateType]
         }
+        // Update html with new values
         countdownComponents.push(
             <li className="timeCard">
                 <h1>{value}</h1>
@@ -47,9 +50,11 @@ const Countdown = () => {
             </li>
         );
     })
+    console.log(countdownComponents)
 
     return (
         <div id="countdownContainer">
+            {/* When list is all zeroes, html will toggle countdown off */}
             {countdownComponents.length ? <h2>GryphHacks 2022 starting in...</h2> : null}
             <ul id="countdown">
                 {countdownComponents.length ? countdownComponents : <h2>Thank you for attending!</h2>}
