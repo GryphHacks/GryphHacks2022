@@ -32,6 +32,7 @@ const ContactForm = () => {
     } else if (message.length === 0) {
       throw new Error("Enter a message.");
     }
+    setMessage(""); //reset message variable after submitted input has been checked
   };
 
   const displayNotification = (errorMessage) => {
@@ -67,7 +68,6 @@ const ContactForm = () => {
   //integrating EmailJS
   const sendEmail = (e) => {
     e.preventDefault();
-
     // parameters: "YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID"
     // e.target is whatever the user is submitting through the form
     emailjs
