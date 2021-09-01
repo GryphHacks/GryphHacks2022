@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
+import '../stylesheet/countdown.css'
 
 const Countdown = () => {
 
     // unary operator returns date as a number (epoch/time in milliseconds)
-    const targetDate = +new Date("2021-08-31T21:31:30.000-04:00")
+    const targetDate = +new Date("2021-09-01T00:12:00.000-04:00")
 
     const calculateTimeRemaining = () => {
 
@@ -21,23 +22,40 @@ const Countdown = () => {
         }
         return timeRemaining;
     }
-    
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
+    // Update the countdown timer every second
     useEffect(() => {
         const timer = setTimeout(() => {
-            // Update timer every second
             setTimeRemaining(calculateTimeRemaining());
         }, 1000);
         return () => clearTimeout(timer);
     });
 
+    const countdownComponents = [];
+    Object.keys(timeRemaining).forEach((dateType) => {
+
+        let value = timeRemaining[dateType];
+
+        if (timeRemaining[dateType] < 10) {
+            value = "0" + timeRemaining[dateType]
+        }
+        countdownComponents.push(
+            <li className="timeCard">
+                <h1>{value}</h1>
+                <span>{dateType}</span>
+            </li>
+        );
+    })
+
     return (
-        <div>
-            <h2>GryphHacks 2022 starting in...</h2>
-            <h1>{timeRemaining.days} : {timeRemaining.hours} : {timeRemaining.minutes} : {timeRemaining.seconds}</h1>
+        <div id="countdownContainer">
+            {countdownComponents.length ? <h2>GryphHacks 2022 starting in...</h2> : null}
+            <ul id="countdown">
+                {countdownComponents.length ? countdownComponents : <h2>Thank you for attending!</h2>}
+            </ul>
         </div>
     )
 }
 
-export default Countdown
+export default Countdown;
