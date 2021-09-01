@@ -4,7 +4,7 @@ import '../stylesheet/countdown.css'
 const Countdown = () => {
 
     // unary operator returns date as a number (epoch/time in milliseconds)
-    const targetDate = +new Date("2021-09-01T00:12:00.000-04:00")
+    const targetDate = +new Date("2021-09-01T00:39:00.000-04:00")
 
     const calculateTimeRemaining = () => {
 

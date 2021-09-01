@@ -9,7 +9,7 @@ const Landing = () => {
     <div style={{textAlign:'center'}}>
       <br/>
       <Countdown/>
-      <br/>
+      <br/><br/>
       <NewsletterSignUp/>
       <br/>
       <br/>
