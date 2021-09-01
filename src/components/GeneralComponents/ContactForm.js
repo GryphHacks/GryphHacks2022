@@ -31,8 +31,9 @@ const ContactForm = () => {
       throw new Error("Enter your email.");
     } else if (message.length === 0) {
       throw new Error("Enter a message.");
+    } else { //no error
+      setMessage(""); //reset message variable after submitted input has been checked
     }
-    setMessage(""); //reset message variable after submitted input has been checked
   };
 
   const displayNotification = (errorMessage) => {
@@ -72,10 +73,10 @@ const ContactForm = () => {
     // e.target is whatever the user is submitting through the form
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SID,
-        process.env.REACT_APP_EMAILJS_TID,
+        process.env.REACT_APP_EMAILJS_SERVICE,
+        process.env.REACT_APP_EMAILJS_TEMPLATE,
         e.target,
-        process.env.REACT_APP_EMAILJS_UID
+        process.env.REACT_APP_EMAILJS_USER
       )
       .then((result) => {
           console.log(result.text);
