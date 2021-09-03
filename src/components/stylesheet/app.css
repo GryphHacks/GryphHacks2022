@@ -21,6 +21,21 @@
   width: 48%;
 }
 
+/* App.js */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrap {
+  flex: 1;
+}
+.content {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 50px; /* Probably shouldn't use fixed margins! this is temporary */
+}
+
 /* Footer component */
 #footer {
   background-color: #a60909;
@@ -29,9 +44,9 @@
   padding: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  height: 125px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
 }
 .in-footer {
   margin-right: 50px;

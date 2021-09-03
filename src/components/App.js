@@ -26,11 +26,12 @@ import Footer from './GeneralComponents/Footer';
 const App = () => {
 
   return (
-    <div>
-      <ReactNotification />
-      <Router history={createBrowserHistory}>
+    <div className="page-container">
+      <div className="content-wrap">
+        <ReactNotification />
+        <Router history={createBrowserHistory}>
         <Navigation />
-        <div className="container" style={{ marginTop: "50px" }}>
+        <div className="content">
           <Switch>
             <Route path="/" exact component={Landing} />
             <Route path="/register" exact component={Register} />
@@ -46,9 +47,10 @@ const App = () => {
             <Route component={NotFound} />
           </Switch>
         </div>
-      </Router>
+        </Router>
+      </div> 
       <Footer />
-    </div>
+    </div>   
   );
 }
 
