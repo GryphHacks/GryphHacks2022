@@ -70,12 +70,11 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     // parameters: "YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID"
-    // e.target is whatever the user is submitting through the form
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE,
         process.env.REACT_APP_EMAILJS_TEMPLATE,
-        e.target,
+        e.target, // whatever the user is submitting through the form
         process.env.REACT_APP_EMAILJS_USER
       )
       .then((result) => {
