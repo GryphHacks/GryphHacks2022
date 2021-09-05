@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import '../stylesheet/countdown.css'
+import '../stylesheet/countdown.css';
 
 const Countdown = () => {
 
     // unary operator returns date as a number (epoch/time in milliseconds)
-    const eventDate = +new Date("2021-09-05T02:54:00.000-04:00")
+    const eventDate = +new Date("2021-09-05T02:54:00.000-04:00");
 
     const calculateTimeRemaining = () => {
 
-        let difference = eventDate - +new Date() ;
+        let difference = eventDate - +new Date();
         let timeRemaining = {};
 
         if (difference > 0) {
@@ -41,7 +41,7 @@ const Countdown = () => {
 
         if (timeRemaining[dateType] < 10) {
             // Prefix single digits with a 0 for the aesthetic lol
-            value = "0" + timeRemaining[dateType]
+            value = "0" + timeRemaining[dateType];
         }
         // Update html with new values
         countdownComponents.push(
