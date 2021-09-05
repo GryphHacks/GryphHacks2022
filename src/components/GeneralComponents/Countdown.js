@@ -4,11 +4,11 @@ import '../stylesheet/countdown.css'
 const Countdown = () => {
 
     // unary operator returns date as a number (epoch/time in milliseconds)
-    const eventDate = +new Date("2022-05-01T16:30:00.000-04:00")
+    const eventDate = +new Date("2021-09-05T02:54:00.000-04:00")
 
     const calculateTimeRemaining = () => {
 
-        let difference = eventDate - +new Date();
+        let difference = eventDate - +new Date() ;
         let timeRemaining = {};
 
         if (difference > 0) {
@@ -30,7 +30,8 @@ const Countdown = () => {
             setTimeRemaining(calculateTimeRemaining());
         }, 1000);
         return () => clearTimeout(timer);
-    });
+    // Effect will trigger on every render until seconds does not change (countdown finished)
+    }, [timeRemaining.seconds]);    
 
     const countdownComponents = []; 
     // Create array from time remaining to keep track of each value
@@ -50,7 +51,6 @@ const Countdown = () => {
             </li>
         );
     })
-    console.log(countdownComponents)
 
     return (
         <div id="countdownContainer">
