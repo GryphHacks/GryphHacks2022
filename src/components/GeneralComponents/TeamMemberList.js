@@ -17,6 +17,6 @@ const TeamMemberList = ({data}) => {
 const columns ={
     display: "grid",
     gridTemplateColumns: "20% 20% 20% 20% 20%",
-  }
+}
 
 export default TeamMemberList
