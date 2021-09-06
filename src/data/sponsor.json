@@ -40,7 +40,7 @@
         "logo":"images/sponsor/facebook.png",
         "link":"https://about.facebook.com/",
         "sponsorImage":"images/sponsor/facebook2.png",
-        "sponsorMessage":"CEO of Facebook Mark Zuckerburg"
+        "sponsorMessage":"For people who like to invent, there's no better place to explore opportunities than at Amazon. We're currently hiring for Software Developers (Interns and Full Time - 2022) in Canada. Join our team and help us build the future!"
     },
     {   "id2":2,
         "name":"Arctic Wolf",
@@ -48,7 +48,7 @@
         "logo":"images/sponsor/arcticWolf.png",
         "link":"https://arcticwolf.com/",
         "sponsorImage":"images/sponsor/arcticWolf2.png",
-        "sponsorMessage":"Arctic Wolf is a company about Cybersecurity"
+        "sponsorMessage":"PagerDuty is the digital operations management platform that empowers the right action, when seconds matter. For teams who build and run the digital systems that power business, PagerDuty is the best way to manage urgent, mission-critical work to keep operations running smoothly, without disruption of customer experiences. Over 40% of the Fortune 500 place PagerDuty at the center of their digital infrastructure to manage unplanned tasks, events, or opportunities. With more than 1,000 employees across offices in San Francisco, Atlanta, Toronto, Sydney, and London, PagerDuty is helping modern enterprises redefine their approach to operations in a digital-first world."
     },
     {   "id2":3,
         "name":"Oracle",
@@ -56,7 +56,7 @@
         "logo":"images/sponsor/oracle.png",
         "link":"https://www.oracle.com/ca-en/corporate/",
         "sponsorImage":"images/sponsor/oracle2.png",
-        "sponsorMessage":"Oracle is a Database software and technology"
+        "sponsorMessage":"SPS Commerce is the world’s leading retail network, connecting trading partners around the globe to optimize supply chain operations for all retail partners. We support data-driven partnerships with innovative cloud technology, customer-obsessed service and accessible experts so our customers can focus on what they do best. To date, more than 95,000 companies in retail, distribution, grocery and e-commerce have chosen SPS as their retail network. SPS has achieved 82 consecutive quarters of revenue growth and is headquartered in Minneapolis. For additional information, contact SPS at 866-245-8100 or visit \n\n www.spscommerce.com."
     }
 ],
 "3":[
@@ -66,7 +66,7 @@
         "logo":"images/sponsor/apple.png",
         "link":"https://www.apple.com/ca/business/",
         "sponsorImage":"images/sponsor/apple2.png",
-        "sponsorMessage":"Tim Cook the current CEO of Apple"
+        "sponsorMessage":"Cockroach Labs is a company building CockroachDB, a distributed SQL database that helps you build cloud-native apps that survive everything and thrive everywhere -- just like a cockroach!"
     },
     {   "id3":2,
         "name":"Google",
@@ -74,7 +74,7 @@
         "logo":"images/sponsor/google.png",
         "link":"https://about.google/",
         "sponsorImage":"images/sponsor/google2.png",
-        "sponsorMessage":"Sundar Pichai is the CEO of Google"
+        "sponsorMessage":"Sundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of"
     }     
 
 ]
