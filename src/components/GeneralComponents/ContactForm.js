@@ -11,14 +11,10 @@ const ContactForm = () => {
   const handleSubmit = async (e, firstName, lastName, email, message) => {
     e.preventDefault();
     try {
-      if (!validateEmail(email)) { //validate email -- IF THIS RUNS FIRST, OTHER ERROR NEVER WILL
-        displayNotification("Enter a valid email address.");
-      } else {
-        await handleErrors(firstName, lastName, email, message);
-        sendEmail(e);
-        displayNotification("success");
-        document.querySelector("form").reset();
-      }
+      await handleErrors(firstName, lastName, email, message);
+      sendEmail(e);
+      displayNotification("success");
+      document.querySelector("form").reset();
     } catch(e) {
       displayNotification(e.message);
     }
@@ -26,6 +22,8 @@ const ContactForm = () => {
 
   //throw error and catch in parent (handleSubmit) function
   const handleErrors = async (firstName, lastName, email, message) => {
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
     if (firstName.length === 0) {
       throw new Error("Enter your first name.");
     } else if (lastName.length === 0) {
@@ -34,7 +32,9 @@ const ContactForm = () => {
       throw new Error("Enter your email.");
     } else if (message.length === 0) {
       throw new Error("Enter a message.");
-    } else { // no empty input fields
+    } else if (!email.match(regexEmail)) { // text was entered but is incorrectly formatted
+      throw new Error("Enter a valid email address.");
+    } else { // no empty fields and no incorrectly formatted email address
       setMessage(""); //reset message variable after submitted input has been checked
     }
   };
@@ -86,13 +86,6 @@ const ContactForm = () => {
           console.log(error.text);
         }
       );
-  };
-
-  const validateEmail = (email) => {
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (email.match(regexEmail)) return true; 
-
-    return false;
   };
 
   return (
