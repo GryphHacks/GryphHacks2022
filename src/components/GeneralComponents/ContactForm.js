@@ -1,4 +1,3 @@
-import { first, has, last, startCase } from "lodash";
 import { useState } from "react";
 import { store } from "react-notifications-component";
 import emailjs from "emailjs-com";
@@ -12,10 +11,14 @@ const ContactForm = () => {
   const handleSubmit = async (e, firstName, lastName, email, message) => {
     e.preventDefault();
     try {
-      await handleErrors(firstName, lastName, email, message);
-      sendEmail(e);
-      displayNotification("success");
-      document.querySelector("form").reset();
+      if (!validateEmail(email)) { //validate email -- IF THIS RUNS FIRST, OTHER ERROR NEVER WILL
+        displayNotification("Enter a valid email address.");
+      } else {
+        await handleErrors(firstName, lastName, email, message);
+        sendEmail(e);
+        displayNotification("success");
+        document.querySelector("form").reset();
+      }
     } catch(e) {
       displayNotification(e.message);
     }
@@ -31,7 +34,7 @@ const ContactForm = () => {
       throw new Error("Enter your email.");
     } else if (message.length === 0) {
       throw new Error("Enter a message.");
-    } else { //no error
+    } else { // no empty input fields
       setMessage(""); //reset message variable after submitted input has been checked
     }
   };
@@ -83,6 +86,13 @@ const ContactForm = () => {
           console.log(error.text);
         }
       );
+  };
+
+  const validateEmail = (email) => {
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email.match(regexEmail)) return true; 
+
+    return false;
   };
 
   return (
