@@ -4,7 +4,7 @@ import '../stylesheet/countdown.css';
 const Countdown = () => {
 
     // unary operator returns date as a number (epoch/time in milliseconds)
-    const eventDate = +new Date("2021-09-05T02:54:00.000-04:00");
+    const eventDate = +new Date("2021-09-06T04:54:00.000-04:00");
 
     const calculateTimeRemaining = () => {
 
@@ -45,7 +45,7 @@ const Countdown = () => {
         }
         // Update html with new values
         countdownComponents.push(
-            <li className="timeCard">
+            <li className="timeCard" key={dateType}>
                 <h1>{value}</h1>
                 <span>{dateType}</span>
             </li>
