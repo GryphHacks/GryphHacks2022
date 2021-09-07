@@ -1,16 +1,23 @@
 import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-
+import "./GeneralComponentsCSS/Question.css"
 
 const Question = ({ question, answer }) => {
+
+
   const [isClicked, setClicked] = useState(false);
   return (
     <div>
-      <div onClick={() => setClicked(!isClicked)}>
-        <h6> {isClicked ? <FaChevronUp /> : <FaChevronDown />} {question} </h6>
+   
+      <div className = "divQuestion"onClick={() => setClicked(!isClicked)}>
+        <h6 className = "Question">  {question}  {isClicked ? <p className = "up"></p>: <p className = "down"></p>}</h6>
       </div>
-      {isClicked && <div>{answer}</div>}
+
+      <div 
+        className={`answer-collapse ${isClicked ? 'show' : ''}`}>
+        {answer}
+      </div>
       <br/>
+      
     </div>
   );
 };

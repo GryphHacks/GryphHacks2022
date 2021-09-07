@@ -1,27 +1,16 @@
-const Showcase = ({image,link,message}) => {
-    const img  = {
-        display: "inline",
-        maxWidth:"100px",
-        maxHeight:"100px",
-        width: "auto",
-        height: "auto",
-        margin:"auto",
 
-      }
-      const text = {
-        overflow:"hidden",
-        margin:"auto",
-      }
+const Showcase = ({name,image,link,message}) => {
     return (
         <div>
             <div>
-                <img style = {img} src = {image} alt = {"logo"}/>
-                <br/>
-                <br/>
-                <p style = {text}>{message}</p>
-                <br/>
-                <br/>
-                <a href = {link} target = {"_blank"}>Website Link</a>
+                <br/><br/><br/><br/><br/><br/>
+                <img className = "logo" src = {image} alt = {"logo"}/>
+                <br/><br/> <br/>
+                <div className = "containerCSS">
+                <p>{message}</p>
+                </div>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <a className = "linkCSS"href = {link} target = {"_blank"}>Explore Careers at {name}</a>
 
             </div>
         </div>
