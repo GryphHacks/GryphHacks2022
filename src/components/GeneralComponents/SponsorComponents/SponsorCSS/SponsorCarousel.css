@@ -1,0 +1,111 @@
+  .carousel  {
+    background-color:
+    #4A4A4A;
+    height:515px;
+    border-radius: 10px;
+
+  }
+
+.carousel .control-dots {
+    bottom: -50px;
+    left: 40%;
+    display: flex;
+    align-items: flex-end;
+  
+  }
+
+.carousel .control-dots .dot {
+    background: #4A4A4A;
+    margin: 10px;
+    height:17px;
+    width:16px;
+
+  }
+
+.carousel.carousel-slider {
+    overflow: inherit;
+}
+
+.carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover{
+    background-color: transparent;
+    right: 30px;
+    top:0px
+}
+
+.carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover {
+    background-color: transparent;
+    left: 30px;
+    top:0px;
+
+}
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow{
+    opacity: 1;
+}
+
+.carousel .control-next.control-arrow:before {
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.carousel .control-prev.control-arrow:before {
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+
+
+.headingCSS  {
+    color: #212121;
+    letter-spacing:20px;
+    margin-bottom:35px;
+
+    }
+
+.logo   {
+    position:absolute;
+    top: 140px;
+    right: 700px;
+    max-width:250px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+  }
+  
+.linkCSS  {
+    color:#FFFFFF;
+    font-size:20px;
+    position:absolute;
+    left:550px;
+    bottom:10px;
+  }
+
+.linkCSS:hover{
+    color: white;
+  }
+
+.carouselContainer{
+    display:flex;
+    justify-Content: center;
+}
+.containerCSS {
+    color:#FFFFFF;
+    display: flex;
+    align-items:center;
+    text-align: left;
+    font-size:20px;
+    width : 500px;
+    height :411px;
+    position:absolute;
+    right:100px;
+    top:50px;
+    overflow:hidden;
+  }
