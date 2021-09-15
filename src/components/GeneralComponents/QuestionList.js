@@ -2,8 +2,11 @@ import Question from "./Question"
 
 const QuestionList = ({leftData,rightData}) => {
   const columns = {
+    position:"relative",
     display: "grid",
-    gridTemplateColumns: "50% 50%",
+    columnGap:"5%",
+    justifyContent: "center",
+    gridTemplateColumns: "auto auto",
   };
 
   return (
