@@ -1,4 +1,4 @@
-const SponsorTier = ({tier, about, cost,  perks}) => {
+const SponsorTier = ({props: {tier, about, cost,  perks}}) => {
     return (
         <div>
             <div>
@@ -17,5 +17,6 @@ const SponsorTier = ({tier, about, cost,  perks}) => {
         </div>
     )
 }
+
 
 export default SponsorTier
