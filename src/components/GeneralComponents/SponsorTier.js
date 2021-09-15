@@ -1,4 +1,6 @@
 const SponsorTier = ({props: {tier, about, cost,  perks}}) => {
+    var id = 0;
+
     return (
         <div>
             <div>
@@ -10,7 +12,7 @@ const SponsorTier = ({props: {tier, about, cost,  perks}}) => {
                <h3>${cost}</h3>
                <ul>
                 {perks.map(({item}) => (
-                    <li>{item}</li>
+                    <li key= {id++}>{item}</li>
                 ))}
                </ul>    
            </div>
