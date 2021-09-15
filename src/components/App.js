@@ -15,6 +15,8 @@ import Contact from './pageComponents/Contact';
 import Schedule from './pageComponents/Schedule';
 import NotFound from './pageComponents/NotFound';
 import Shop from './pageComponents/Shop';
+import ProductList from './Shop/ProductList';
+import ProductDetail from './Shop/ProductDetail';
 
 const App = () => {
 
@@ -31,7 +33,8 @@ const App = () => {
             <Route path='/faq' exact component={FAQ} />
             <Route path='/contact' exact component={Contact}/>
             <Route path='/schedule' exact component={Schedule}/>
-            <Route path='/shop' exact component={Shop}/>
+            <Route path="/shop" exact component={ProductList} />
+            <Route path="/productDetail/:id" exact component={ProductDetail} />
             <Route component={NotFound}/>
           </Switch>
         </div>

@@ -1,0 +1,20 @@
+.boxi{
+  margin-top: 350px;
+  display: flex;
+}
+
+.content-product{
+
+}
+.content-product h2{
+  padding: 20px;
+  font-size: 50px;
+}
+.content-product span{
+  padding: 20px;
+  display: inline-block;
+  margin-bottom: auto;
+}
+.my-btn{
+  margin-top: auto;
+}
