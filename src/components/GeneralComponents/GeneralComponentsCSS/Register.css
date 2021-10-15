@@ -1,0 +1,65 @@
+#hackie{
+    background-color: #DD1133; /* Green */
+    border-radius: 20px;
+    color: white;
+    border:none;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    top: -40px;
+    right: 10px;
+
+}
+
+
+#mentor{
+
+    background-color: transparent; 
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    top: -40px;
+    left: 10px;
+    
+ 
+
+}
+
+.link{
+    margin-top: 50px;
+    color: white;
+    position: relative;
+    top: -50px;
+    
+}
+
+.link:hover{
+    margin-top: 50px;
+    color: white;
+    position: relative;
+    top: -50px;
+    
+}
+
+
+
+
+
+#title {
+    color: white;
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 128px
+
+}
