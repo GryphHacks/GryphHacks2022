@@ -5,7 +5,7 @@ const Register = () => {
     const history = useHistory();
     return (
         <div>
-            <h6 id = "title">Register</h6>
+            <h6 class = "title">Register</h6>
             <button id = "hackie" onClick = {()=>history.push("/register")}  >Hackie </button>
             <button id = "mentor" onClick = {()=>history.push("/register")}>Mentor</button>
            <br/>
