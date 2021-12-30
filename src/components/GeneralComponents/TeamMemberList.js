@@ -15,8 +15,11 @@ const TeamMemberList = ({data}) => {
 }
 
 const columns ={
+    position:"relative",
+    marginLeft:"10%",
+    marginRight:"10%",
     display: "grid",
-    gridTemplateColumns: "20% 20% 20% 20% 20%",
+    gridTemplateColumns: "25% 25% 25% 25%",
 }
 
 export default TeamMemberList

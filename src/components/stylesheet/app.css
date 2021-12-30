@@ -10,7 +10,7 @@
 .content {
   margin-left: 0%;
   margin-right: 0%;
-  margin-top: 50px; /* Probably shouldn't use fixed margins! this is temporary */
+  /* margin-top: 50px; Probably shouldn't use fixed margins! this is temporary */
  overflow: hidden;
 }
 

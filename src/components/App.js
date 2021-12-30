@@ -42,7 +42,9 @@ const App = () => {
             <Route path="/schedule" exact component={Schedule} />
             <Route path="/forgotpassword" exact component={PasswordReset} />
             <Route path="/shop" exact component={Shop} />
+            <div id = "aboutUsContainer">
             <Route path="/about" exact component={About} />
+            </div>
             <Route path="/sponsor" exact component={Sponsor} />
             <Route component={NotFound} />
           </Switch>

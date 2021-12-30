@@ -6,7 +6,7 @@ import LogoShowcase from "../GeneralComponents/SponsorComponents/LogoShowcase"
 import SponsorCarousel from "../GeneralComponents/SponsorComponents/SponsorCarousel";
 import Register from "../GeneralComponents/Register";
 import SponsorLanding from "../GeneralComponents/SponsorLanding";
-import "./Landing.css"
+import '../pageComponents/Landing.css'
 const Landing = () => {
   return (
     <div style={{textAlign:'center'}}>

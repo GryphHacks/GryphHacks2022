@@ -4,7 +4,7 @@ import '../stylesheet/countdown.css';
 const Countdown = () => {
 
     // unary operator returns date as a number (epoch/time in milliseconds)
-    const eventDate = +new Date("2021-10-30T02:54:00.000-04:00");
+    const eventDate = +new Date("2022-05-30T02:54:00.000-04:00");
 
     const calculateTimeRemaining = () => {
 
