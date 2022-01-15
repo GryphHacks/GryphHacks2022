@@ -1,24 +1,24 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import createBrowserHistory from '../history';
-import './stylesheet/app.css';
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
+import './stylesheet/app.css';
 import "animate.css"
 
-import Landing from './pageComponents/Landing';
-import Register from './authComponents/Register';
-import Login from './authComponents/Login';
-import PrivateRoute from './authComponents/PrivateRoute';
-import Dashboard from './userComponents/Dashboard';
-import FAQ from './pageComponents/FAQ';
-import Contact from './pageComponents/Contact';
-import Schedule from './pageComponents/Schedule';
-import NotFound from './pageComponents/NotFound';
-import PasswordReset from './authComponents/PasswordReset';
-import Shop from './pageComponents/Shop';
-import About from './pageComponents/About';
-import Sponsor from './pageComponents/Sponsor';
+import Landing from './pages/Landing';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import PrivateRoute from './pages/PrivateRoute';
+import Dashboard from './pages/Dashboard';
+import FAQ from './pages/FAQ';
+import Contact from './pages/Contact';
+import Schedule from './pages/Schedule';
+import NotFound from './pages/NotFound';
+import PasswordReset from './pages/PasswordReset';
+import Shop from './pages/Shop';
+import About from './pages/About';
+import Sponsor from './pages/Sponsor';
 import Footer from './GeneralComponents/Footer';
 import NavBar from './NavBar';
 

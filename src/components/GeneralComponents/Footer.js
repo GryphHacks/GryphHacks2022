@@ -1,6 +1,7 @@
 import SocialBar from "./SocialBar"
 import NewsletterSignUp from "./NewsletterSignUp";
 import '../stylesheet/footer.css';
+import CircuitImage from '../../assets/FooterCircuit.svg';
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -25,6 +26,7 @@ const Footer = () => {
           </div>
         </div>
     </footer>
+    <img className="overlay-svg" src={CircuitImage} height="100"/>
     <div className="footer-bottom">
       <p>Made with&nbsp; ♥ &nbsp;by the GryphHacks team.</p>
     </div>
@@ -32,4 +34,4 @@ const Footer = () => {
   );
 }
 
-export default Footer
+export default Footer;

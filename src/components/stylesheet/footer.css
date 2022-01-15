@@ -35,13 +35,20 @@ footer .wrapper {
     margin-top: 20px;
 }
 
-a {
+footer a {
     color: white;
     margin-left: 2px;
     text-decoration: none;
 }
 
-a:hover {
+footer a:hover {
     color: rgb(248, 223, 0);
     text-decoration: underline;
+}
+
+.overlay-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+      display: block;
 }

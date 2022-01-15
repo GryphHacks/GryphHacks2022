@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../stylesheet/logo.png'
+import Logo from '../../assets/BasicGryphonLogo.png';
 import firebaseApp from '../../firebase';
 import firebase from 'firebase/app';
 import { Link } from 'react-router-dom';
@@ -133,7 +133,7 @@ const Register = () => {
       </form>
       <div className="col">
         <div>
-          <img src={Logo} className="img-responsive" alt="logo" style={{ marginTop: '-50px' }} />
+          <img src={Logo} className="img-responsive" width="500px" alt="logo"/>
         </div>
       </div>
     </div>
