@@ -9,17 +9,15 @@ const Landing = () => {
     <div style={{textAlign:'center'}}>
       <br/>
       <Countdown/>
-      <br/><br/>
-      <NewsletterSignUp/>
-      <br/>
-      <br/>
+      <br/><br/><br/>
+      <SponsorCarousel/>
+      <br/><br/><br/>
       <LogoShowcase/>
       <br/>  
       <Judges/>
       <br/>
       <Speakers/>
       <br/>
-      <SponsorCarousel/>
     </div>
   );
 };

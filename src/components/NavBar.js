@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import { logOut } from '../actions/user';
 import firebase from '../firebase';
 
-const Navigation = () => {
+const NavBar = () => {
   const isAuthenticated = useSelector(state => state.user.isAuthenticated );
   const dispatch = useDispatch();
   const history = useHistory();
@@ -77,4 +77,4 @@ const Navigation = () => {
   );
 }
 
-export default Navigation;
+export default NavBar;

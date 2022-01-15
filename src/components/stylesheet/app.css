@@ -1,53 +1,18 @@
-/* App.js - top-level component */
+/* html {
+  height: 100%;
+} */
+
+body {
+  font-family: 'Sora';
+  font-size: small;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; May have issues on mobile? html height is alt */
 }
-.content-wrap {
-  flex: 1;
-}
+
 .content {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 50px; /* Probably shouldn't use fixed margins! this is temporary */
-}
-
-/* Contact component - form */
-#contact-form {
-  width: 75%;
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #d3d3d3;
-  border-radius: 10px;
-}
-.form-group {
-  padding-bottom: 10px;
-}
-#name-form {
-  display: flex;
-  flex-direction: row;
-}
-#first-name-form {
-  margin-right: auto;
-  width: 48%;
-}
-#last-name-form {
-  width: 48%;
-}
-
-/* Footer component */
-#footer {
-  background-color: #a60909;
-  color: white;
-  margin-top: 50px;
-  padding: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 150px;
-}
-.in-footer {
-  margin-right: 50px;
+  flex: 1;
 }

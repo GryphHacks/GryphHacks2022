@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { store } from "react-notifications-component";
+import '../stylesheet/contact-form.css';
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
