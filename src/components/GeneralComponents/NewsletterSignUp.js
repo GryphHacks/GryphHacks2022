@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import Lottie from "react-lottie";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import animationData from '../../../src/lotties/gradient-spinner.json';
 
 const CustomForm = ({ status, message, onValidated }) => {
 
@@ -61,9 +63,17 @@ const CustomForm = ({ status, message, onValidated }) => {
         }
     }
 
+    const sendingAnimationOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+
     return (
         <>
-            <h4>Sign up for our newsletter!</h4>
             <form onSubmit={(e) => handleSubscribe(e)}>
                 <input 
                     placeholder="example@email.com"
@@ -74,7 +84,16 @@ const CustomForm = ({ status, message, onValidated }) => {
             
             {/* TODO - Add in MailChimp antispam fields at some point */}
 
-            {status === "sending" && <div style={{ color: "blue" }}>Sending...</div>}
+            {status === "sending" && (
+                <div style={{ color: "white" }}>
+                    <Lottie
+                        options={sendingAnimationOptions}
+                        height={50}
+                        width={50}
+                    />
+                    Sending...
+                </div>
+            )}
 
             {(status === "error" || isEmpty) && (
                 <div 

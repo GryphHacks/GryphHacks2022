@@ -1,16 +1,34 @@
 import SocialBar from "./SocialBar"
 import NewsletterSignUp from "./NewsletterSignUp";
+import '../stylesheet/footer.css';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div id="footer">
-      <div className="in-footer">
-        <SocialBar />
-      </div>
-      <div className="in-footer">
-        <NewsletterSignUp />
-      </div>
+    <>
+    <footer>
+      <div className="wrapper">
+          {/* Newsletter Sign Up Column */}
+          <div className="col">
+            <h4>Join our Newsletter</h4>
+            <NewsletterSignUp/>
+          </div>
+          {/* Socials Column */}
+          <div className="col">
+            <h4>Stay Connected</h4>
+            <SocialBar/>
+          </div>
+          {/* Contact Us Column */}
+          <div className="col">
+            <h4>Questions?</h4>
+              <Link to="/contact">Contact us</Link>
+          </div>
+        </div>
+    </footer>
+    <div className="footer-bottom">
+      <p>Made with&nbsp; ♥ &nbsp;by the GryphHacks team.</p>
     </div>
+    </>
   );
 }
 
