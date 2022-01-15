@@ -10,6 +10,8 @@ const About = () => {
              <div id = "container">
             <TeamInfo/>
             <br/>
+            <h1 id = "title">MEET OUR TEAM</h1>
+            <br/>
             <TeamMemberList data = {members}/>
             <br/>
             {/* <SocialBar/> */}

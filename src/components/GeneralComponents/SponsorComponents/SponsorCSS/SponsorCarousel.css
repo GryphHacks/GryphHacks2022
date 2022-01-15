@@ -6,21 +6,7 @@
 
   }
 
-.carousel .control-dots {
-    bottom: -50px;
-    left: 40%;
-    display: flex;
-    align-items: flex-end;
-  
-  }
 
-.carousel .control-dots .dot {
-    background: #4A4A4A;
-    margin: 10px;
-    height:17px;
-    width:16px;
-
-  }
 
 .carousel.carousel-slider {
     overflow: inherit;
