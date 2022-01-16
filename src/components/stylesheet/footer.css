@@ -1,6 +1,7 @@
 footer {
     color: white;
     background-color: #3D3D3D;
+    margin-top: auto;
     padding-top: 3em;
     bottom: 0;
     width: 100%;
@@ -10,9 +11,9 @@ footer {
 }
 
 footer .wrapper {
-    width: 1080px;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .col {
@@ -22,10 +23,21 @@ footer .wrapper {
     flex-basis: 40%;
 }
 
+.newsletter {
+    text-align: left;
+}
+
+.social {
+    text-align: center;
+}
+
+.questions {
+    text-align: left;
+}
+
 .footer-bottom {
     width: 100%;
     color: white;
-    min-height: 50px;
     background-color: #242425;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     text-align: center;
@@ -39,16 +51,17 @@ footer a {
     color: white;
     margin-left: 2px;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 footer a:hover {
-    color: rgb(248, 223, 0);
-    text-decoration: underline;
+    color: #FFC14A;
+    text-shadow: 0px 3px 15px rgba(0,0,0,0.5);
 }
 
-.overlay-svg {
+/* .overlay-svg {
     position: absolute;
     top: 0;
     left: 0;
-      display: block;
-}
+    display: block;
+} */

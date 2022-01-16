@@ -3,6 +3,9 @@ import Lottie from "react-lottie";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import animationData from '../../assets/lotties/gradient-spinner.json';
 
+import '../stylesheet/newsletter.css'; 
+import { MdSend } from 'react-icons/md'; 
+
 const CustomForm = ({ status, message, onValidated }) => {
 
     const [email, setEmail] = useState('');
@@ -75,11 +78,13 @@ const CustomForm = ({ status, message, onValidated }) => {
     return (
         <>
             <form onSubmit={(e) => handleSubscribe(e)}>
-                <input 
+                <input
                     placeholder="example@email.com"
                     onChange={e => setEmail(e.target.value)}
                 />
-                <button label="subscribe" type="submit" className="btn btn-primary">Subscribe</button>
+                <button label="subscribe" type="submit">
+                    <MdSend size='30'/>
+                </button>
             </form>
             
             {/* TODO - Add in MailChimp antispam fields at some point */}

@@ -1,0 +1,25 @@
+button {
+    border:2.2px solid #D82929;;
+    background: #D82929;
+    border-radius: 10px;
+    text-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    padding: 0px 5px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    width: 250px;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+
+    margin-bottom: 5px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+/* brittany_mueller@sympatico.ca */
