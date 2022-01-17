@@ -1,3 +1,11 @@
+:root {
+  --gryphred: #D82929;
+  --gryphyellow: #FFC14A;
+  --lightgrey: #C4C4C4;
+  --darkgrey: #3D3D3D;
+  --softblack: #242425;
+}
+
 body {
   font-family: 'Sora';
   font-size: small;
