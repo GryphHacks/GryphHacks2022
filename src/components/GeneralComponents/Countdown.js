@@ -55,7 +55,7 @@ const Countdown = () => {
     return (
         <div id="countdownContainer">
             {/* When list is all zeroes, html will toggle countdown off */}
-            {countdownComponents.length ? <h2>GryphHacks 2022 starting in...</h2> : null}
+            {countdownComponents.length ? <h2></h2> : null}
             <ul id="countdown">
                 {countdownComponents.length ? countdownComponents : <h2>Thank you for attending!</h2>}
             </ul>
