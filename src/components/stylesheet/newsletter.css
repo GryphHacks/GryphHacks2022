@@ -1,25 +1,79 @@
-button {
-    border:2.2px solid #D82929;;
-    background: #D82929;
-    border-radius: 10px;
-    text-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+.newsletter-form {
+    display: flex;
+    flex-wrap: nowrap;
+}
+    
+.newsletter-form button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--gryphred);
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    padding: 0px 5px;
     color: white;
     text-align: center;
+
+    margin-top: 12px;
+    height: 32px;
+    width: 40px;
 }
 
-input {
-    border: none;
+.custom-field {
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.custom-field .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition:
+        top 0.3s ease,
+        font-size 0.3s ease,
+        color 0.3s ease;
+    user-select: none;
+}
+
+/* .custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder {
+    top: 10px;
+    font-size: 12px;
+    color: white;
+} */
+
+.custom-field .placeholder.hidden {
+    visibility: hidden;
+}
+
+.custom-field input {
+    border: 2px solid #3D3D3D;
     border-radius: 3px;
+
+    padding: 12px;
+    font-size: 14px;
+    
     outline: none;
     width: 250px;
-    padding: 5px;
-    font-size: 12px;
-    margin-right: 10px;
-
-    margin-bottom: 5px;
+    padding: 6px;
+    padding-left: 10px;
+    /* font-size: 12px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 3px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+
+    transition: border-color 0.1s ease;
 }
+
+.custom-field input:focus {
+    border-color: var(#DD1133);
+}
+
+/* .custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder {
+    top: 15px;
+} */
 
 /* brittany_mueller@sympatico.ca */

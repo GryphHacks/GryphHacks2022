@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Lottie from "react-lottie";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import animationData from '../../assets/lotties/gradient-spinner.json';
-
 import '../stylesheet/newsletter.css'; 
 import { MdSend } from 'react-icons/md'; 
 
@@ -10,6 +9,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 
     const [email, setEmail] = useState('');
     const [isEmpty, setEmpty] = useState(null);     // Email field is empty by default
+    const [isPlaceholderVisible, setPlaceholderVisible] = useState(true);
 
     const handleSubscribe = (event) => {
 
@@ -77,13 +77,13 @@ const CustomForm = ({ status, message, onValidated }) => {
 
     return (
         <>
-            <form onSubmit={(e) => handleSubscribe(e)}>
-                <input
-                    placeholder="example@email.com"
-                    onChange={e => setEmail(e.target.value)}
-                />
+            <form className="newsletter-form" onSubmit={(e) => handleSubscribe(e)}>
+                <label className='custom-field'>
+                    <input type='text' onChange={ e => setEmail(e.target.value), e => setPlaceholderVisible(!e.target.value) }/>
+                    <span className={`placeholder ${ isPlaceholderVisible ? "" : "hidden" }`}>Enter your email here.</span>
+                </label>
                 <button label="subscribe" type="submit">
-                    <MdSend size='30'/>
+                    <MdSend className="send-icon" size='24'/>
                 </button>
             </form>
             
