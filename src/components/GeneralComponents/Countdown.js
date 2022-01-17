@@ -4,7 +4,7 @@ import '../stylesheet/countdown.css';
 const Countdown = () => {
 
     // unary operator returns date as a number (epoch/time in milliseconds)
-    const eventDate = +new Date("2021-09-05T02:54:00.000-04:00");
+    const eventDate = +new Date("2022-05-30T02:54:00.000-04:00");
 
     const calculateTimeRemaining = () => {
 
@@ -55,7 +55,7 @@ const Countdown = () => {
     return (
         <div id="countdownContainer">
             {/* When list is all zeroes, html will toggle countdown off */}
-            {countdownComponents.length ? <h2>GryphHacks 2022 starting in...</h2> : null}
+            {countdownComponents.length ? <h2></h2> : null}
             <ul id="countdown">
                 {countdownComponents.length ? countdownComponents : <h2>Thank you for attending!</h2>}
             </ul>

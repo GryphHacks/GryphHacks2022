@@ -19,6 +19,7 @@ const SponsorCarousel = () => {
               width = {1032}
               emulateTouch = {true}
               swipeable = {true}
+              showIndicators={false}
               >
 
               {data[2].map(({id2,name,sponsorImage,link,sponsorMessage})=>(
