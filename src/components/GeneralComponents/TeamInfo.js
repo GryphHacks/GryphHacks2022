@@ -1,4 +1,5 @@
-import '../GeneralComponents/GeneralComponentsCSS/TeamInfo.css'
+import '../GeneralComponents/stylesheet/TeamInfo.css'
+
 const TeamInfo = () => {
     return (
         <div>

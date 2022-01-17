@@ -1,11 +1,12 @@
 import React from 'react'
-import "../GeneralComponents/GeneralComponentsCSS/Register.css"
+import "../GeneralComponents/stylesheet/Register.css"
 import { Link, useHistory } from "react-router-dom";
+
 const Register = () => {
     const history = useHistory();
     return (
         <div>
-            <h6 class = "title">Register</h6>
+            <h6 className = "title">Register</h6>
             <button id = "hackie" onClick = {()=>history.push("/register")}  >Hackie </button>
             <button id = "mentor" onClick = {()=>history.push("/register")}>Mentor</button>
            <br/>
@@ -17,4 +18,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Register;

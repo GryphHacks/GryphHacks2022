@@ -25,15 +25,15 @@ footer .wrapper {
     flex-wrap: nowrap;
 }
 
-.newsletter {
+footer .newsletter {
     text-align: left;
 }
 
-.social {
+footer .social {
     text-align: center;
 }
 
-.questions {
+footer .questions {
     text-align: left;
 }
 

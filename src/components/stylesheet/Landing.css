@@ -25,17 +25,16 @@
 
 
 
-.date{
+.date {
   
     display : inline-block;
     font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 120%;
-letter-spacing: 0.08em;
-color:white;
-
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.08em;
+    color:white;
 }
 
 .seperate{
@@ -59,10 +58,9 @@ color:white;
     display: flex;
     justify-content: center;
 
-    
-     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(johnsonHall.jpeg);  
-    size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../../assets/johnsonHall.jpeg');  
     background-size: 100%;
-     background-repeat: no-repeat; 
+    background-repeat: no-repeat; 
 
 }

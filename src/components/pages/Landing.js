@@ -1,12 +1,12 @@
 import Countdown from "../GeneralComponents/Countdown";
-import NewsletterSignUp from "../GeneralComponents/NewsletterSignUp";
 import Judges from "../GeneralComponents/SpeakerAndJudgesComponents/Judges"
 import Speakers from "../GeneralComponents/SpeakerAndJudgesComponents/Speakers"
 import LogoShowcase from "../GeneralComponents/SponsorComponents/LogoShowcase"
 import SponsorCarousel from "../GeneralComponents/SponsorComponents/SponsorCarousel";
 import Register from "../GeneralComponents/Register";
 import SponsorLanding from "../GeneralComponents/SponsorLanding";
-import '../pageComponents/Landing.css'
+import '../stylesheet/Landing.css'
+
 const Landing = () => {
   return (
     <div style={{textAlign:'center'}}>
@@ -23,7 +23,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <br/>
+      <br/><br/>
       <Countdown/>
       <br/><br/><br/>
       <SponsorCarousel/>

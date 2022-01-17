@@ -1,7 +1,7 @@
 import React from 'react'
 import Pdf from '../test.pdf'
 import { Link,useHistory } from 'react-router-dom'
-import '../GeneralComponents/GeneralComponentsCSS/SponsorLanding.css'
+import '../GeneralComponents/stylesheet/SponsorLanding.css'
 const SponsorLanding = ({title,info}) => {
     const history = useHistory();
     return (

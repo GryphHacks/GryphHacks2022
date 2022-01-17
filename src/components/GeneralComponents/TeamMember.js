@@ -1,5 +1,5 @@
 import { FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
-import '../GeneralComponents/GeneralComponentsCSS/TeamInfo.css'
+import '../GeneralComponents/stylesheet/TeamInfo.css'
 const TeamMember = ({member}) => {
     return (
         <div>
