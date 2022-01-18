@@ -83,7 +83,8 @@ const CustomForm = ({ status, message, onValidated }) => {
                     <span className={`placeholder ${ isPlaceholderVisible ? "" : "hidden" }`}>Enter your email here.</span>
                 </label>
                 <button label="subscribe" type="submit">
-                    <MdSend className="send-icon" size='24'/>
+                    {/* <MdSend className="send-icon" size='24'/> */}
+                    Subscribe
                 </button>
             </form>
             
