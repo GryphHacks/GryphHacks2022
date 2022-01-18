@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Contact Us Column */}
           <div className="col questions">
             <h4>Questions?</h4>
-              <Link to="/contact">Contact us <FiMail/></Link>
+            <Link to="/contact">Contact us here <FiMail size={15} style={{ marginBottom : '3px' }}/></Link>
           </div>
         </div>
     </footer>
