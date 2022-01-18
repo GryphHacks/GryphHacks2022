@@ -2,8 +2,9 @@ import {useSelector, useDispatch} from 'react-redux';
 import { Link, useHistory } from "react-router-dom";
 import { logOut } from '../actions/user';
 import firebase from '../firebase';
+import './navbar.css'
 
-import Logo from '../assets/BasicGryphonLogo.png';
+import Logo from '../assets/WhiteNavbarGryphon.png';
 
 const NavBar = () => {
   const isAuthenticated = useSelector(state => state.user.isAuthenticated );
@@ -22,7 +23,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top float-right">
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top float-right">
       <div className="container-fluid">
         <Link to='/' className="navbar-brand">
           <img src={Logo} className="img-responsive" width="60px" alt="logo" style={{ marginLeft: '20px' }}/>
@@ -31,10 +32,10 @@ const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul id="bootstrap-override" className="navbar-nav ms-auto mb-2 mb-lg-0">
             
             <li className="nav-item">
-              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/" className=" nav-style nav-link">Home</Link>
             </li>
             <li className="nav-item">
               <Link to='/about' className="nav-link">About Us</Link>

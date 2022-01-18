@@ -1,0 +1,10 @@
+.navbar {
+    background-color: #3D3D3D;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link .nav-style .nav-item{ 
+    /* font-family: Roboto; */
+    color: rgb(255, 255, 255);
+}
+
