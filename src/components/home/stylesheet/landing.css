@@ -1,0 +1,64 @@
+.gryph {
+   
+    display : inline-block;
+    color: #FFC14A;
+ font-Family: Sora;
+  font-Style: normal;
+  font-Weight: bold;
+  font-Size: 120px;
+  line-Height: 120%;
+  letter-Spacing: 0.05em;
+}
+.hacks {
+
+  display:inline-block;
+  color: red;
+  font-Family: Sora;
+  font-Style: normal;
+  font-Weight: bold;
+  font-Size: 120px;
+  line-Height: 120%;
+  letter-Spacing: 0.05em;
+  
+}
+
+
+
+
+.date {
+  
+    display : inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.08em;
+    color:white;
+}
+
+.separator {
+    display : inline-block;
+    color:#FFC14A;
+    letter-spacing: 0.08em;
+}
+
+.info-section {
+    display: inline-block;
+    position: relative;
+    top:50px
+}
+
+
+
+#topLandingcontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../../../assets/johnsonHall.jpeg');  
+    background-size: 100%;
+    background-repeat: no-repeat; 
+
+}
