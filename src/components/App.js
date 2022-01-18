@@ -6,20 +6,20 @@ import "react-notifications-component/dist/theme.css";
 import './stylesheet/app.css';
 import "animate.css"
 
-import Landing from './pages/Landing';
-import Register from './pages/Register';
-import Login from './pages/Login';
-import PrivateRoute from './pages/PrivateRoute';
-import Dashboard from './pages/Dashboard';
-import FAQ from './pages/FAQ';
-import Contact from './pages/Contact';
-import Schedule from './pages/Schedule';
-import NotFound from './pages/NotFound';
-import PasswordReset from './pages/PasswordReset';
-import Shop from './pages/Shop';
-import About from './pages/About';
-import Sponsor from './pages/Sponsor';
-import Footer from './GeneralComponents/Footer';
+import Landing from './home/Landing';
+import Register from './dashboard/Register';
+import Login from './dashboard/Login';
+import PrivateRoute from './PrivateRoute';
+import Dashboard from './dashboard/Dashboard';
+import FAQ from './faq/FAQ';
+import Contact from './contact/Contact';
+import Schedule from './schedule/Schedule';
+import NotFound from './NotFound';
+import PasswordReset from './dashboard/PasswordReset';
+import Shop from './shop/Shop';
+import About from './about/About';
+import Sponsor from './sponsors/Sponsor';
+import Footer from './footer/Footer';
 import NavBar from './NavBar';
 
 const App = () => {

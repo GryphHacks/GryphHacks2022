@@ -1,7 +1,7 @@
-import TeamMemberList from "../GeneralComponents/TeamMemberList";
-import TeamInfo from "../GeneralComponents/TeamInfo";
+import TeamMemberList from "./TeamMemberList";
+import TeamInfo from "./TeamInfo";
 import members from "../../data/team.json";
-import '../stylesheet/about.css'
+import './stylesheet/about.css'
 
 const About = () => {
     return (

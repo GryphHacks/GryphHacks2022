@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '../stylesheet/countdown.css';
+import './stylesheet/countdown.css';
 
 const Countdown = () => {
 

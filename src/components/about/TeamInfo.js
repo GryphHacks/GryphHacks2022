@@ -1,4 +1,4 @@
-import '../GeneralComponents/stylesheet/TeamInfo.css'
+import './stylesheet/TeamInfo.css'
 
 const TeamInfo = () => {
     return (

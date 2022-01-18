@@ -1,6 +1,6 @@
 import SocialBar from "./SocialBar"
 import NewsletterSignUp from "./NewsletterSignUp";
-import '../stylesheet/footer.css';
+import './stylesheet/footer.css';
 import CircuitImage from '../../assets/FooterCircuit.svg';
 import { FiMail } from 'react-icons/fi';
 import { Link } from "react-router-dom";

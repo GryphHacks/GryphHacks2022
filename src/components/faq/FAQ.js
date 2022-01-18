@@ -1,4 +1,4 @@
-import QuestionList from "../GeneralComponents/QuestionList";
+import QuestionList from "./QuestionList";
 import faq from "../../data/faq.json"
 const FAQ = () => {
 

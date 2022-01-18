@@ -1,5 +1,5 @@
 import React from 'react'
-import speakersList from "../../../data/speaker.json"
+import speakersList from "../../data/speaker.json"
 import GuestCard from './GuestCard'
 
 const Speakers = () => {

@@ -1,6 +1,6 @@
 import Pdf from '../test.pdf';
 import { Link } from "react-router-dom";
-import SponsorTier from '../GeneralComponents/SponsorTier';
+import SponsorTier from './SponsorTier';
 
 
 const sponsorTiers = [

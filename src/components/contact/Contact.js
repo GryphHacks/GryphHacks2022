@@ -1,5 +1,5 @@
-import SocialBar from "../GeneralComponents/SocialBar"
-import ContactForm from "../GeneralComponents/ContactForm";
+import SocialBar from "../footer/SocialBar"
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
 

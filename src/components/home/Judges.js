@@ -1,5 +1,5 @@
 import React from 'react'
-import judgesList from "../../../data/judges.json"
+import judgesList from "../../data/judges.json"
 import GuestCard from './GuestCard'
 
 const Judges = () => {

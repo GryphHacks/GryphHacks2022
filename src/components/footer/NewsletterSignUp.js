@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Lottie from "react-lottie";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import animationData from '../../assets/lotties/gradient-spinner.json';
-import '../stylesheet/newsletter.css'; 
+import './stylesheet/newsletter.css'; 
 import { MdSend } from 'react-icons/md'; 
 
 const CustomForm = ({ status, message, onValidated }) => {

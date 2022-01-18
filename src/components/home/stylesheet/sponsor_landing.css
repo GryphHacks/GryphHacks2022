@@ -50,9 +50,6 @@
     float:center;
 }
 
-
-
-
 #textContainer{
     position: relative;
 
@@ -65,18 +62,15 @@
 }
 
 #text{
-
     font-size: 50px;
 }
 
 #title{
-
     font-family: Sora;
     letter-spacing: 10px;
     color: #212121;
 font-style: normal;
 font-weight: normal;
 font-size: 50px;
-
 
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Pdf from '../test.pdf'
 import { Link,useHistory } from 'react-router-dom'
-import '../GeneralComponents/stylesheet/SponsorLanding.css'
+import './stylesheet/sponsor_landing.css'
 const SponsorLanding = ({title,info}) => {
     const history = useHistory();
     return (
@@ -17,8 +17,6 @@ const SponsorLanding = ({title,info}) => {
  
             <Link id = "link"to = {Pdf} target = "_blank">Sponsor's PDF</Link>
             </div>
-           
-            
         </div>
     )
 }

@@ -37,15 +37,13 @@
     color:white;
 }
 
-.seperate{
+.separator {
     display : inline-block;
     color:#FFC14A;
     letter-spacing: 0.08em;
 }
 
-.divText{
-
-
+.info-section {
     display: inline-block;
     position: relative;
     top:50px
@@ -59,7 +57,7 @@
     justify-content: center;
 
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../../assets/johnsonHall.jpeg');  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../../../assets/johnsonHall.jpeg');  
     background-size: 100%;
     background-repeat: no-repeat; 
 

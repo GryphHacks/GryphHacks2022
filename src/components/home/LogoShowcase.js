@@ -1,7 +1,7 @@
-import Tier1Logo from "./Tier1Logo"
-import Tier2Logo from "./Tier2Logo"
-import Tier3Logo from "./Tier3Logo"
-import data from "../../../data/sponsor.json"
+import Tier1Logo from "../sponsors/Tier1Logo"
+import Tier2Logo from "../sponsors/Tier2Logo"
+import Tier3Logo from "../sponsors/Tier3Logo"
+import data from "../../data/sponsor.json"
 const LogoShowcase = () => {
     return (
         <div>

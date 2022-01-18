@@ -1,8 +1,8 @@
 import Showcase from "./Showcase"
 import { Carousel } from "react-responsive-carousel"
-import data from "../../../data/sponsor.json"
+import data from "../../data/sponsor.json"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import "./SponsorCSS/SponsorCarousel.css"
+import "./stylesheet/sponsor_carousel.css"
 const SponsorCarousel = () => {
 
     return (
