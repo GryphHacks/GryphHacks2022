@@ -10,16 +10,16 @@ import './stylesheet/landing.css'
 const Landing = () => {
   return (
     <div style={{textAlign:'center'}}>
-      <div id = "topLandingcontainer">
-        <div className = "div">
-          <div>
-            <h1 className="gryph">Gryph</h1> 
-            <h1 className="hacks">Hacks</h1>
+      <div className="landing-background">
+        <div className="landing-wrapper">
+          <div className="splash-title">
+            <h1 style={{color : 'var(--gryphyellow)'}}>&lt; Gryph</h1> 
+            <h1 style={{color : 'var(--rubyred)'}}>Hacks /&gt;</h1>
           </div>
-          <div className = "info-section">
-            <h3 className = "date">March 11-12,2022</h3>
+          <div className = "info-div">
+            <h3 className = "info-text">March 11-12,2022</h3>
             <h3 className = "separator">&nbsp;|&nbsp;</h3>
-            <h3 className = "date">Virtual Hackathon</h3>
+            <h3 className = "info-text">Virtual Hackathon</h3>
           </div>
           <Countdown/>
           <RegisterSection/>

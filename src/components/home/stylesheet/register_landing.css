@@ -1,3 +1,7 @@
+.register {
+    padding-bottom: 50px;    
+}
+
 #hackie{
     background-color: #DD1133; /* Green */
     border-radius: 20px;
@@ -9,7 +13,6 @@
     display: inline-block;
     font-size: 16px;
     position: relative;
-    top: -40px;
     right: 10px;
 
 }
@@ -27,7 +30,6 @@
     display: inline-block;
     font-size: 16px;
     position: relative;
-    top: -40px;
     left: 10px;
     
  
@@ -38,7 +40,6 @@
     margin-top: 50px;
     color: white;
     position: relative;
-    top: -50px;
     
 }
 
@@ -50,16 +51,10 @@
     
 }
 
-
-
-
-
-.title {
+.register-title {
     color: white;
-    font-family: Inter;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 128px
-
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    padding-bottom: 30px;
 }
