@@ -1,0 +1,19 @@
+/* Contact component */
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+}
+.contact-text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+hr {
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  width: 60%;
+  color: #FFC14A;
+}

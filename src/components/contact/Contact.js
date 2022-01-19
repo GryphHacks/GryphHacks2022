@@ -1,15 +1,22 @@
 import SocialBar from "../footer/SocialBar"
 import ContactForm from "./ContactForm";
+import './contact.css'
 
 const Contact = () => {
 
   return (
-    <div>
-      <h1>Contact Us!</h1>
-      <br />
+  <div>
+    <div className="contact-page">
       <ContactForm />
-      <SocialBar />
+      <div className="contact-text">
+        <h1>Contact Us</h1>
+        <hr></hr>
+        <p>We would love to hear from you :)</p>
+      </div>
     </div>
+    <br />
+    <SocialBar />    
+  </div>
   );
 }
 export default Contact;
