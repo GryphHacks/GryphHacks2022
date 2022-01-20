@@ -15,7 +15,6 @@ const Contact = () => {
       </div>
     </div>
     <br />
-    <SocialBar />    
   </div>
   );
 }
