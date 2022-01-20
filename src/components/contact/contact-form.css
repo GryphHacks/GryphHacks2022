@@ -3,8 +3,10 @@
     width: 75%;
     margin-top: 10px;
     padding: 10px;
-    background-color: #d3d3d3;
+    background-color: #6e6e6e;
     border-radius: 10px;
+    text-align: center;
+    color: #fff;
 }
 .form-group { /* padding between form elements */
     padding-bottom: 10px;
@@ -19,4 +21,12 @@
 }
 #last-name-form {
     width: 48%;
+}
+#contact-button {
+    background-color: #D82929;
+    border-color: #D82929;
+    border-radius: 5%;
+    min-width: min-content;
+    min-height: min-content;
+    font-size: small;   
 }
