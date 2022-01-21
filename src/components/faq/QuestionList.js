@@ -1,17 +1,10 @@
 import Question from "./Question"
-
+import './Question.css'
 const QuestionList = ({leftData,rightData}) => {
-  const columns = {
-    position:"relative",
-    display: "grid",
-    columnGap:"5%",
-    justifyContent: "center",
-    gridTemplateColumns: "auto auto",
-  };
-
+  
   return (
     <div>
-      <div style = {columns}>
+      <div className = 'columns'>
         <div>
         {leftData.map( ({idL,question,answer}) => (
             <Question key = {idL} question={question} answer={answer}/>
