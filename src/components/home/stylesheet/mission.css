@@ -1,0 +1,51 @@
+/* mission statement section */
+.missionSection {
+    background-color:#122F4C;
+    color: white;
+    padding: 2% 10%;
+}
+
+/* 3 word mission statement */
+.statement {
+    font-family: Sora;
+    letter-spacing: 5px;
+    margin: 40px 20px;
+}
+
+/* 3 items container */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3 items */
+.item {
+    width: 30%; 
+    margin: 1%;
+    padding: 0 2%;
+}
+.item-img {
+    width: 30%;
+    margin: 10px;
+}
+.item-word {
+    margin: 20px 0;
+}
+.item-text {
+    font-size: 20px;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .item {
+        width: 100%;
+    }
+    .item-img {
+        width: 20%;
+    }
+}
