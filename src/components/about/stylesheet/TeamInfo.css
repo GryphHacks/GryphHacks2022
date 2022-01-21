@@ -2,7 +2,7 @@
     font-family: Sora;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
+    font-size: xx-large;
     line-height: 60px;
     text-align: center;
     margin-bottom: 5%;
@@ -12,7 +12,7 @@
     background-color: #202020;
     margin-left: 10%;
     margin-right: 10%;
-    height: 530px;
+    height: auto;
     border: 1px solid #202020;
     box-shadow: -23px 20px 20px 0px  #DD1133;
     margin-bottom:10%;
@@ -22,10 +22,8 @@
     margin-left: auto;
     margin-right: auto;
     border: 8px solid #FFC14A;
-    width:100%;
-    max-width:125px;
-    height: 100%;
-    max-height: 125px;
+    height:15vw;
+    width:15vw;
     border-radius: 50%;
     }
 #text{
@@ -37,12 +35,13 @@
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 28px;
+    line-height: auto;
     text-align: center;
 }
 
 #textDes{
     text-align: center;
+    font-size: 2.5vw;
 }
 #icon{
     display: table;
