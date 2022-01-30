@@ -1,4 +1,3 @@
-import SocialBar from "../footer/SocialBar"
 import ContactForm from "./ContactForm";
 import './contact.css'
 
