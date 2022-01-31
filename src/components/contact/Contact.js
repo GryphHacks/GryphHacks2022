@@ -10,7 +10,7 @@ const Contact = () => {
       <ContactForm />
       <div className="contact-text">
         <h1>Contact Us</h1>
-        <hr></hr>
+        <hr/>
         <p>We would love to hear from you :)</p>
         <img src={image} alt=""/>
       </div>
