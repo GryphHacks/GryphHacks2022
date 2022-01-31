@@ -2,7 +2,7 @@
     padding-bottom: 50px;    
 }
 
-#hackie{
+#hackie {
     background-color: #DD1133; /* Green */
     border-radius: 20px;
     color: white;
@@ -14,11 +14,10 @@
     font-size: 16px;
     position: relative;
     right: 10px;
-
 }
 
 
-#mentor{
+#mentor {
 
     background-color: transparent; 
     border-radius: 20px;
@@ -31,24 +30,17 @@
     font-size: 16px;
     position: relative;
     left: 10px;
-    
- 
-
 }
 
-.link{
+.link {
     margin-top: 50px;
     color: white;
     position: relative;
     
 }
 
-.link:hover{
-    margin-top: 50px;
-    color: white;
-    position: relative;
-    top: -50px;
-    
+.link:hover {
+    color: white; 
 }
 
 .register-title {

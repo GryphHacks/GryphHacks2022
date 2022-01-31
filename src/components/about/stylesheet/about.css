@@ -5,3 +5,37 @@
     margin-bottom: 10%;
     height: 100%;
 }
+
+#title {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#text{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+#about{
+    border-radius: 10px;
+    background-color: #202020;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 530px;
+    border: 1px solid #202020;
+    box-shadow: -23px 20px 20px 0px  #DD1133;
+    margin-bottom:10%;
+}

@@ -1,82 +1,85 @@
 [
     {   "id":1,
         "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "title":"Development Lead",
+        "image":"images/AndrewLinington.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/",
-            "instagram": "https://daveceddia.com/react-image-tag/",
-            "twitter": "https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/andrew-linington/"
         }
     },
     {   "id":2,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "name":"Brittany Mueller",
+        "title":"Development Lead",
+        "image":"images/BrittanyMueller.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/brittany-a-mueller/"
         }
     },
     {   "id":3,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "name":"Zaza Hashmi",
+        "title":"Co-Founder",
+        "image":"images/GryphMissingPic.png",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/shaiza-hashmi/",
+            "github":"https://github.com/Kayeris"
         }
     },
     {   "id":4,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "name":"Rithik Choudhary",
+        "title":"Co-Founder",
+        "image":"images/GryphMissingPic.png",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/rithik-c/",
+            "github":"https://github.com/rithik-c"
         }
     },
     {   "id":5,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "name":"Mrudini Patel",
+        "title":"Web Design Lead | Web Developer",
+        "image":"images/MrudiniPatel.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/mrudinipatel/",
+            "github":"https://github.com/mrudinipatel"
         }
     },
     {   "id":6,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "name":"Madhurbain Kaur",
+        "title":"Web Developer",
+        "image":"images/MadhurbainKaur.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/madhurbain-kaur/",
+            "instagram":"https://www.instagram.com/madhurbainkaur/"
         }
     },
     {   "id":7,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "name":"Rabia Qureshi",
+        "title":"Web Developer | Design Associate",
+        "image":"images/RabiaQureshi.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/rabia-qureshi-a4749b106/"
         }
     },
     {   "id":8,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "name":"Eason Liang",
+        "title":"Web Developer | Bot Master",
+        "image":"images/EasonLiang.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/eason-liang-a37646212/"
         }
     },
     {   "id":9,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "name":"Riya Gangwar",
+        "title":"Operations Associate",
+        "image":"images/RiyaGangwar.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/riya-gangwar-a025b9203/",
+            "instagram":"https://www.instagram.com/riiyaaa_07"
         }
     },
     {   "id":10,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -84,14 +87,14 @@
     {   "id":11,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
     },   {   "id":12,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -99,7 +102,7 @@
     {   "id":13,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -107,7 +110,7 @@
     {   "id":14,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -115,7 +118,7 @@
     {   "id":15,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -123,21 +126,22 @@
     {   "id":16,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
-    } ,{   "id":17,
+    } ,{   
+        "id":17,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
     }, {   "id":18,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -145,7 +149,7 @@
     {   "id":19,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -153,7 +157,7 @@
     {   "id":20,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -161,7 +165,7 @@
     {   "id":21,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
@@ -169,21 +173,21 @@
     {   "id":22,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
     }, {   "id":23,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
     }, {   "id":24,
         "name":"Andrew Linington",
         "title":"System Administrator",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
