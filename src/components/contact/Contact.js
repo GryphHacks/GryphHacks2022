@@ -1,6 +1,6 @@
 import ContactForm from "./ContactForm";
 import './contact.css'
-import image from "../../assets/help-desk-temp.jpg"
+import image from "../../assets/ContactDesk.svg"
 
 const Contact = () => {
 
@@ -12,7 +12,7 @@ const Contact = () => {
         <h1>Contact Us</h1>
         <hr/>
         <p>We would love to hear from you :)</p>
-        <img src={image} alt=""/>
+        <img className='contact-img' src={image} alt="Image of person working at desk"/>
       </div>
     </div>
     <br />

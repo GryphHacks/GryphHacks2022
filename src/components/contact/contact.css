@@ -13,9 +13,16 @@
   align-items: center;
   font-size: medium;
 }
-hr {
+.contact-page hr {
   margin-top: 10px; 
-  margin-bottom: 10px; 
+  margin-bottom: 20px; 
+  border: 2px solid var(--gryphyellow);
   width: 60%;
-  color: #FFC14A;
+  opacity: 1; /* Bootstrap overriding opacity */
+}
+.contact-img {
+  width: 170%;
+  height: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
