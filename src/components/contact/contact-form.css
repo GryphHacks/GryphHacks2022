@@ -1,22 +1,37 @@
 /* Contact component - form */
 #contact-form {
-    width: 75%;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #d3d3d3;
+    width: 100%;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #6e6e6e;
     border-radius: 10px;
+    text-align: center;
+    color: #fff;
 }
-.form-group {
-padding-bottom: 10px;
+#contact-form h5 {
+    text-align: left;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.form-group { /* padding between form elements */
+    padding-bottom: 20px;
 }
 #name-form {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 #first-name-form {
-margin-right: auto;
-width: 48%;
+    margin-right: auto;
+    width: 48%;
 }
 #last-name-form {
-width: 48%;
+    width: 48%;
+}
+#contact-button {
+    background-color: var(--gryphred);
+    border-color: var(--gryphred);
+    border-radius: 3px;
+    min-width: min-content;
+    min-height: min-content;
+    font-size: small;   
 }
