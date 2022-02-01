@@ -1,15 +1,20 @@
 /* Contact component - form */
 #contact-form {
     width: 100%;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 10%;
+    padding: 20px;
     background-color: #6e6e6e;
     border-radius: 10px;
     text-align: center;
     color: #fff;
 }
-.form-group { /* padding between form elements */
+#contact-form h5 {
+    text-align: left;
+    font-size: large;
     padding-bottom: 10px;
+}
+.form-group { /* padding between form elements */
+    padding-bottom: 20px;
 }
 #name-form {
     display: flex;
@@ -23,9 +28,9 @@
     width: 48%;
 }
 #contact-button {
-    background-color: #D82929;
-    border-color: #D82929;
-    border-radius: 5%;
+    background-color: var(--gryphred);
+    border-color: var(--gryphred);
+    border-radius: 3px;
     min-width: min-content;
     min-height: min-content;
     font-size: small;   

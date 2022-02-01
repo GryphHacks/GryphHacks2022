@@ -16,6 +16,7 @@
 .contact-page hr {
   margin-top: 10px; 
   margin-bottom: 20px; 
+  background: var(--gryphyellow);
   border: 2px solid var(--gryphyellow);
   width: 60%;
   opacity: 1; /* Bootstrap overriding opacity */

@@ -95,7 +95,7 @@ const ContactForm = () => {
         id="contact-form"
         onSubmit={(e) => handleSubmit(e, firstName, lastName, email, message)}
       >
-        <p>Send us a message!</p>
+        <h5>Send us a message</h5>
         <div className="form-group" id="name-form">
           <div id="first-name-form">
             <input
