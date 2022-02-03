@@ -8,13 +8,13 @@
     color:#ffffff;
 }
 .Question  {
+    display: flex;
+    justify-content: space-between;
     font-family:Roboto;
-    font-weight:500;
     margin-top: 10px;
-    font-size:20px;
+    font-size:19px;
     text-align:center;
     align-items:center;
-    transition: all;
 }
 
 .answer-collapse {
@@ -24,7 +24,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size:18px;
+    font-size:19px;
     display:flex;
     align-items:center;
     text-align:center;
@@ -44,7 +44,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size:18px;
+    font-size:19px;
     display:flex;
     align-items:center;
     text-align:center;
@@ -57,7 +57,8 @@
    }
  
   .up {
-    margin: auto;
+    margin-left: 10%;
+    margin-right: 2%;
     float: right;
     width: 0; 
     height: 0; 
@@ -67,7 +68,8 @@
   }
   
 .down {
-  margin: auto;
+    margin-left: 10%;
+    margin-right: 2%;
     float: right;
     width: 0; 
     height: 0; 
