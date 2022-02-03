@@ -1,0 +1,32 @@
+/* contains title and layout(for cards) */
+#judgesSection {
+    color: white; 
+    background-color: var(--gryphred);
+    padding: 2% 10%;
+}
+
+/* Our Judges title */
+#title {
+    font-family: Sora;
+    letter-spacing: 5px;
+    margin: 40px 20px;
+}
+
+/* Layout for the guest cards */
+#layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+@media (max-width: 1200px) {
+    #layout{
+        padding: 0 5%;
+    }
+}
+
+
+  

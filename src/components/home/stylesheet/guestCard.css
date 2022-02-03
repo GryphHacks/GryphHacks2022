@@ -1,0 +1,27 @@
+/* contains img, title, and text */
+.card-body {
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.card-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    width:100%;
+    max-width:125px;
+    height: 100%;
+    max-height: 125px;
+    border-radius: 50%;
+}
+
+.card-title {
+    margin-top: 20px;
+}
+
+/* change border colour on card hover */
+.card-body:hover .card-img {
+    border-color: var( --gryphyellow);
+}
