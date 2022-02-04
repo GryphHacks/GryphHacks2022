@@ -22,7 +22,8 @@ body::before {
 	width: 100%;
 	will-change: transform;
 	z-index: -1;
-  }
+}
+
 .page-container {
   display: flex;
   flex-direction: column;

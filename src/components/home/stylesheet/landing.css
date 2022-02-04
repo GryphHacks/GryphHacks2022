@@ -1,6 +1,6 @@
 .splash-title {
     padding-top: 100px;
-
+    font-family: 'Fira Code', monospace;
 }
 .splash-title h1 {
     display:inline-block;

@@ -14,8 +14,8 @@ const Landing = () => {
       <div className="landing-background">
         <div className="landing-wrapper">
           <div className="splash-title">
-            <h1 style={{color : 'var(--gryphyellow)'}}>&lt; Gryph</h1> 
-            <h1 style={{color : 'var(--rubyred)'}}>Hacks /&gt;</h1>
+            <h1 style={{color : 'var(--gryphyellow)'}}>&lt;Gryph</h1> 
+            <h1 style={{color : 'var(--rubyred)'}}>Hacks/&gt;</h1>
           </div>
           <div className = "info-div">
             <h3 className = "info-text">March 11-12,2022</h3>
