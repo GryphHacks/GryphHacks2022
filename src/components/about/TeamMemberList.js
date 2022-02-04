@@ -18,7 +18,7 @@ const columns ={
     position:"relative",
     marginLeft:"10%",
     marginRight:"10%",
-    display: "grid",
+    display: "grid",  
     gridTemplateColumns: "25% 25% 25% 25%",
 }
 
