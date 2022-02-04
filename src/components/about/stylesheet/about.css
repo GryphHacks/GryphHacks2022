@@ -1,8 +1,7 @@
 #container {
-    margin-left: 5%;
-    margin-right: 5%;
-    background:  rgba(138, 138, 138, 0.39);
-    margin-bottom: 10%;
+    margin: auto;
+    width: 80%;
+    background:  rgba(138, 138, 138, 0.4);
     height: 100%;
 }
 

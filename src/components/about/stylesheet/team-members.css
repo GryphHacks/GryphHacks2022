@@ -20,6 +20,8 @@
 }
 
 .team-member-card {
+    margin: 10px;
+    flex: 0 1 calc(20% - 20px); /* <-- adjusting for margin */
     text-align: center;
 }
 
@@ -44,4 +46,13 @@
 .member-socials a:hover {
     color: var(--darkgrey);
     transition: ease 0.2s;
+}
+
+.team-member-grid {
+    margin:auto;
+    margin-bottom: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

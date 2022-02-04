@@ -1,21 +1,14 @@
 [
     {   "id":1,
-        "name":"Andrew Linington",
-        "title":"Development Lead",
-        "image":"images/AndrewLinington.jpg",
+        "name":"Rithik Choudhary",
+        "title":"Co-Founder",
+        "image":"images/GryphMissingPic.png",
         "social": {
-            "linkedin":"https://www.linkedin.com/in/andrew-linington/"
+            "linkedin":"https://www.linkedin.com/in/rithik-c/",
+            "github":"https://github.com/rithik-c"
         }
     },
     {   "id":2,
-        "name":"Brittany Mueller",
-        "title":"Development Lead",
-        "image":"images/BrittanyMueller.jpg",
-        "social": {
-            "linkedin":"https://www.linkedin.com/in/brittany-a-mueller/"
-        }
-    },
-    {   "id":3,
         "name":"Zaza Hashmi",
         "title":"Co-Founder",
         "image":"images/GryphMissingPic.png",
@@ -24,13 +17,21 @@
             "github":"https://github.com/Kayeris"
         }
     },
-    {   "id":4,
-        "name":"Rithik Choudhary",
-        "title":"Co-Founder",
-        "image":"images/GryphMissingPic.png",
+    {   "id":3,
+        "name":"Andrew Linington",
+        "title":"Development Lead",
+        "image":"images/AndrewLinington.jpg",
         "social": {
-            "linkedin":"https://www.linkedin.com/in/rithik-c/",
-            "github":"https://github.com/rithik-c"
+            "linkedin":"https://www.linkedin.com/in/andrew-linington/"
+        }
+
+    },
+    {   "id":4,
+        "name":"Brittany Mueller",
+        "title":"Development Lead",
+        "image":"images/BrittanyMueller.jpg",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/brittany-a-mueller/"
         }
     },
     {   "id":5,
