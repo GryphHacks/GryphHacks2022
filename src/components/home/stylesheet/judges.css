@@ -6,8 +6,7 @@
 }
 
 /* Our Judges title */
-#title {
-    font-family: Sora;
+#judgesSection h1{
     letter-spacing: 5px;
     margin: 40px 20px;
 }
