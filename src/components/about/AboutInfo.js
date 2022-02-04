@@ -1,6 +1,6 @@
-import './stylesheet/TeamInfo.css'
+import './stylesheet/about.css'
 
-const TeamInfo = () => {
+const AboutInfo = () => {
     return (
         <div>
             <br/>
@@ -21,4 +21,4 @@ const TeamInfo = () => {
     )
 }
 
-export default TeamInfo
+export default AboutInfo;
