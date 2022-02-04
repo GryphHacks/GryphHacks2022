@@ -18,6 +18,15 @@
         }
     },
     {   "id":3,
+        "name":"Roman Savelyev",
+        "title":"VP Internal",
+        "image":"images/RomanSavelyev.jpg",
+        "social": {
+            "linkedin":""
+        }
+
+    },
+    {   "id":4,
         "name":"Andrew Linington",
         "title":"Development Lead",
         "image":"images/AndrewLinington.jpg",
@@ -69,6 +78,14 @@
         }
     },
     {   "id":9,
+        "name":"Julia Hawkins",
+        "title":"VP Operations",
+        "image":"images/JuliaHawkins.jpg",
+        "social": {
+            "linkedin":""
+        }
+    },
+    {   "id":10,
         "name":"Riya Gangwar",
         "title":"Operations Associate",
         "image":"images/RiyaGangwar.jpg",
@@ -77,35 +94,29 @@
             "instagram":"https://www.instagram.com/riiyaaa_07"
         }
     },
-    {   "id":10,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
-        "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
-        }
-    },
     {   "id":11,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
+        "name":"Christopher Law",
+        "title":"Operations Associate",
+        "image":"images/ChristopherLaw.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/chrisdlaw/",
+            "github":"https://github.com/Christophler"
         }
-    },   {   "id":12,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
+    },   
+    {   "id":12,
+        "name":"Olivia Gair",
+        "title":"Operations Associate",
+        "image":"images/OliviaGair.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":""
         }
     },
     {   "id":13,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
+        "name":"Manas Verma",
+        "title":"Operations Associate",
+        "image":"images/ManasVerma.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":""
         }
     },
     {   "id":14,
