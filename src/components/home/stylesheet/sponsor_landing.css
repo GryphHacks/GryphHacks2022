@@ -5,12 +5,10 @@
     border: 5px solid gray;
     border-radius: 5px;
     background-color: #4A4A4A;
-    height: 500px;
+    height: auto;
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
-   
-   
 }
 
 #p1{
@@ -24,53 +22,48 @@
 }
 
 #button{
-
     background-color: #DD1133;
     border-radius: 20px;
     color: white;
     border:none;
     padding: 10px 40px;
     text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
+    font-size:medium;
     position: relative;
-    top: 100px;
-    right: -300px;
-    float:left;
+    margin-right: 10%;
+    margin-bottom: 10%;
 }
 
 
 #link{
     color: white;
-    margin-left: 50px;
     position: relative;
-    right:0px;
-    top: 110px;
-    float:center;
+    font-size: auto;
+    align-items: center;
+    font-size: large;
 }
 
 #textContainer{
     position: relative;
-
-    left: 180px;
+    margin-left: 10%;
+    margin-right: 10%;
     float: center;
-    width: 700px;
-    top: 50px;
     display:flex;
     justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #text{
-    font-size: 50px;
+    font-size: auto;
+
 }
 
 #title{
-    font-family: Sora;
-    letter-spacing: 10px;
-    color: #212121;
+font-family: Sora;
+letter-spacing: 10px;
+color: #212121;
 font-style: normal;
 font-weight: normal;
-font-size: 50px;
-
+font-size: medium;
 }

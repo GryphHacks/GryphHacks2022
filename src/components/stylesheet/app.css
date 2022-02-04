@@ -10,8 +10,18 @@
 body {
   font-family: 'Sora';
   font-size: small;
+   /* background:  url("../../assets/Circuit\ Board.svg") repeat fixed center; */
 }
-
+body::before {
+	background-image: url("../../assets/Circuit\ Board.svg");
+	background-size: cover;
+	content: "";
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	will-change: transform;
+	z-index: -1;
+  }
 .page-container {
   display: flex;
   flex-direction: column;
