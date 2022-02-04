@@ -24,7 +24,6 @@
         "social": {
             "linkedin":""
         }
-
     },
     {   "id":4,
         "name":"Andrew Linington",
@@ -33,9 +32,8 @@
         "social": {
             "linkedin":"https://www.linkedin.com/in/andrew-linington/"
         }
-
     },
-    {   "id":4,
+    {   "id":5,
         "name":"Brittany Mueller",
         "title":"Development Lead",
         "image":"images/BrittanyMueller.jpg",
@@ -43,7 +41,7 @@
             "linkedin":"https://www.linkedin.com/in/brittany-a-mueller/"
         }
     },
-    {   "id":5,
+    {   "id":6,
         "name":"Mrudini Patel",
         "title":"Web Design Lead | Web Developer",
         "image":"images/MrudiniPatel.jpg",
@@ -52,7 +50,7 @@
             "github":"https://github.com/mrudinipatel"
         }
     },
-    {   "id":6,
+    {   "id":7,
         "name":"Madhurbain Kaur",
         "title":"Web Developer",
         "image":"images/MadhurbainKaur.jpg",
@@ -61,7 +59,7 @@
             "instagram":"https://www.instagram.com/madhurbainkaur/"
         }
     },
-    {   "id":7,
+    {   "id":8,
         "name":"Rabia Qureshi",
         "title":"Web Developer | Design Associate",
         "image":"images/RabiaQureshi.jpg",
@@ -69,7 +67,7 @@
             "linkedin":"https://www.linkedin.com/in/rabia-qureshi-a4749b106/"
         }
     },
-    {   "id":8,
+    {   "id":9,
         "name":"Eason Liang",
         "title":"Web Developer | Bot Master",
         "image":"images/EasonLiang.jpg",
@@ -77,7 +75,7 @@
             "linkedin":"https://www.linkedin.com/in/eason-liang-a37646212/"
         }
     },
-    {   "id":9,
+    {   "id":10,
         "name":"Julia Hawkins",
         "title":"VP Operations",
         "image":"images/JuliaHawkins.jpg",
@@ -85,7 +83,7 @@
             "linkedin":""
         }
     },
-    {   "id":10,
+    {   "id":11,
         "name":"Riya Gangwar",
         "title":"Operations Associate",
         "image":"images/RiyaGangwar.jpg",
@@ -94,7 +92,7 @@
             "instagram":"https://www.instagram.com/riiyaaa_07"
         }
     },
-    {   "id":11,
+    {   "id":12,
         "name":"Christopher Law",
         "title":"Operations Associate",
         "image":"images/ChristopherLaw.jpg",
@@ -103,7 +101,7 @@
             "github":"https://github.com/Christophler"
         }
     },   
-    {   "id":12,
+    {   "id":13,
         "name":"Olivia Gair",
         "title":"Operations Associate",
         "image":"images/OliviaGair.jpg",
@@ -111,7 +109,7 @@
             "linkedin":""
         }
     },
-    {   "id":13,
+    {   "id":14,
         "name":"Manas Verma",
         "title":"Operations Associate",
         "image":"images/ManasVerma.jpg",
@@ -119,91 +117,77 @@
             "linkedin":""
         }
     },
-    {   "id":14,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
-        "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
-        }
-    },
     {   "id":15,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
+        "name":"Sophie Mlodzik",
+        "title":"VP Finance",
+        "image":"images/SophieMlodzik.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/sophie-mlodzik-2877891ba/",
+            "github":"https://github.com/smlodzik"
         }
     },
     {   "id":16,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
+        "name":"Ali Asjad",
+        "title":"Finance Associate",
+        "image":"images/AliAsjad.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
-        }
-    } ,{   
-        "id":17,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
-        "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
-        }
-    }, {   "id":18,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
-        "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":""
         }
     },
-    {   "id":19,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
+    {   "id":17,
+        "name":"Rubeel Saleem",
+        "title":"Finance Associate",
         "image":"images/GryphMissingPic.png",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/irubeel/"
+        }
+    } ,{   
+        "id":18,
+        "name":"Mussab Imran",
+        "title":"VP Designs",
+        "image":"images/GryphMissingPic.png",
+        "social": {
+            "linkedin":""
+        }
+    }, 
+    {   "id":19,
+        "name":"Neha Ambati",
+        "title":"Design Associate",
+        "image":"images/GryphMissingPic.png",
+        "social": {
+            "linkedin":""
         }
     },
     {   "id":20,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
+        "name":"Hasen Romani",
+        "title":"VP Marketing",
+        "image":"images/HasenRomani.jpg",
         "social": {
             "linkedin":"https://daveceddia.com/react-image-tag/"
         }
     },
     {   "id":21,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
+        "name":"Layane Alhabian",
+        "title":"Marketing Asscoiate",
+        "image":"images/LayaneAlhabian.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/layane-alhabian/"
         }
     },
     {   "id":22,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
+        "name":"Manpreet Singh",
+        "title":"Marketing Asscoiate",
+        "image":"images/ManpreetSingh.jpg",
+        "social": {
+            "linkedin":""
+        }
+    },
+    {   "id":23,
+        "name":"Daniel Marcus-Chidozie",
+        "title":"Sponsorships Associate",
         "image":"images/GryphMissingPic.png",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/marcus-chidoziedaniel/"
         }
-    }, {   "id":23,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
-        "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
-        }
-    }, {   "id":24,
-        "name":"Andrew Linington",
-        "title":"System Administrator",
-        "image":"images/GryphMissingPic.png",
-        "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
-        }
-    }
-     
-  
+    }  
 ]

@@ -11,8 +11,6 @@
     
 }
 
-
-
 .member-picture:hover {
     transform: translateZ(0) scale(1.04);
     box-shadow: 0 0 2px 1px rgba(160, 160, 160, 0.5);
