@@ -95,51 +95,52 @@ const ContactForm = () => {
         id="contact-form"
         onSubmit={(e) => handleSubmit(e, firstName, lastName, email, message)}
       >
+        <h5>Send us a message</h5>
         <div className="form-group" id="name-form">
           <div id="first-name-form">
-            <label htmlFor="name">First Name</label>
             <input
               required
               type="text"
               className="form-control"
               name="firstName"
+              placeholder="first name"
               onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
           <div id="last-name-form">
-            <label htmlFor="name">Last Name</label>
             <input
               required
               type="text"
               className="form-control"
               name="lastName"
+              placeholder="last name"
               onChange={(e) => setLastName(e.target.value)}
             />
           </div>
         </div>
         <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
           <input
             required
             type="email"
             className="form-control"
             name="email"
+            placeholder="email"
             aria-describedby="emailHelp"
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="message">Message</label>
           <textarea
             required
             className="form-control"
             name="message"
+            placeholder="message"
             rows="5"
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
+        <button id="contact-button" type="submit" className="btn btn-primary">
+          Send Message
         </button>
       </form>
       <br />

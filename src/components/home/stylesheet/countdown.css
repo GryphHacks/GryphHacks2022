@@ -1,6 +1,7 @@
 
 #countdownContainer {
     padding: 50px;
+    display: flex;
     
     
     /* box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
@@ -10,7 +11,6 @@
 #countdownContainer h2 {
 
     color: rgb(121, 121, 121);
-    margin: 0 auto;
     text-align: center;
     font-size: 50px;
    
@@ -18,10 +18,9 @@
 }
 
 #countdown {
-    border: 5px solid gray;
+    flex: 1;
+    justify-content: center;
     padding: 10px;
-
-    
 }
   
 #countdown li {
@@ -30,28 +29,21 @@
     display: inline-block;
     font-size: 1.5em;
     list-style-type: none;
-    padding-bottom: 0;      
     text-transform: uppercase;
-    margin-left: 2px;
+    /* This margin is weird for 3 digits */
+    padding: 10px;
 }
   
 .timeCard span {
     
     color: white;
     position: relative;
-    width:100px;
-
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    width:120px;
     display: block;
     font-size: 15px;
 }
 
 .timeCard h1 {
-    
-
     color: white;
-    border-radius: 20px;
-    font-size: 60px;
+    font-size: 70px;
 }
