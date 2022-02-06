@@ -11,8 +11,9 @@
 }
 
 .navbar-link-box:focus-within {
-    border-bottom: 2px solid var(--gryphred);
+    border-bottom: 2px solid var(--gryphyellow);
     padding-bottom: 0;
+    background-color: #292626;
 }
 
 .navbar-logo {
