@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import { logOut } from "../actions/user";
 import firebase from "../firebase";
-import "./navbar.css";
+import "./stylesheet/navbar.css";
 
 import Logo from "../assets/WhiteNavbarGryphon.png";
 
