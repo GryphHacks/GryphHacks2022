@@ -7,8 +7,8 @@ const RegisterSection = () => {
     const history = useHistory();
 
     return (
-        <div>
-            <h6 className = "title">Register</h6>
+        <div className="register">
+            <h6 className = "register-title">Register</h6>
             <button id = "hackie" onClick = {()=>history.push("/register")}  >Hackie </button>
             <button id = "mentor" onClick = {()=>history.push("/register")}>Mentor</button>
             <br/>
