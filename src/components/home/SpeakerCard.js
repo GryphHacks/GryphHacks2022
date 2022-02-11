@@ -23,9 +23,10 @@ const speakerCardStyle = {
 
 const speakerImageStyle = {
   borderRadius: "50%",
-  height:"200px",
-  width:"200px",
-}
+  border: "10px solid rgba(221,17,51,.73)",
+  height: "200px",
+  width: "200px",
+};
 
 const speakerInfoStyle = {
   backgroundColor: "#8A8A8A",
