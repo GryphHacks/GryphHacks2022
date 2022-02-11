@@ -1,6 +1,6 @@
 import React from 'react'
 import './stylesheet/speakers.css'
-import speakersList from "../../data/speaker.json";
+import speakers from "../../data/speaker.json";
 import SpeakerCard from './SpeakerCard';
 
 const Speakers = () => {
@@ -10,9 +10,7 @@ const Speakers = () => {
       <div className="speakerContent">
         <h1>KEYNOTE SPEAKERS</h1>
         <div style={speakerStyle}>
-          {speakersList.map((speaker) => (
-            <SpeakerCard key={"speaker_" + speaker.id} member={speaker} />
-          ))}
+          <SpeakerCard member={speakers[0]} />
         </div>
       </div>
     </div>
@@ -22,7 +20,7 @@ const Speakers = () => {
 const speakerStyle = {
   display: "flex",
   flexDirection: "row",
-  justifyContent: "space-evenly",
+  justifyContent: "space-around",
   paddingTop: "5%",
   paddingLeft: "10%",
   paddingRight: "10%",
