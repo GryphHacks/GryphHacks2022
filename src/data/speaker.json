@@ -2,21 +2,21 @@
     {
         "id":1,
         "name":"Walt Disney",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "role":"Software Engineer @ Google",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem."
     },
     {
         "id":2,
         "name":"Scooby Doo",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "role":"Product Manager @ DoorDash",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem."
     },
     {
         "id":3,
         "name":"Wal Greens",
-        "image":"images/sampleImage.jpeg",
+        "image":"images/GryphMissingPic.png",
         "role":"Software Developer @ Netflix",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem."
     }

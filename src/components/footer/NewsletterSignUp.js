@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import Lottie from "react-lottie";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import animationData from '../../assets/lotties/gradient-spinner.json';
-import './stylesheet/newsletter.css'; 
-import { MdSend } from 'react-icons/md'; 
+import './stylesheet/newsletter.css';  
 
 const CustomForm = ({ status, message, onValidated }) => {
 
@@ -12,6 +10,8 @@ const CustomForm = ({ status, message, onValidated }) => {
     const [isPlaceholderVisible, setPlaceholderVisible] = useState(true);
 
     const handleSubscribe = (event) => {
+
+        console.log("handling subscribe")
 
         event.preventDefault();
         setEmpty(true)  // Reset state
@@ -42,18 +42,20 @@ const CustomForm = ({ status, message, onValidated }) => {
 
     const handleMessage = (message) => {
 
+        console.log("handling message: ", message)
+
         if (isEmpty || message.includes('Please enter a value')) {
             // MailChimp API does not error handle blank field, on spaces "0 - Please enter a value"
-            return 'Please enter a valid email address';
+            return 'Please enter a valid email address.';
 
         } else if (message.includes('domain portion')) {
             // 0 - The domain portion of the email address is invalid (the portion after the @: .com)
-            return 'The domain of the provided email address is invalid';
+            return 'The domain of the provided email address is invalid.';
 
         } else if (message.includes('cannot be added') || message.includes('cannot be imported')) {
             // This email cannot be added to this list. Please enter a different email address.
             // admin@b.com is an invalid email address and cannot be imported.
-            return 'The email provided is invalid and cannot be added to this list. Please try a different email address';
+            return 'The email provided is invalid and cannot be added to this list. Please try a different email address.';
 
         } else {
             // Use the provided MailChimp message, but trim any leading spaces/zeroes
@@ -66,14 +68,14 @@ const CustomForm = ({ status, message, onValidated }) => {
         }
     }
 
-    const sendingAnimationOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-        }
-    };
+    // const sendingAnimationOptions = {
+    //     loop: true,
+    //     autoplay: true,
+    //     animationData: animationData,
+    //     rendererSettings: {
+    //         preserveAspectRatio: "xMidYMid slice"
+    //     }
+    // };
 
     return (
         <>
@@ -92,11 +94,11 @@ const CustomForm = ({ status, message, onValidated }) => {
 
             {status === "sending" && (
                 <div style={{ color: "white" }}>
-                    <Lottie
+                    {/* <Lottie
                         options={sendingAnimationOptions}
                         height={50}
                         width={50}
-                    />
+                    /> */}
                     Sending...
                 </div>
             )}

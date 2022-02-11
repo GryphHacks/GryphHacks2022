@@ -1,0 +1,55 @@
+.navbar {
+    background-color: var(--darkgrey);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-link-box {
+    transition: background-color 0.3s ease;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-link-box:focus-within {
+    border-bottom: 3px solid var(--darkred);
+    padding-bottom: 0;
+    background-color: #292626;
+}
+
+.navbar-logo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-right: 2px; */
+    /* white-space: nowrap; */
+}
+
+.logo-div-navbar {
+    transition: ease 0.3s;
+}
+
+.logo-div-navbar:hover {
+    background-image: url("../../assets/RedWhiteNavbarGryphon.png");
+    border-radius: 10px;
+    transform: translateZ(0) scale(1.07);
+    /* box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.nav-word {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #FFFFFf;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out, border-bottom .15s ease-in-out; 
+}
+
+.nav-word:hover {
+    color: white;
+}
+
+.navbar-link-box:hover {
+    background-color: var(--greyhover);
+}

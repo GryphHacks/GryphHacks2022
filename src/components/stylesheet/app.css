@@ -1,15 +1,30 @@
 :root {
+  --darkred: #c7102f;
+  --rubyred: #DD1133;
   --gryphred: #D82929;
   --redhover: #d83c3c;
   --gryphyellow: #FFC14A;
   --lightgrey: #C4C4C4;
   --darkgrey: #3D3D3D;
   --softblack: #242425;
+  --greyhover: #5f5c5c;
 }
 
 body {
   font-family: 'Sora';
   font-size: small;
+  /* background:  url("../../assets/Circuit\ Board.svg") repeat fixed center; */
+}
+
+body::before {
+	background-image: url("../../assets/Circuit\ Board.svg");
+	background-size: cover;
+	content: "";
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	will-change: transform;
+	z-index: -1;
 }
 
 .page-container {
