@@ -4,11 +4,11 @@ const SpeakerCard = ({member}) => {
   return (
     <div style={speakerCardStyle}>
       <img style={speakerImageStyle} alt={member.name} src={member.image} />
-      <div style={layerStyle}/>
+      <div style={layerStyle} />
       <div style={speakerInfoStyle}>
         <h4>{member.name}</h4>
-        <h5 style={{fontSize:"15px"}}>{member.role}</h5>
-        <br/>
+        <h5 style={{fontSize: "15px"}}>{member.role}</h5>
+        <br />
         <p>{member.description}</p>
       </div>
     </div>
@@ -32,6 +32,7 @@ const speakerImageStyle = {
 
 const speakerInfoStyle = {
   zIndex: "1",
+  textAlign: "left",
   position: "relative",
   backgroundColor: "#8A8A8A",
   color: "white",
