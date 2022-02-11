@@ -27,6 +27,7 @@ const speakerImageStyle = {
   border: "10px solid rgba(221,17,51,.73)",
   height: "200px",
   width: "200px",
+  padding: "5px"
 };
 
 const speakerInfoStyle = {
@@ -49,7 +50,6 @@ const layerStyle = {
   left: "34%",
   width: "45%",
   backgroundColor: "rgba(221,17,51,.73)",
-  color: "white",
   borderRadius: "10px",
 };
 
