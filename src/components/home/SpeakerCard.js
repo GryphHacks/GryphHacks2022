@@ -4,8 +4,8 @@ const SpeakerCard = ({member}) => {
   return (
     <div style={speakerCardStyle}>
       <img style={speakerImageStyle} alt={member.name} src={member.image} />
-      <div style={layerStyle} />
       <div style={speakerInfoStyle}>
+        <div style={layerStyle} />
         <h4>{member.name}</h4>
         <h5 style={{fontSize: "15px"}}>{member.role}</h5>
         <br />
@@ -31,7 +31,6 @@ const speakerImageStyle = {
 };
 
 const speakerInfoStyle = {
-  zIndex: "1",
   textAlign: "left",
   position: "relative",
   backgroundColor: "#8A8A8A",
@@ -45,11 +44,12 @@ const speakerInfoStyle = {
 };
 
 const layerStyle = {
-  zIndex: "0",
+  zIndex: "-1", // z-index applies only to absolutely positioned elements
   position: "absolute",
-  height: "50%",
-  left: "34%",
-  width: "45%",
+  height: "100%",
+  width: "100%",
+  top: "5%",
+  right: "2%",
   backgroundColor: "rgba(221,17,51,.73)",
   borderRadius: "10px",
 };
