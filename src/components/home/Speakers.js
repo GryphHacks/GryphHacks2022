@@ -25,17 +25,18 @@ const speakerSeparatorStyle = {
 };
 
 const speakerContent = {
-  paddingTop:"5%",
-  paddingBottom:"10%",
-}
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  paddingTop: "5%",
+  paddingBottom: "5%",
+};
 
 const speakerStyle = {
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-around",
-  paddingTop: "5%",
-  paddingLeft: "10%",
-  paddingRight: "10%",
+  padding: "5% 10%",
+  border: "2px solid rgba(221,17,51,.73)",
+  align: "center",
+  width: "80%"
 };
 
 export default Speakers;

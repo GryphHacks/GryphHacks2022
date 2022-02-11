@@ -35,10 +35,7 @@ const speakerInfoStyle = {
   position: "relative",
   backgroundColor: "#8A8A8A",
   color: "white",
-  paddingTop: "5%",
-  paddingBottom: "5%",
-  paddingLeft: "5%",
-  paddingRight: "5%",
+  padding: "5%",
   width: "60%",
   borderRadius: "10px",
 };
