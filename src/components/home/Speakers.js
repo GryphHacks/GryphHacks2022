@@ -1,13 +1,12 @@
 import React from 'react'
-import './stylesheet/speakers.css'
 import speakers from "../../data/speaker.json";
 import SpeakerCard from './SpeakerCard';
 
 const Speakers = () => {
   return (
     <div>
-      <hr className="speakerSeparator" />
-      <div className="speakerContent">
+      <hr style={speakerSeparatorStyle} />
+      <div style={speakerContent}>
         <h1>KEYNOTE SPEAKERS</h1>
         <div style={speakerStyle}>
           <SpeakerCard member={speakers[0]} />
@@ -15,6 +14,18 @@ const Speakers = () => {
       </div>
     </div>
   );
+}
+
+const speakerSeparatorStyle = {
+  backgroundColor: "#FFC14A",
+  opacity: "1",
+  padding: "2%",
+  width: "100%",
+}
+
+const speakerContent = {
+  paddingTop:"5%",
+  paddingBottom:"10%",
 }
 
 const speakerStyle = {
