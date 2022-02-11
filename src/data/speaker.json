@@ -1,8 +1,22 @@
 [
     {
         "id":1,
-        "name":"Joe Smith",
+        "name":"Walt Disney",
         "image":"images/sampleImage.jpeg",
         "role":"Software Engineer @ Google"
+    },
+    {
+        "id":2,
+        "name":"Scooby Doo",
+        "image":"images/sampleImage.jpeg",
+        "role":"Product Manager @ DoorDash"
+    },
+    {
+        "id":3,
+        "name":"Wal Greens",
+        "image":"images/sampleImage.jpeg",
+        "role":"Software Developer @ Netflix"
     }
+
+
 ]

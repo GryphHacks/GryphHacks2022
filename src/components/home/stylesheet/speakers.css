@@ -1,0 +1,12 @@
+.speakerSeparator {
+  background-color: #FFC14A;
+  opacity: 1;
+  padding: 2%;
+  width: 100%;
+}
+
+.speakerContent {
+  padding-top:10%;
+  padding-bottom:10%;
+}
+

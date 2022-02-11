@@ -12,7 +12,7 @@ const Contact = () => {
         <h1>Contact Us</h1>
         <hr/>
         <p>We would love to hear from you :)</p>
-        <img className='contact-img' src={image} alt="Image of person working at desk"/>
+        <img className='contact-img' src={image} alt="person working at desk"/>
       </div>
     </div>
     <br />
