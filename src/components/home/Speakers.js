@@ -8,7 +8,7 @@ const Speakers = () => {
     <div>
       <hr style={speakerSeparatorStyle} />
       <div style={speakerContent}>
-        <h1>KEYNOTE SPEAKERS</h1>
+        <h1 style={{"letter-spacing": "10px"}}>KEYNOTE SPEAKERS</h1>
         <div style={speakerStyle}>
           <SpeakerCard member={speakers[0]} />
         </div>
@@ -33,6 +33,7 @@ const speakerContent = {
 };
 
 const speakerStyle = {
+  marginTop: "3%",
   padding: "5% 10%",
   border: "2px solid rgba(221,17,51,.73)",
   align: "center",
