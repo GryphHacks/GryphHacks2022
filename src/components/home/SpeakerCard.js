@@ -17,6 +17,7 @@ const SpeakerCard = ({member}) => {
 const speakerCardStyle = {
   display: "flex",
   columnGap: "5%",
+  justifyContent: "center",
   alignItems: "center"
 }
 
@@ -33,7 +34,7 @@ const speakerInfoStyle = {
   paddingBottom: "5%",
   paddingLeft: "5%",
   paddingRight: "5%",
-  width: "75%",
+  width: "60%",
   borderRadius: "10px",
 };
 
