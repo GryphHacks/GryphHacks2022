@@ -42,6 +42,7 @@ const speakerInfoStyle = {
   padding: "5%",
   width: "60%",
   borderRadius: "10px",
+  boxShadow: "-2px 2px 5px rgb(128, 128, 128)",
 };
 
 // bottom layer of info section of Speaker Card
@@ -54,6 +55,7 @@ const layerStyle = {
   right: "15px",
   backgroundColor: "rgba(221,17,51,.73)",
   borderRadius: "10px",
+  boxShadow: "-5px 5px 10px rgb(180, 186, 194)",
 };
 
 export default SpeakerCard;
