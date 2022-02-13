@@ -39,8 +39,8 @@ const Speakers = () => {
 //circuit image
 const circuitImageStyle = {
   position: "absolute",
-  height: "25%",
-  width: "25%",
+  height: "30%",
+  width: "20%",
   zIndex: "-1",
 };
 
