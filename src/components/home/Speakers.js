@@ -9,9 +9,9 @@ import "./stylesheet/sponsor_carousel.css";
 const Speakers = () => {
   return (
     <div style={{"position": "relative"}}>
-      <img style={{...circuitImageStyle, ...{"left": "0", "top": "5%"}}} src={circuit} alt="circuit" />
-      <hr style={speakerSeparatorStyle} />
-      <div style={speakerContent}>
+      <img style={{...imgStyle, ...{"left": "0", "top": "5%"}}} src={circuit} alt="circuit" />
+      <hr style={separatorStyle} />
+      <div style={contentStyle}>
         <h1 style={{ "letter-spacing": "10px" }}>KEYNOTE SPEAKERS</h1>
         <Carousel
           className='speaker-carousel'
@@ -31,13 +31,13 @@ const Speakers = () => {
           ))}
         </Carousel>
       </div>
-      <img style={{...circuitImageStyle, ...{"transform": "rotate(180deg)", "right": "0", "bottom": "-15%"}}} src={circuit} alt="circuit" />
+      <img style={{...imgStyle, ...{"transform": "rotate(180deg)", "right": "0", "bottom": "-15%"}}} src={circuit} alt="circuit" />
     </div>
   );
 }
 
 //circuit image
-const circuitImageStyle = {
+const imgStyle = {
   position: "absolute",
   height: "30%",
   width: "20%",
@@ -45,7 +45,7 @@ const circuitImageStyle = {
 };
 
 // top separator
-const speakerSeparatorStyle = {
+const separatorStyle = {
   backgroundColor: "var(--gryphyellow)",
   opacity: "1",
   padding: "2%",
@@ -53,7 +53,7 @@ const speakerSeparatorStyle = {
 };
 
 // all text and content within the Keynote Speakers section on Landing
-const speakerContent = {
+const contentStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",

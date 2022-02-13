@@ -2,9 +2,9 @@ import React from 'react';
 
 const SpeakerCard = ({member}) => {
   return (
-    <div style={speakerCardStyle}>
-      <img style={speakerImageStyle} alt={member.name} src={member.image} />
-      <div style={speakerInfoStyle}>
+    <div style={cardStyle}>
+      <img style={photoStyle} alt={member.name} src={member.image} />
+      <div style={infoCardStyle}>
         <div style={layerStyle} />
         <h4>{member.name}</h4>
         <h5 style={{fontSize: "15px"}}>{member.role}</h5>
@@ -16,7 +16,7 @@ const SpeakerCard = ({member}) => {
 }
 
 // main Speakers component content - Speaker Card (photo and info section)
-const speakerCardStyle = {
+const cardStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -25,7 +25,7 @@ const speakerCardStyle = {
 }
 
 // image in Speaker Card
-const speakerImageStyle = {
+const photoStyle = {
   borderRadius: "50%",
   border: "10px solid rgba(221,17,51,.73)",
   height: "200px",
@@ -34,7 +34,7 @@ const speakerImageStyle = {
 };
 
 // info section in Speaker Card
-const speakerInfoStyle = {
+const infoCardStyle = {
   textAlign: "left",
   position: "relative",
   backgroundColor: "#8A8A8A",
