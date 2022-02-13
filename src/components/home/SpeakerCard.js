@@ -21,10 +21,9 @@ const speakerCardStyle = {
   justifyContent: "center",
   alignItems: "center",
   columnGap: "5%",
-  marginTop: "3%",
+  // marginTop: "3%",
   padding: "5% 5%",
-  width: "70%",
-  border: "2px solid rgba(221,17,51,.73)",
+  // border: "2px solid rgba(221,17,51,.73)",
 }
 
 // image in Speaker Card

@@ -1,12 +1,14 @@
   .carousel  {
-    background-color:
-    #4A4A4A;
+    background-color:#4A4A4A;
     height:515px;
     border-radius: 10px;
-
   }
 
-
+/* overriding CSS property values for Keynote Speaker carousel */
+.speaker-carousel .carousel {
+    background-color:transparent;
+    height: auto;
+}
 
 .carousel.carousel-slider {
     overflow: inherit;
@@ -30,7 +32,7 @@
 }
 
 .carousel .control-next.control-arrow:before {
-    border: solid white;
+    border: solid rgb(167, 161, 161);
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 5px;
@@ -39,7 +41,7 @@
 }
 
 .carousel .control-prev.control-arrow:before {
-    border: solid white;
+    border: solid rgb(167, 161, 161);
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 5px;
