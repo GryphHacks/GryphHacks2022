@@ -15,13 +15,19 @@ const SpeakerCard = ({member}) => {
   );
 }
 
+// main Speakers component content - Speaker Card (photo and info section)
 const speakerCardStyle = {
   display: "flex",
-  columnGap: "5%",
   justifyContent: "center",
-  alignItems: "center"
+  alignItems: "center",
+  columnGap: "5%",
+  marginTop: "3%",
+  padding: "5% 5%",
+  width: "70%",
+  border: "2px solid rgba(221,17,51,.73)",
 }
 
+// image in Speaker Card
 const speakerImageStyle = {
   borderRadius: "50%",
   border: "10px solid rgba(221,17,51,.73)",
@@ -30,6 +36,7 @@ const speakerImageStyle = {
   padding: "5px"
 };
 
+// info section in Speaker Card
 const speakerInfoStyle = {
   textAlign: "left",
   position: "relative",
@@ -40,6 +47,7 @@ const speakerInfoStyle = {
   borderRadius: "10px",
 };
 
+// bottom layer of info section of Speaker Card
 const layerStyle = {
   position: "absolute",
   zIndex: "-1", // z-index applies only to absolutely positioned elements

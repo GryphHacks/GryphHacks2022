@@ -10,9 +10,7 @@ const Speakers = () => {
       <hr style={speakerSeparatorStyle} />
       <div style={speakerContent}>
         <h1 style={{ "letter-spacing": "10px" }}>KEYNOTE SPEAKERS</h1>
-        <div style={speakerStyle}>
-          <SpeakerCard member={speakers[0]} />
-        </div>
+        <SpeakerCard member={speakers[0]} />
       </div>
       <img style={{...circuitImageStyle, ...{"transform": "rotate(180deg)", "right": "0", "bottom": "-15%"}}} src={circuit} alt="circuit" />
     </div>
@@ -42,14 +40,6 @@ const speakerContent = {
   alignItems: "center",
   paddingTop: "5%",
   paddingBottom: "5%",
-};
-
-// div around SpeakerCard component
-const speakerStyle = {
-  marginTop: "3%",
-  padding: "5% 5%",
-  border: "2px solid rgba(221,17,51,.73)",
-  width: "70%"
 };
 
 export default Speakers;
