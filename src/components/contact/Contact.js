@@ -5,7 +5,6 @@ import image from "../../assets/ContactDesk.svg"
 const Contact = () => {
 
   return (
-  <div>
     <div className="contact-page">
       <ContactForm />
       <div className="contact-text">
@@ -14,9 +13,8 @@ const Contact = () => {
         <p>We would love to hear from you :)</p>
         <img className='contact-img' src={image} alt="person working at desk"/>
       </div>
+      <br />
     </div>
-    <br />
-  </div>
   );
 }
 export default Contact;
