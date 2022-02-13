@@ -4,7 +4,7 @@
     border-radius: 10px;
   }
 
-/* overriding CSS property values for Keynote Speaker carousel */
+/* overriding styling for Keynote Speaker carousel */
 .speaker-carousel .carousel {
     background-color:transparent;
     height: auto;
@@ -32,7 +32,7 @@
 }
 
 .carousel .control-next.control-arrow:before {
-    border: solid rgb(167, 161, 161);
+    border: solid white;
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 5px;
@@ -41,7 +41,7 @@
 }
 
 .carousel .control-prev.control-arrow:before {
-    border: solid rgb(167, 161, 161);
+    border: solid white;
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 5px;
@@ -49,7 +49,24 @@
     -webkit-transform: rotate(135deg);
 }
 
+/* overriding styling for Keynote Speaker carousel arrows */
+.speaker-carousel .carousel .control-next.control-arrow:before {
+    border: solid rgb(167, 161, 161);
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
+.speaker-carousel .carousel .control-prev.control-arrow:before {
+    border: solid rgb(167, 161, 161);
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
 
 .headingCSS  {
     color: #212121;
