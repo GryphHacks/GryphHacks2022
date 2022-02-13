@@ -24,7 +24,7 @@ const Speakers = () => {
           width = {1032}
           emulateTouch = {true}
           swipeable = {true}
-          showIndicators={false}
+          showIndicators={true}
         >
           {speakers.map((speaker) => (
             <SpeakerCard member={speaker} />

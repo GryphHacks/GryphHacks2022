@@ -22,6 +22,7 @@ const cardStyle = {
   alignItems: "center",
   columnGap: "5%",
   padding: "5% 5%",
+  marginBottom: "20px"
 }
 
 // image in Speaker Card
