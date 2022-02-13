@@ -43,7 +43,7 @@ const infoCardStyle = {
   padding: "5%",
   width: "60%",
   borderRadius: "10px",
-  boxShadow: "-2px 2px 5px rgb(128, 128, 128)",
+  boxShadow: "-3px 3px 3px rgb(122,122,122)",
 };
 
 // bottom layer of info section of Speaker Card
