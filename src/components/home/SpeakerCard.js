@@ -41,12 +41,12 @@ const speakerInfoStyle = {
 };
 
 const layerStyle = {
-  zIndex: "-1", // z-index applies only to absolutely positioned elements
   position: "absolute",
+  zIndex: "-1", // z-index applies only to absolutely positioned elements
   height: "100%",
   width: "100%",
-  top: "5%",
-  right: "2%",
+  top: "15px",
+  right: "15px",
   backgroundColor: "rgba(221,17,51,.73)",
   borderRadius: "10px",
 };
