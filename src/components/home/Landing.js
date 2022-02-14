@@ -37,7 +37,7 @@ const Landing = () => {
       <br/>  
       <Judges/>
       <br/>
-      <Speakers/>
+      {/* <Speakers/> */}
       <br/>
     </div>
   );
