@@ -35,9 +35,9 @@ const Landing = () => {
       <br/><br/><br/>
       <LogoShowcase/>
       <br/>  
-      <Judges/>
+      <Speakers/>
       <br/>
-      {/* <Speakers/> */}
+      <Judges/>
       <br/>
     </div>
   );
