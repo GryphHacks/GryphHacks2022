@@ -28,5 +28,11 @@
         "name":"Joe Smith",
         "image":"images/GryphMissingPic.png",
         "role":"Software Engineer @ Google"
+    },
+    {
+        "id":6,
+        "name":"Joe Smith",
+        "image":"images/GryphMissingPic.png",
+        "role":"Software Engineer @ Google"
     }
 ]

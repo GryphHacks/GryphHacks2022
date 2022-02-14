@@ -1,15 +1,16 @@
 import React from 'react'
+import './stylesheet/guestCard.css';
 
 const GuestCard = ({ member }) => {
     return (
         <div>
-            <img width="200" height="200" alt={member.name + "'s image"} src={member.image}/>
-            <h4>
-                {member.name}    
-            </h4>
-            <p>
-                {member.role}
-            </p>
+            <div className="card-body">
+                <img className="card-img" src={member.image} alt={member.name + "'s Profile image"}></img>
+                <h5 className="card-title">{member.name}</h5>
+                <p className="card-text">{member.role}</p>
+            </div>
+
+
         </div>
     )
 }
