@@ -1,12 +1,14 @@
-  .carousel  {
-    background-color:
-    #4A4A4A;
-    height:515px;
-    border-radius: 10px;
+.carousel  {
+  background-color:#4A4A4A;
+  height:515px;
+  border-radius: 10px;
+}
 
-  }
-
-
+/* overriding styling for Keynote Speaker carousel */
+.speaker-carousel .carousel {
+    background-color:transparent;
+    height: auto;
+}
 
 .carousel.carousel-slider {
     overflow: inherit;
@@ -22,7 +24,6 @@
     background-color: transparent;
     left: 30px;
     top:0px;
-
 }
 
 .carousel .control-arrow, .carousel.carousel-slider .control-arrow{
@@ -47,14 +48,37 @@
     -webkit-transform: rotate(135deg);
 }
 
+/* overriding styling for Keynote Speaker carousel arrows */
+.speaker-carousel .carousel .control-next.control-arrow:before {
+    border: solid rgb(167, 161, 161);
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
+.speaker-carousel .carousel .control-prev.control-arrow:before {
+    border: solid rgb(167, 161, 161);
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+/* adding indicator for Speaker carousel */
+.speaker-carousel .carousel .control-dots .dot {
+    height: 10px;
+    width: 10px;
+    background: #4A4A4A;
+}
 
 .headingCSS  {
     color: #212121;
     letter-spacing:20px;
     margin-bottom:35px;
-
-    }
+}
 
 .logo   {
     position:absolute;
