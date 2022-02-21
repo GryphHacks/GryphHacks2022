@@ -1,8 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory,NavLink } from "react-router-dom";
 import { logOut } from "../actions/user";
 import firebase from "../firebase";
 import "./stylesheet/navbar.css";
+
 
 import Logo from "../assets/WhiteNavbarGryphon.png";
 
@@ -41,7 +42,7 @@ const NavBar = () => {
         </div>
 
         <button
-          className="navbar-toggler"
+          className="navbar-toggler navbar-dark"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -55,52 +56,52 @@ const NavBar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <Link to="/" className=" nav-word">
+                <NavLink to="/" className=" nav-word" activeClassName="underline" exact={true}>
                   Home
-                </Link>
+                </NavLink>
               </li>
             </div>
 
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <Link to="/about" className=" nav-word">
+                <NavLink to="/about" className=" nav-word"  activeClassName="underline">
                   About Us
-                </Link>
+                </NavLink>
               </li>
             </div>
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <Link to="/sponsor" className=" nav-word">
+                <NavLink to="/sponsor" className=" nav-word"  activeClassName="underline">
                   Sponsors
-                </Link>
+                </NavLink>
               </li>
             </div>
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <Link to="/schedule" className=" nav-word">
+                <NavLink to="/schedule" className=" nav-word"  activeClassName="underline">
                   Schedule
-                </Link>
+                </NavLink>
               </li>
             </div>
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <Link to="/shop" className=" nav-word">
+                <NavLink to="/shop" className=" nav-word"  activeClassName="underline">
                   Shop
-                </Link>
+                </NavLink>
               </li>
             </div>
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <Link to="/faq" className=" nav-word">
+                <NavLink to="/faq" className=" nav-word" activeClassName="underline">
                   FAQ
-                </Link>
+                </NavLink>
               </li>
             </div>
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <Link to="/contact" className=" nav-word">
+                <NavLink to="/contact" className=" nav-word"  activeClassName="underline">
                   Contact Us
-                </Link>
+                </NavLink>
               </li>
             </div>
 

@@ -9,11 +9,16 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-
 .navbar-link-box:focus-within {
     border-bottom: 3px solid var(--darkred);
     padding-bottom: 0;
     background-color: #292626;
+} 
+
+.underline{
+    /* border-bottom: 3px solid var(--darkred);
+    padding-bottom: 0;
+    background-color: #292626; */
 }
 
 .navbar-logo {
@@ -52,4 +57,10 @@
 
 .navbar-link-box:hover {
     background-color: var(--greyhover);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    box-shadow: none;
 }
