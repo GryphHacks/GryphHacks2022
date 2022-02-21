@@ -18,6 +18,7 @@
 }
 
 .answer-collapse {
+    padding: 0;
     margin: auto;
     background-color: transparent;
     overflow: hidden;
@@ -32,12 +33,13 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 10px 10px;
     max-width:450px;
-    transition: max-height 2s  ease;
-    transition-timing-function: cubic-bezier(0, 1.1, 0, 1.1);
+    transition: max-height 1s  ease;
+    transition-timing-function: cubic-bezier(0, 1, 0, 1);
     max-height:0;
    }
    
 .answer-collapse.show {
+  padding: 1rem;
   margin: auto;
     position: relative;
     z-index: -1;
@@ -52,9 +54,10 @@
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 10px 10px;
-    transition: max-height 2s  ease;
+    transition: max-height 1s  ease;
     max-height:500px;
     max-width:450px;
+    transition-timing-function: cubic-bezier(0, 0.1, 0, 0.1);
     overflow:hidden;
    }
  
