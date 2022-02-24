@@ -18,7 +18,7 @@ const Landing = () => {
             <h1 style={{color : 'var(--rubyred)'}}>Hacks/&gt;</h1>
           </div>
           <div className = "info-div">
-            <h3 className = "info-text">March 11-12,2022</h3>
+            <h3 className = "info-text">May 20-22, 2022</h3>
             <h3 className = "separator">&nbsp;|&nbsp;</h3>
             <h3 className = "info-text">Virtual Hackathon</h3>
           </div>
