@@ -58,9 +58,3 @@
 .navbar-link-box:hover {
     background-color: var(--greyhover);
 }
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    box-shadow: none;
-}

@@ -3,6 +3,7 @@ import { Link, useHistory,NavLink } from "react-router-dom";
 import { logOut } from "../actions/user";
 import firebase from "../firebase";
 import "./stylesheet/navbar.css";
+import "./stylesheet/hamburger.css";
 
 
 import Logo from "../assets/WhiteNavbarGryphon.png";
@@ -28,7 +29,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg sticky-top float-right">
+    <nav className="navbar navbar-expand-lg sticky-top float-right navbar-dark">
       <div className="container-fluid">
         <div className="logo-div-navbar">
           <Link to="/" >
@@ -42,7 +43,7 @@ const NavBar = () => {
         </div>
 
         <button
-          className="navbar-toggler navbar-dark"
+          className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -50,7 +51,9 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="toggler-icon top-bar"></span>
+          <span className="toggler-icon middle-bar"></span>
+          <span className="toggler-icon bottom-bar"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
