@@ -6,19 +6,21 @@
 
 .navbar-link-box {
     transition: background-color 0.3s ease;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    line-height: 32px;
+    height: 50px;
 }
-.navbar-link-box:focus-within {
+/* .navbar-link-box:focus-within {
     border-bottom: 3px solid var(--darkred);
     padding-bottom: 0;
     background-color: #292626;
-} 
+}  */
 
 .underline{
-    /* border-bottom: 3px solid var(--darkred);
-    padding-bottom: 0;
-    background-color: #292626; */
+    border-bottom: 3px solid var(--darkred);
+    background-color: #292626;
+    line-height: 32px;
+    height: 50px;
+  
 }
 
 .navbar-logo {
