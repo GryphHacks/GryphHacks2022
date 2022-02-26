@@ -18,17 +18,33 @@
 }
 
 .subText {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
-.blink4 {
-    animation: blinker 1s linear infinite;
+.blink {
+    animation: blinker 2s linear infinite;
     color: black;
+}
+
+.return-home {
+    background-color: var(--rubyred);
+    border-radius: 25px;
+    color: white;
+    border:none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: ease-in-out 0.1s;
+}
+.return-home:hover {
+    background-color: rgb(209, 5, 39);
+    transition: ease-in-out 0.2s;
 }
 
 @keyframes blinker {
     50% {
-        opacity: 0;
+        opacity: 0.5;
         color: var(--gryphred);
     }
 }
