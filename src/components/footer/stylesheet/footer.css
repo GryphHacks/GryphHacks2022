@@ -6,30 +6,23 @@ footer {
     bottom: 0;
     width: 100%;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
-    /* display: flex;
-    justify-content: center; */
-
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    /* align-items: center; */
-    justify-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 
 footer .wrapper {
     width: 75%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
 }
 
 .col {
     padding: 20px;
     box-sizing: border-box;
-    margin-right: 20px;
     margin-bottom: 20px;
-    /* flex-basis: 40%;
-    flex-wrap: nowrap; */
 }
 
 footer .newsletter {
@@ -38,12 +31,12 @@ footer .newsletter {
 
 footer .social {
     text-align: center;
+    flex-grow: 2;
 }
 
 footer .questions {
     text-align: end;
-    /* TODO what is the actual calculation for how far to translate to make it even? */
-    transform: translateX(-24%);
+    margin-right: 0;
 }
 
 .footer-bottom {
@@ -76,3 +69,18 @@ footer a:hover {
     left: 0;
     display: block;
 } */
+
+@media (max-width: 970px) {
+    footer .social {
+        text-align: end;
+    }
+    footer .questions {
+        text-align: start;
+    }
+}
+
+@media (max-width: 735px) {
+    footer .social {
+        text-align: start;
+    }
+}
