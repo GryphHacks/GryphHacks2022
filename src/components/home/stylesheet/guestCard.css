@@ -22,6 +22,6 @@
 }
 
 /* change border colour on card hover */
-.card-body:hover .card-img {
+.card-img:hover {
     border-color: var( --gryphyellow);
 }
