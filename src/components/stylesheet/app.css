@@ -6,8 +6,9 @@
   --gryphyellow: #FFC14A;
   --lightgrey: #C4C4C4;
   --darkgrey: #3D3D3D;
+  --greyhover: #505050;
+  --selectgrey: #323232;
   --softblack: #242425;
-  --greyhover: #5f5c5c;
 }
 
 body {
