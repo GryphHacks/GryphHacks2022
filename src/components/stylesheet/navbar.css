@@ -17,10 +17,15 @@
 
 .underline{
     border-bottom: 3px solid var(--darkred);
-    background-color: #292626;
+    background-color: var(--selectgrey);
     line-height: 32px;
     height: 50px;
-  
+}
+
+@media screen and (max-width: 992px) {
+    .underline {
+        border-bottom: none;
+    }
 }
 
 .navbar-logo {
@@ -44,6 +49,7 @@
 }
 
 .nav-word {
+    text-align: center;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     display: block;

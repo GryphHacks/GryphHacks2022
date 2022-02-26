@@ -2,7 +2,7 @@
     width: 20px;
     height: 20px;
     position: relative;
-    transition: .5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .navbar-toggler,
@@ -25,12 +25,12 @@
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #d3531a;
+    background: #f7f7f7;
     border-radius: 1px;
     opacity: 1;
-    left: 0;
+    left: -5px;
     transform: rotate(0deg);
-    transition: .25s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .middle-bar {
@@ -43,6 +43,7 @@
     position: absolute;
     top: 0px;
     transform: rotate(0deg);
+    transform-origin: left;
 }
 
 .navbar-toggler.collapsed .middle-bar {
@@ -61,7 +62,7 @@
 /* when menu is clicked */
 .navbar-toggler .top-bar {
     top: inherit;
-    transform: rotate(135deg);
+    transform: rotate(45deg);
 }
 
 .navbar-toggler .middle-bar {
@@ -72,5 +73,5 @@
 
 .navbar-toggler .bottom-bar {
     top: inherit;
-    transform: rotate(-135deg);
+    transform: rotate(-45deg);
 }

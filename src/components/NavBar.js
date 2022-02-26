@@ -59,7 +59,7 @@ const NavBar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <NavLink to="/" className=" nav-word" activeClassName="underline" exact={true}>
+                <NavLink to="/" className="nav-word" activeClassName="underline" exact={true}>
                   Home
                 </NavLink>
               </li>
@@ -67,7 +67,7 @@ const NavBar = () => {
 
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <NavLink to="/about" className=" nav-word"  activeClassName="underline">
+                <NavLink to="/about" className="nav-word"  activeClassName="underline">
                   About Us
                 </NavLink>
               </li>
@@ -129,7 +129,7 @@ const NavBar = () => {
                 </Link>
               </li>
             )} */}
-            {isAuthenticated && (
+            {/* {isAuthenticated && (
               <li className="nav-item">
                 <button
                   className="nav-link"
@@ -138,7 +138,7 @@ const NavBar = () => {
                   Log Out
                 </button>
               </li>
-            )}
+            )} */}
           </ul>
         </div>
       </div>
