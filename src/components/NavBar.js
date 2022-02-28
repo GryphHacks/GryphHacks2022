@@ -6,7 +6,7 @@ import "./stylesheet/navbar.css";
 import "./stylesheet/hamburger.css";
 
 
-import Logo from "../assets/WhiteNavbarGryphon.png";
+import Logo from "../assets/WhiteNavbarGryph.svg";
 
 const NavBar = () => {
   const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
@@ -79,20 +79,20 @@ const NavBar = () => {
                 </NavLink>
               </li>
             </div>
-            <div className="navbar-link-box">
+            {/* <div className="navbar-link-box">
               <li className="nav-item-link">
                 <NavLink to="/schedule" className=" nav-word"  activeClassName="underline">
                   Schedule
                 </NavLink>
               </li>
-            </div>
-            <div className="navbar-link-box">
+            </div> */}
+            {/* <div className="navbar-link-box">
               <li className="nav-item-link">
                 <NavLink to="/shop" className=" nav-word"  activeClassName="underline">
                   Shop
                 </NavLink>
               </li>
-            </div>
+            </div> */}
             <div className="navbar-link-box">
               <li className="nav-item-link">
                 <NavLink to="/faq" className=" nav-word" activeClassName="underline">

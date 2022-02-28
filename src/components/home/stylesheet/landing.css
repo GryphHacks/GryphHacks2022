@@ -39,7 +39,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    /* background-attachment: fixed; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.8)) , url('../../../assets/PolygonBackground1920x1080.svg');  
     background-size: cover;
     background-repeat: no-repeat; 

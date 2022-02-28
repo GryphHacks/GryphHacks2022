@@ -14,7 +14,7 @@
 body {
   font-family: 'Sora';
   font-size: small;
-  /* background:  url("../../assets/Circuit\ Board.svg") repeat fixed center; */
+  /* height: 100%; */
 }
 
 body::before {
@@ -31,9 +31,24 @@ body::before {
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* May have issues on mobile? html height is alt */
+  /* May have issues on mobile? html height is alt */
+  min-height: 100vh; 
 }
 
 .content {
   flex: 1;
+}
+
+.page-content {
+  margin: auto;
+  width: 80%;
+  background:  rgba(138, 138, 138, 0.4);
+  height: 100%;
+}
+
+.section-title {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
