@@ -1,19 +1,21 @@
 .newsletter-form {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: nowrap;
+
 }
     
 .newsletter-form button {
     border: none;
-    border-radius: 2px 2px 2px 2px;
-    background-color: var(--gryphred);
+    border-radius: 5px;
+    background-color: var(--rubyred);
     /* box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
     color: white;
     font-size: 14px;
     text-align: center;
 
-    margin-top: 12px;
-    height: 32px;
+    height: 36px;
     width: 90px;
 
     transition: background-color 0.08s ease;
@@ -25,14 +27,12 @@
 
 .newsletter-form button:active {
     background-color: #d32828;
-    box-shadow: inset 0px 0px 5px #b62222;
     outline: none;
 }
 
 .custom-field {
     position: relative;
     font-size: 14px;
-    margin-bottom: 10px;
 }
 
 .custom-field .placeholder {
@@ -60,19 +60,18 @@
 }
 
 .custom-field input {
-    border: 2px solid #3D3D3D;
+    border: 3px solid transparent;
     border-radius: 3px;
 
-    padding: 6px;
+    padding: 5px;
     font-size: 14px;
     
     outline: none;
     width: 250px;
     padding-left: 10px;
-    /* font-size: 12px; */
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 3px;
+    margin-right: 8px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 
     transition: border-color 0.1s ease;
