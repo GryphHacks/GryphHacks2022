@@ -41,6 +41,7 @@
 .sponsor-link-div {
     display: flex;
     align-items: center;
+    font-size: 14px;
     padding: 20px;
 }
 .sponsor-link-div span {
@@ -49,6 +50,7 @@
 
 .link {
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .link:hover {

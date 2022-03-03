@@ -10,7 +10,8 @@ const Speakers = () => {
   return (
     <div style={{"position": "relative"}}>
       <img style={{...imgStyle, ...{"left": "0", "top": "5%"}}} src={circuit} alt="circuit" />
-      <hr style={separatorStyle} />
+      {/* TODO this separator is part of LogoShowcase background */}
+      {/* <hr style={separatorStyle} /> */}
       <div style={contentStyle}>
         <h1 style={{ "letter-spacing": "10px" }}>KEYNOTE SPEAKERS</h1>
         <Carousel

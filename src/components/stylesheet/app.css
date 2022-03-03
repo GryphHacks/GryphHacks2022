@@ -3,9 +3,12 @@
   --rubyred: #DD1133;
   --gryphred: #D82929;
   --redhover: rgb(231, 27, 61);
+  --redclick: #c5112f;
   --gryphyellow: #FFC14A;
+  --lightyellow: #ffcf76;
   --lightgrey: #bbbbbb;
   --darkgrey: #3D3D3D;
+  --midgrey: #464646;
   --greyhover: #505050;
   --selectgrey: #323232;
   --softblack: #242425;
@@ -41,14 +44,25 @@ body::before {
 
 .page-content {
   margin: auto;
-  width: 80%;
-  background:  rgba(138, 138, 138, 0.4);
+  width: 75%;
+  background:  rgba(138, 138, 138, 0.3);
   height: 100%;
 }
 
 .section-title {
   font-size: 48px;
+  letter-spacing: 10px;
   text-align: center;
-  padding-top: 7%;
+  padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.red-button:hover {
+  background-color: var(--redhover);
+  transition: ease-in-out 0.3s;
+}
+
+.red-button:active {
+  background-color: var(--redclick);
+  outline: none;
 }

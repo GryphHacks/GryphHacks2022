@@ -18,7 +18,7 @@
     height: 36px;
     width: 90px;
 
-    transition: background-color 0.08s ease;
+    transition: background-color 0.1s ease;
 }
 
 .newsletter-form button:hover {
@@ -26,7 +26,7 @@
 }
 
 .newsletter-form button:active {
-    background-color: #d32828;
+    background-color: var(--redclick);
     outline: none;
 }
 
