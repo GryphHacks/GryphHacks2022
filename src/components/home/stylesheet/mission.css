@@ -1,6 +1,6 @@
 /* mission statement section */
 .missionSection {
-    background-color:#122F4C;
+    background-color: var(--gryphnavy);
     color: white;
     padding: 2% 10%;
     text-align: center;

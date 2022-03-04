@@ -7,23 +7,21 @@ const SponsorLanding = () => {
     const history = useHistory();
     return (
         <div>
-            <h1 className='section-title'>SPONSOR US</h1>
-            <div className='sponsor-landing-wrapper'>
-                <h5>The key to any successful hackathon are sponsors. From providing mentorship, to opening gateways
-                     to exciting opportunities, YOU are the reason our hackers can aim for the stars!
-                </h5>
-                <div className='sponsor-landing-card'>
-                    <p> We provide companies the opportunity to gain valuable insight and feedback from 300+
-                        emerging developers, entrepreneurs and designers. Our hackers will innovate potentially 
-                        using your products & technologies to bring their ideas to life. By sponsoring GryphHacks, 
-                        you will also be able to interact and build relations with potential future employees in a 
-                        new setting unlike a traditional interview!
-                    </p>
-                    <div className='become-sponsor'>
-                        <button className='red-button sponsor-button' onClick = {()=>history.push("/sponsor")}>Become a Sponsor </button>
-                        <Link id = "link"to = {SponsorPamphlet} target = "_blank">Sponsor's PDF</Link>
-                    </div>
-                </div>
+            <div className='sponsor-landing-card'>
+                <h1 className='section-title'>SPONSOR US</h1>
+                <p> The support of our sponsors is what makes this hackathon possible.  
+                    By sponsoring GryphHacks, you will be provided the opportunity to mentor, 
+                    connect with, and recruit passionate and innovative minds.  Our hackers will 
+                    use your products and technologies to bring their ideas to life, providing 
+                    you valuable insight from 300+ emerging developers, entrepreneurs, and designers.  
+                    <span className='sponsor-important'> 
+                        &nbsp;If you’d like to support us in our mission to bring students together to challenge 
+                        themselves and achieve their goals, check out our&nbsp; 
+                        {/* <Link id = "link" to = {SponsorPamphlet} target = "_blank"> here.</Link> */}
+                        <Link id='sponsor-link' onClick={()=>history.push("/sponsor")}>sponsorship packages.</Link>
+                    </span>
+                </p>
+                <button className='red-button sponsor-button' onClick = {()=>history.push("/contact")}>Become a Sponsor</button>
             </div>
         </div>
     )

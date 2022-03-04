@@ -7,11 +7,14 @@
   --gryphyellow: #FFC14A;
   --lightyellow: #ffcf76;
   --lightgrey: #bbbbbb;
+  --darkfade: rgba(61, 61, 61, 0.7);
   --darkgrey: #3D3D3D;
   --midgrey: #464646;
   --greyhover: #505050;
   --selectgrey: #323232;
   --softblack: #242425;
+  --blackfade: rgba(28, 28, 30, 0.8);
+  --gryphnavy: #122F4C;
 }
 
 body {
@@ -50,7 +53,7 @@ body::before {
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: 36px;
   letter-spacing: 10px;
   text-align: center;
   padding-top: 5%;
@@ -59,10 +62,11 @@ body::before {
 
 .red-button:hover {
   background-color: var(--redhover);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
 }
 
 .red-button:active {
   background-color: var(--redclick);
   outline: none;
+  transition: ease-in-out 0.2s;
 }
