@@ -1,13 +1,7 @@
-.sponsor-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .sponsor-box-centered {
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     width: 70%;
   }
@@ -50,13 +44,11 @@
 
   .list-flex {
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    flex: 0 1 auto;
   }
 
   .info-list {
     margin: 20px 0;
+    font-size: 16px;
   }
 
   .shadow-below {

@@ -124,20 +124,20 @@ const platinum = {
 
 
 const Sponsor = () => {
+
     return (
-        <div className='sponsor-box'>
-            <div className='sponsor-box-centered'>
-                <br/>
-                <h1>Sponsor Tiers</h1>
-                <PlatinumSponsorTier props={platinum}/>
-                <br/>
-                <div className='normal-sponsor'>
-                    {sponsorTiers.map(sponsorTier => (<SponsorTier key={sponsorTier.tier}  props = {sponsorTier} />))}
-                </div>
-                <br/>
-                <Link to = {Pdf} target = "_blank">Pamphlet</Link>
-                <p>Learn more here</p>
+        <div className='sponsor-box-centered'>
+            <h1>Sponsor Tiers</h1>
+            <br/>
+
+            <PlatinumSponsorTier props={platinum}/>
+            <br/>
+            <div className='normal-sponsor'>
+                {sponsorTiers.map(sponsorTier => (<SponsorTier key={sponsorTier.tier}  props = {sponsorTier} />))}
             </div>
+            <br/>
+            <Link to = {Pdf} target = "_blank">Pamphlet</Link>
+            <p>Learn more here</p>
         </div>
     )
 }
