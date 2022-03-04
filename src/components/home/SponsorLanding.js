@@ -18,7 +18,7 @@ const SponsorLanding = () => {
                         &nbsp;If you’d like to support us in our mission to bring students together to challenge 
                         themselves and achieve their goals, check out our&nbsp; 
                         {/* <Link id = "link" to = {SponsorPamphlet} target = "_blank"> here.</Link> */}
-                        <Link id='sponsor-link' onClick={()=>history.push("/sponsor")}>sponsorship packages.</Link>
+                        <Link to= "/sponsor" id='sponsor-link' >sponsorship packages.</Link>
                     </span>
                 </p>
                 <button className='red-button sponsor-button' onClick = {()=>history.push("/contact")}>Become a Sponsor</button>
