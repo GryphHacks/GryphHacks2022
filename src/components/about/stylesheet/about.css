@@ -15,7 +15,7 @@
 
 #about {
     border-radius: 10px;
-    background-color: var(--softblack);
+    background-color: var(--blackfade);
     display: -webkit-flex;
     display: flex;
     align-items: center;
