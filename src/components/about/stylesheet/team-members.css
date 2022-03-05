@@ -18,8 +18,7 @@
 }
 
 .team-member-card {
-    margin: 10px;
-    flex: 0 1 calc(20% - 20px); /* <-- adjusting for margin */
+    flex: 0 1 calc(25% - 20px); /* <-- adjusting for margin */
     text-align: center;
 }
 
@@ -48,7 +47,6 @@
 
 .team-member-grid {
     margin:auto;
-    margin-bottom: 5%;
     width: 80%;
     display: flex;
     justify-content: center;

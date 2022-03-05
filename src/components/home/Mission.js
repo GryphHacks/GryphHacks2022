@@ -7,7 +7,7 @@ import teamwork from '../../assets/teamwork.png';
 const Mission = () => {
   return (
     <div className="missionSection">
-        <h1 className="statement">3 WORD MISSION STATEMENT</h1>
+        <h1 className="section-title statement">OUR MISSION</h1>
         <div className="flex-container">
             <div className="item">
                 <img className="item-img" src={lightbulb} alt="lightbulb img"></img>

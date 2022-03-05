@@ -1,69 +1,57 @@
-#container1  {
-    float:center;
-    position: relative;
-    display: block;
-    border: 5px solid gray;
-    border-radius: 5px;
-    background-color: #4A4A4A;
-    height: auto;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+.sponsor-landing-card  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--midgrey);
+    /* background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(82,82,82,1) 100%); */
+    background:  var(--blackfade);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60%;
 }
 
-#p1{
+.sponsor-landing-card h1 {
+    color: var(--lightyellow);
+    text-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    padding-bottom: 3%;
+}
+
+.sponsor-landing-card p {
     color: white;
-    text-align: center;
-    font-size: 20px;
+    text-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    line-height: 2;
+    font-size: medium;
+    margin-top: auto;
+    width: 80%;
 }
 
-#p2{
-    float: left;
+.sponsor-landing-card span {
+    color: var(--lightyellow);
 }
 
-#button{
-    background-color: #DD1133;
+.sponsor-button {
+    background-color: var(--rubyred);
     border-radius: 20px;
     color: white;
     border:none;
-    padding: 10px 40px;
-    text-align: center;
-    font-size:medium;
-    position: relative;
-    margin-right: 10%;
-    margin-bottom: 10%;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    font-size:large;
+    transition: all 0.2s ease;
 }
 
-
-#link{
-    color: white;
-    position: relative;
-    font-size: auto;
-    align-items: center;
-    font-size: large;
+#sponsor-link {
+    letter-spacing: 0.5px;
+    /* font-weight: bold; */
+    color: var(--lightyellow);
+    transition: all .2s ease-in-out;
 }
 
-#textContainer{
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    float: center;
-    display:flex;
-    justify-content: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-#text{
-    font-size: auto;
-
-}
-
-#title{
-font-family: Sora;
-letter-spacing: 10px;
-color: #212121;
-font-style: normal;
-font-weight: normal;
-font-size: medium;
+#sponsor-link:hover {
+    color: #fffdf2;
 }

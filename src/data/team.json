@@ -22,7 +22,8 @@
         "title":"VP Internal",
         "image":"images/RomanSavelyev.jpg",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/roman-savelyev/",
+            "instagram":"https://www.instagram.com/roman.savelyev/"
         }
     },
     {   "id":4,
@@ -97,7 +98,7 @@
         "title":"Operations Associate",
         "image":"images/OwenDouglas.png",
         "social": {
-            "linkedin":""
+            "linkedin":"https://ca.linkedin.com/in/omdouglas"
         }
     },
     {   "id":14,
@@ -105,7 +106,8 @@
         "title":"Operations Associate",
         "image":"images/WilliamSiongSing.png",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/william-siong-244a68213",
+            "instagram":"https://www.instagram.com/william.siong"
         }
     },
     {   "id":23,
@@ -130,7 +132,7 @@
         "title":"Finance Associate",
         "image":"images/AliAsjad.jpg",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/ali-asjad-412515229"
         }
     },
     {   "id":17,
@@ -162,7 +164,8 @@
         "title":"VP Marketing",
         "image":"images/HasenRomani.jpg",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/hasen-romani/",
+            "instagram":"https://www.instagram.com/hasenromanii/"
         }
     },
     {   "id":21,
@@ -172,13 +175,5 @@
         "social": {
             "linkedin":"https://www.linkedin.com/in/layane-alhabian/"
         }
-    },
-    {   "id":22,
-        "name":"Manpreet Singh",
-        "title":"Marketing Asscoiate",
-        "image":"images/ManpreetSingh.jpg",
-        "social": {
-            "linkedin":""
-        }
-    }  
+    }
 ]
