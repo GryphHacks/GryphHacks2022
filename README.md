@@ -20,12 +20,14 @@ I suggest all the developers who are installing dependency to this project, plea
 ## Redux Devtools
 This project uses Redux, if you wish to use the Redux Devtools Chrome Extension, add `+ window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()` to the applyMiddleware() parameter where it creates the store.  It should look like the following:
 
+```
 ReactDOM.render(
   <Provider store = {createStore(reducers, applyMiddleware(reduxThunk)  + window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())}>
     <App />
   </Provider>,
   document.getElementById('root')
 );
+```
 
 ## Pull requests
 Please make pull requests to submit your changes. Also do specify clearly about exactly what changes you have made with your pull requests. Team lead will look over the changes and will approve/disapprove the pull requests.
