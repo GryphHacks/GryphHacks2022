@@ -43,7 +43,7 @@
   }
 
   .list-flex {
-    display: flex;
+    margin-top: auto;
   }
 
   .info-list {
