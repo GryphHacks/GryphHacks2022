@@ -1,85 +1,138 @@
-import Pdf from '../test.pdf';
+import Pdf from './Sponsor_Package.pdf';
 import { Link } from "react-router-dom";
 import SponsorTier from './SponsorTier';
-
+import PlatinumSponsorTier from './PlatinumSponsorTier';
+import "./stylesheet/sponsor_page.css"
 
 const sponsorTiers = [
     {
-        tier:"bronze",
-        about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        cost:500.00,
-        perks: [
-            {
-                item: "Lorem ipsum dolor sit amet"
-            },
-            {
-                item: "Lorem ipsum dolor sit amet"
-            },
-            {
-                item: "Lorem ipsum dolor sit amet"
-            },
-            {
-                item: "Lorem ipsum dolor sit amet"
-            },
-            {
-                item: "Lorem ipsum dolor sit amet"
-            }
-        ]
-    },
-    {
-        tier:"Silver",
-        about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        tier:"BRONZE",
+        about:"The bronze tier is the basic package for organizations to participate in GryphHacks offering:",
         cost:1000.00,
+        color:"#C39E82",
         perks: [
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "Dedicated discord channel"
             },
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "Custom hackathon category"
             },
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "Distribute swag"
             },
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "Social media mentions"
             },
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "Send 1 recruiter/company representative"
+            },
+            {
+                item: "Distribute recruiting materials/promo"
+            },
+            {
+                item: "Small integrated sponsor logo on website"
+            },
+        ]
+    },
+    {
+        tier:"SILVER",
+        about:"The silver tier offers all the advantages of the bronze tier in addition to:",
+        cost:2000.00,
+        color:"#A4A4A4",
+        perks: [
+            {
+                item: "A 30 minute workshop"
+            },
+            {
+                item: "1 judge on the judging panel"
+            },
+            {
+                item: "Access to hackies mailing list"
+            },
+            {
+                item: "Medium integrated sponsor logo on website"
             }
         ]
     },
     {
-        tier:"Gold",
-        about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        cost:5000.00,
+        tier:"GOLD",
+        about:"The gold tier offers all the advantages of the silver and bronze tier in addition to:",
+        cost:4000.00,
+        color:"#CAB377",
         perks: [
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "1 minute keynote or opening/closing remarks"
             },
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "An hour long workshop"
             },
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "2 judges on the judging panel"
             },
             {
-                item: "Lorem ipsum dolor sit amet"
+                item: "Branded sponsorship of the livestream"
             },
             {
-                item: "Lorem ipsum dolor sit amet"
-            }
+                item: "Social media takeover"
+            },
+            {
+                item: "Company showcase on website"
+            },
+            {
+                item: "Send 2 recruiters/company representatives"
+            },
+            {
+                item: "Large integrated sponsor logo on website"
+            },
+            {
+                item: "Receive hackies resumes"
+            },
         ]
     }
 ];
 
 
+const platinum = {
+    tier:"PLATINUM",
+    about:"The platinum tier is available for any organization who contributes over $8000 and contains all the benefits of the gold, silver and bronze tiers with the addition of:",
+    cost:8000.00,
+    color:"#5E97A9",
+    perks: [
+        {
+            item: "2 minute keynote or opening/closing remarks"
+        },
+        {
+            item: "3 judges on the judging panel"
+        },
+        {
+            item: "Integrated merch branding"
+        },
+        {
+            item: "Personalized \‘Our #PresentingPartner\’ company feature on website"
+        },
+        {
+            item: "Send 3 recruiters/company representatives"
+        },
+        {
+            item: "Large and central integrated sponsor logo on website"
+        },
+        {
+            item: "Host live interviews"
+        },
+    ]
+};
 
 
 const Sponsor = () => {
+
     return (
-        <div>
-            <h1>Sponsor</h1>
-            <div style = {columns}>
+        <div className='sponsor-box-centered'>
+            <h1>Sponsor Tiers</h1>
+            <br/>
+
+            <PlatinumSponsorTier props={platinum}/>
+            <br/>
+            <div className='normal-sponsor'>
                 {sponsorTiers.map(sponsorTier => (<SponsorTier key={sponsorTier.tier}  props = {sponsorTier} />))}
             </div>
             <br/>
@@ -88,12 +141,4 @@ const Sponsor = () => {
         </div>
     )
 }
-
-const columns ={
-    display: "grid",
-    gridTemplateColumns: "33% 33% 33%",
-  }
-
-
-
 export default Sponsor

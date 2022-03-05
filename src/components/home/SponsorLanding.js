@@ -1,5 +1,5 @@
 import React from 'react'
-import Pdf from '../test.pdf'
+import Pdf from '../sponsors/Sponsor_Package.pdf'
 import { Link,useHistory } from 'react-router-dom'
 import './stylesheet/sponsor_landing.css'
 const SponsorLanding = ({title,info}) => {
