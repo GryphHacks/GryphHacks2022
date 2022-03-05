@@ -1,0 +1,80 @@
+  .sponsor-box-centered {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .sponsor-about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: white;
+    opacity: 0.66;
+    padding: 15px
+  }
+
+  .platinum-about {
+    width: 30%;
+  }
+
+  .text-centered {
+    text-align: center;
+  }
+
+  .sponsor-info {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .sponsor-info-cost {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-left: 15px;
+  }
+
+  .list-flex {
+    margin-top: auto;
+  }
+
+  .info-list {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .shadow-below {
+      box-shadow: 0 8px 6px rgba(0,0,0,0.2);
+  }
+
+  .sponsor-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    flex: 1 1 0px;
+  }
+
+  .normal-sponsor{
+    width: 100%;
+    display: flex;
+    /* flex-basis: 30%; */
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  .line-break{
+    width: 60%;
+    border-top: 4px solid #bbb;
+    height: 40px;
+    opacity: 1;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import SponsorPamphlet from '../test.pdf'
+import SponsorPamphlet from '../sponsors/Sponsor_Package.pdf'
 import { Link, useHistory } from 'react-router-dom'
 import './stylesheet/sponsor_landing.css'
 
@@ -17,8 +17,8 @@ const SponsorLanding = () => {
                     <span className='sponsor-important'> 
                         &nbsp;If you’d like to support us in our mission to bring students together to challenge 
                         themselves and achieve their goals, check out our&nbsp; 
-                        {/* <Link id = "link" to = {SponsorPamphlet} target = "_blank"> here.</Link> */}
-                        <Link to= "/sponsor" id='sponsor-link' >sponsorship packages.</Link>
+                        <Link id='sponsor-link' to = {SponsorPamphlet} target = "_blank">sponsorship packages.</Link>
+                        {/* <Link to= "/sponsor" id='sponsor-link' >sponsorship packages.</Link> */}
                     </span>
                 </p>
                 <button className='red-button sponsor-button' onClick = {()=>history.push("/contact")}>Become a Sponsor</button>
