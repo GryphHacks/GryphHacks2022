@@ -1,4 +1,4 @@
-import Pdf from '../test.pdf';
+import Pdf from './Sponsor_Package.pdf';
 import { Link } from "react-router-dom";
 import SponsorTier from './SponsorTier';
 import PlatinumSponsorTier from './PlatinumSponsorTier';
