@@ -74,7 +74,7 @@ const NavBar = () => {
             </div>
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <NavLink to="/sponsor" className=" nav-word"  activeClassName="underline">
+                <NavLink to="/sponsor" className="nav-word"  activeClassName="underline">
                   Sponsors
                 </NavLink>
               </li>
@@ -95,14 +95,14 @@ const NavBar = () => {
             </div> */}
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <NavLink to="/faq" className=" nav-word" activeClassName="underline">
+                <NavLink to="/faq" className="nav-word" activeClassName="underline">
                   FAQ
                 </NavLink>
               </li>
             </div>
             <div className="navbar-link-box">
               <li className="nav-item-link">
-                <NavLink to="/contact" className=" nav-word"  activeClassName="underline">
+                <NavLink to="/contact" className="nav-word"  activeClassName="underline">
                   Contact Us
                 </NavLink>
               </li>
