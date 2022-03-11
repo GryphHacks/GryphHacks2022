@@ -12,6 +12,9 @@
     margin-bottom: 5%;
     width: 60%;
 }
+.section-title{
+    font-size:5vw
+}
 
 .sponsor-landing-card h1 {
     color: var(--gryphyellow);
@@ -40,7 +43,6 @@
     padding: 10px 30px;
     margin-top: 10px;
     margin-bottom: 40px;
-
     font-size:large;
     transition: all 0.2s ease;
 }
