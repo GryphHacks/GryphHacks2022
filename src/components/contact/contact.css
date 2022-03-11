@@ -16,6 +16,7 @@
 }
 .contact-text h1 {
   margin-bottom: 0;
+  width: 50vw;
 }
 .contact-page hr {
   margin-top: 0; 
@@ -26,8 +27,14 @@
   opacity: 1; /* Bootstrap overriding opacity */
 }
 .contact-img {
-  width: 170%;
+  width: 100%;
   height: auto;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+@media  (max-width: 1000px){
+  .contact-page {
+    flex-direction: column-reverse;
+  }
 }

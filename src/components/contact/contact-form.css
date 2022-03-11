@@ -5,6 +5,7 @@
     background-color: var(--gryphnavy);
     border-radius: 10px;
     text-align: center;
+    justify-content: center;
     color: #fff;
 }
 #contact-form h5 {
