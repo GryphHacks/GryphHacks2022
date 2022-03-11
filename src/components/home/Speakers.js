@@ -7,7 +7,7 @@ import "./stylesheet/sponsor_carousel.css";
 
 const Speakers = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative" ,textAlign:'center'}}>
       <img
         style={{ ...imgStyle, ...{ left: "0", top: "5%" } }}
         src={circuitSVG}
