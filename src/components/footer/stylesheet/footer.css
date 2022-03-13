@@ -70,17 +70,22 @@ footer a:hover {
     display: block;
 } */
 
-@media (max-width: 970px) {
+
+@media (max-width: 980px) {
+    footer .newsletter {
+        flex: 100%;
+    }
     footer .social {
-        text-align: end;
+        text-align: start;
     }
     footer .questions {
         text-align: start;
     }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 550px) {
     footer .social {
-        text-align: start;
+        flex: 100%;
     }
 }
+
