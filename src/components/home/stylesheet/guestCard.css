@@ -1,6 +1,5 @@
 /* contains img, title, and text */
 .card-body {
-    padding: 30px;
     color: white;
     text-align: center;
 }
@@ -11,14 +10,18 @@
     margin-right: auto;
     border: 5px solid black;
     width:100%;
-    max-width:125px;
     height: 100%;
-    max-height: 125px;
+    max-width:150px;
+    max-height: 150px;
     border-radius: 50%;
 }
 
 .card-title {
     margin-top: 20px;
+}
+
+.card-text {
+    font-size: medium;
 }
 
 /* change border colour on card hover */

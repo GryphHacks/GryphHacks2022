@@ -1,14 +1,18 @@
 .member-picture {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 175px;
+    height: 175px;
     border: 8px solid var(--gryphyellow);
     background-color: var(--gryphyellow);
     border-radius: 50%;
-    transform: translateZ(0);
     box-shadow: 0 0 2px 1px rgba(160, 160, 160, 0.5);
     transition: ease 0.4s;
-    
+
+}
+.member-picture-placeholder {
+    /* TODO: adding a border makes this buggy, not enough space around img for it */
+    /* border: 8px solid var(--gryphyellow); */
+    background-color: var(--gryphyellow);
+    border-radius: 50%;
 }
 
 .member-picture:hover {
@@ -18,8 +22,7 @@
 }
 
 .team-member-card {
-    margin: 10px;
-    flex: 0 1 calc(20% - 20px); /* <-- adjusting for margin */
+    flex: 0 1 calc(25% - 20px); /* <-- adjusting for margin */
     text-align: center;
 }
 
@@ -48,7 +51,6 @@
 
 .team-member-grid {
     margin:auto;
-    margin-bottom: 5%;
     width: 80%;
     display: flex;
     justify-content: center;

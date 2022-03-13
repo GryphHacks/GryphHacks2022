@@ -2,7 +2,7 @@
     {   "id":1,
         "name":"Rithik Choudhary",
         "title":"Co-Founder",
-        "image":"images/GryphMissingPic.png",
+        "image":"images/RithikChoudhary.png",
         "social": {
             "linkedin":"https://www.linkedin.com/in/rithik-c/",
             "github":"https://github.com/rithik-c"
@@ -11,7 +11,7 @@
     {   "id":2,
         "name":"Zaza Hashmi",
         "title":"Co-Founder",
-        "image":"images/GryphMissingPic.png",
+        "image":"images/ZazaHashmi.png",
         "social": {
             "linkedin":"https://www.linkedin.com/in/shaiza-hashmi/",
             "github":"https://github.com/Kayeris"
@@ -22,7 +22,8 @@
         "title":"VP Internal",
         "image":"images/RomanSavelyev.jpg",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/roman-savelyev/",
+            "instagram":"https://www.instagram.com/roman.savelyev/"
         }
     },
     {   "id":4,
@@ -80,16 +81,7 @@
         "title":"VP Operations",
         "image":"images/JuliaHawkins.jpg",
         "social": {
-            "linkedin":""
-        }
-    },
-    {   "id":11,
-        "name":"Riya Gangwar",
-        "title":"Operations Associate",
-        "image":"images/RiyaGangwar.jpg",
-        "social": {
-            "linkedin":"https://www.linkedin.com/in/riya-gangwar-a025b9203/",
-            "instagram":"https://www.instagram.com/riiyaaa_07"
+            "linkedin":"https://www.linkedin.com/in/julia-hawkins-b8a175133/"
         }
     },
     {   "id":12,
@@ -100,23 +92,32 @@
             "linkedin":"https://www.linkedin.com/in/chrisdlaw/",
             "github":"https://github.com/Christophler"
         }
-    },   
+    },
     {   "id":13,
-        "name":"Olivia Gair",
+        "name":"Owen Douglas",
         "title":"Operations Associate",
-        "image":"images/OliviaGair.jpg",
+        "image":"images/OwenDouglas.png",
         "social": {
-            "linkedin":""
+            "linkedin":"https://ca.linkedin.com/in/omdouglas"
         }
     },
     {   "id":14,
-        "name":"Manas Verma",
+        "name":"William Siong Sing",
         "title":"Operations Associate",
-        "image":"images/ManasVerma.jpg",
+        "image":"images/WilliamSiongSing.png",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/william-siong-244a68213",
+            "instagram":"https://www.instagram.com/william.siong"
         }
     },
+    {   "id":23,
+        "name":"Daniel Marcus-Chidozie",
+        "title":"Sponsorships Associate",
+        "image":"images/DanielMarcus-Chidozie.png",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/marcus-chidoziedaniel/"
+        }
+    },        
     {   "id":15,
         "name":"Sophie Mlodzik",
         "title":"VP Finance",
@@ -131,13 +132,13 @@
         "title":"Finance Associate",
         "image":"images/AliAsjad.jpg",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/ali-asjad-412515229"
         }
     },
     {   "id":17,
         "name":"Rubeel Saleem",
         "title":"Finance Associate",
-        "image":"images/GryphMissingPic.png",
+        "image":"images/MuhammadRubeel.jpg",
         "social": {
             "linkedin":"https://www.linkedin.com/in/irubeel/"
         }
@@ -145,17 +146,17 @@
         "id":18,
         "name":"Mussab Imran",
         "title":"VP Designs",
-        "image":"images/GryphMissingPic.png",
+        "image":"images/MussabImran.jpg",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/mussab-imran-5011951a4/"
         }
     }, 
     {   "id":19,
         "name":"Neha Ambati",
         "title":"Design Associate",
-        "image":"images/GryphMissingPic.png",
+        "image":"images/NehaAmbhati.jpg",
         "social": {
-            "linkedin":""
+            "linkedin":"https://www.linkedin.com/in/neha-ambati-a627b0202/"
         }
     },
     {   "id":20,
@@ -163,7 +164,8 @@
         "title":"VP Marketing",
         "image":"images/HasenRomani.jpg",
         "social": {
-            "linkedin":"https://daveceddia.com/react-image-tag/"
+            "linkedin":"https://www.linkedin.com/in/hasen-romani/",
+            "instagram":"https://www.instagram.com/hasenromanii/"
         }
     },
     {   "id":21,
@@ -173,21 +175,5 @@
         "social": {
             "linkedin":"https://www.linkedin.com/in/layane-alhabian/"
         }
-    },
-    {   "id":22,
-        "name":"Manpreet Singh",
-        "title":"Marketing Asscoiate",
-        "image":"images/ManpreetSingh.jpg",
-        "social": {
-            "linkedin":""
-        }
-    },
-    {   "id":23,
-        "name":"Daniel Marcus-Chidozie",
-        "title":"Sponsorships Associate",
-        "image":"images/GryphMissingPic.png",
-        "social": {
-            "linkedin":"https://www.linkedin.com/in/marcus-chidoziedaniel/"
-        }
-    }  
+    }
 ]

@@ -2,18 +2,26 @@
   --darkred: #c7102f;
   --rubyred: #DD1133;
   --gryphred: #D82929;
-  --redhover: #d83c3c;
+  --redhover: rgb(231, 27, 61);
+  --redclick: #c5112f;
   --gryphyellow: #FFC14A;
-  --lightgrey: #C4C4C4;
+  --lightyellow: #ffcf76;
+  --lightgrey: #bbbbbb;
+  --darkfade: rgba(61, 61, 61, 0.7);
   --darkgrey: #3D3D3D;
+  --midgrey: #464646;
+  --greyhover: #505050;
+  --selectgrey: #323232;
   --softblack: #242425;
-  --greyhover: #5f5c5c;
+  --blackfade: rgba(28, 28, 30, 0.8);
+  --gryphnavy: #122F4C;
 }
 
 body {
   font-family: 'Sora';
   font-size: small;
-  /* background:  url("../../assets/Circuit\ Board.svg") repeat fixed center; */
+  color: black;
+  /* height: 100%; */
 }
 
 body::before {
@@ -30,9 +38,36 @@ body::before {
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* May have issues on mobile? html height is alt */
+  /* May have issues on mobile? html height is alt */
+  min-height: 100vh; 
 }
 
 .content {
   flex: 1;
+}
+
+.page-content {
+  margin: auto;
+  width: 75%;
+  background:  rgba(138, 138, 138, 0.3);
+  height: 100%;
+}
+
+.section-title {
+  font-size: 36px;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.red-button:hover {
+  background-color: var(--redhover);
+  transition: ease-in-out 0.2s;
+}
+
+.red-button:active {
+  background-color: var(--redclick);
+  outline: none;
+  transition: ease-in-out 0.2s;
 }

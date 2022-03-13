@@ -1,38 +1,8 @@
 [
     {
         "id":1,
-        "name":"Joe Smith",
+        "name":"This could be YOU!",
         "image":"images/GryphMissingPic.png",
-        "role":"Software Engineer @ Google"
-    },
-    {
-        "id":2,
-        "name":"Joe Smith",
-        "image":"images/GryphMissingPic.png",
-        "role":"Software Engineer @ Google"
-    },
-    {
-        "id":3,
-        "name":"Joe Smith",
-        "image":"images/GryphMissingPic.png",
-        "role":"Software Engineer @ Google"
-    },
-    {
-        "id":4,
-        "name":"Joe Smith",
-        "image":"images/GryphMissingPic.png",
-        "role":"Software Engineer @ Google"
-    },
-    {
-        "id":5,
-        "name":"Joe Smith",
-        "image":"images/GryphMissingPic.png",
-        "role":"Software Engineer @ Google"
-    },
-    {
-        "id":6,
-        "name":"Joe Smith",
-        "image":"images/GryphMissingPic.png",
-        "role":"Software Engineer @ Google"
+        "role":"If you're interested in judging, contact us now to find our more!"
     }
 ]

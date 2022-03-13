@@ -86,7 +86,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                 </label>
                 <button label="subscribe" type="submit">
                     {/* <MdSend className="send-icon" size='24'/> */}
-                    Subscribe
+                    Sign Up
                 </button>
             </form>
             

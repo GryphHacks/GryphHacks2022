@@ -1,15 +1,9 @@
 /* mission statement section */
 .missionSection {
-    background-color:#122F4C;
+    background-color: var(--gryphnavy);
     color: white;
     padding: 2% 10%;
-}
-
-/* 3 word mission statement */
-.statement {
-    font-family: Sora;
-    letter-spacing: 5px;
-    margin: 40px 20px;
+    text-align: center;
 }
 
 /* 3 items container */
@@ -38,6 +32,7 @@
     text-align: left;
 }
 
+/* TODO have this max width match navbar */
 @media (max-width: 1000px) {
     .flex-container {
         flex-direction: column;

@@ -1,5 +1,13 @@
 .register {
-    padding-bottom: 50px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    /* background-color: var(--darkgrey); */
+    background-color: var(--darkfade);
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
 }
 
 #hackie {
@@ -18,7 +26,6 @@
 
 
 #mentor {
-
     background-color: transparent; 
     border-radius: 20px;
     border: 2px solid white;
@@ -32,21 +39,35 @@
     left: 10px;
 }
 
-.link {
-    margin-top: 50px;
+.sponsor-link-div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 20px;
+}
+.sponsor-link-div span {
     color: white;
-    position: relative;
-    
+}
+
+.link {
+    color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .link:hover {
-    color: white; 
+    color: var(--gryphyellow); 
 }
 
 .register-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gryphyellow);
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+.register p {
     color: white;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    padding-bottom: 30px;
+    font-size: medium;
 }
