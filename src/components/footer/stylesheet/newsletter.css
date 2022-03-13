@@ -3,10 +3,14 @@
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    flex-direction: column;
-
+    flex-direction: row;
 }
-    
+@media (max-width:900px){
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
+
 .newsletter-form button {
     border: none;
     border-radius: 5px;
@@ -15,10 +19,8 @@
     color: white;
     font-size: 14px;
     text-align: center;
-
     height: 36px;
     width: 90px;
-
     transition: background-color 0.1s ease;
 }
 
