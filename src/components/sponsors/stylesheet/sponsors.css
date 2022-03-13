@@ -76,11 +76,17 @@
   flex-wrap: wrap;
 }
 
-.line-break {
+.line-break{
   width: 60%;
   border-top: 4px solid #bbb;
   height: 40px;
   opacity: 1;
+}
+
+@media (max-width:1000px){
+  .normal-sponsor {
+    flex-direction: column;
+  } 
 }
 
 .sponsor-pdf {
@@ -103,8 +109,7 @@
   flex-direction: row;
 }
 
-
-@media (max-width:1000px){
+@media (max-width:1000px) {
   .plat-flex {
     flex-direction: column;
   }
