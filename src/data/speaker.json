@@ -1,16 +1,16 @@
 [
     {
         "id":1,
-        "name":"Walt Disney",
+        "name":"COMING SOON ~",
         "image":"images/GryphMissingPic.png",
-        "role":"Software Engineer @ Google",
-        "description": "TLorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem."
+        "role":"Mentor @ GryphHacks",
+        "description": "This could be you! We're looking for passionate individuals to help inspire and mentor our hackies."
     },
     {
         "id":2,
-        "name":"Scooby Doo",
+        "name":"COMING SOON ~",
         "image":"images/GryphMissingPic.png",
-        "role":"Product Manager @ DoorDash",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem."
+        "role":"Speaker @ GryphHacks",
+        "description": "If you're interested in participating, contact us now to get started!"
     }
 ]

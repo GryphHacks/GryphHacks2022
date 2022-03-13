@@ -1,4 +1,3 @@
-import React from 'react'
 import speakers from "../../data/speaker.json";
 import SpeakerCard from './SpeakerCard';
 import circuitSVG from '../../assets/Circuit-Primary.svg'
@@ -74,6 +73,7 @@ const contentStyle = {
   alignItems: "center",
   paddingTop: "5%",
   paddingBottom: "5%",
+  fontSize: "large"
 };
 
 export default Speakers;

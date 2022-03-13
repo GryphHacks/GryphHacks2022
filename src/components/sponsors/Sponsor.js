@@ -2,7 +2,7 @@ import Pdf from './Sponsor_Package.pdf';
 import { Link } from "react-router-dom";
 import SponsorTier from './SponsorTier';
 import PlatinumSponsorTier from './PlatinumSponsorTier';
-import "./stylesheet/sponsor_page.css"
+import "./stylesheet/sponsors.css"
 
 const sponsorTiers = [
     {
@@ -127,17 +127,15 @@ const Sponsor = () => {
 
     return (
         <div className='sponsor-box-centered'>
-            <h1>Sponsor Tiers</h1>
-            <br/>
-
+            <h1 className='section-title'>SPONSOR TIERS</h1>
             <PlatinumSponsorTier props={platinum}/>
-            <br/>
             <div className='normal-sponsor'>
                 {sponsorTiers.map(sponsorTier => (<SponsorTier key={sponsorTier.tier}  props = {sponsorTier} />))}
             </div>
-            <br/>
-            <Link to = {Pdf} target = "_blank">Pamphlet</Link>
-            <p>Learn more here</p>
+            <p className='sponsor-pdf'> Check out our&nbsp; 
+                <Link to = {Pdf} id="sponsors-pdf-link" target = "_blank">Sponsorship Package here</Link>
+                &nbsp;to learn more about our mission and what we have to offer!
+            </p>
         </div>
     )
 }

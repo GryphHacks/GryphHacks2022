@@ -5,10 +5,8 @@
     padding: 2% 10%;
 }
 
-/* Our Judges title */
-#judgesSection h1{
-    letter-spacing: 5px;
-    margin: 40px 20px;
+#judgesSection h3 {
+    text-align: center;
 }
 
 /* Layout for the guest cards */
@@ -18,7 +16,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 10%;
 }
 
 @media (max-width: 1200px) {
