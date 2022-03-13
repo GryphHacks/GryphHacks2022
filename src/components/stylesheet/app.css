@@ -40,6 +40,7 @@ body::before {
   flex-direction: column;
   /* May have issues on mobile? html height is alt */
   min-height: 100vh; 
+  overflow-x: hidden;
 }
 
 .content {

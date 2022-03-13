@@ -9,7 +9,11 @@
     background-color:transparent;
     height: auto;
 }
-
+@media (max-width:1000px){
+    .speaker-carousel .carousel {
+        width: 100vw!important;
+    }
+}
 .carousel.carousel-slider {
     overflow: inherit;
 }
