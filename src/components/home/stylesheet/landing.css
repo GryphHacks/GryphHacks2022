@@ -1,4 +1,5 @@
 .splash-title {
+    text-align: center;
     font-family: 'Fira Code', monospace;
 }
 .splash-title h1 {
@@ -11,6 +12,7 @@
 }
 
 .info-div {
+    text-align: center;
     display: inline-block;
     position: relative;
     padding-top: 50px;
@@ -49,3 +51,10 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width: 800px) { 
+    .splash-title h1{
+        font-Size: 21vw;
+    }
+  }

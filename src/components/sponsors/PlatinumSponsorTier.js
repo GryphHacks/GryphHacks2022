@@ -5,7 +5,7 @@ const PlatinumSponsorTier = ({props: {tier, about, cost, color, perks}}) => {
     var perkSecond = perks.slice(-(perks.length / 2 ))
 
     return (
-        <div className="sponsor-card platinum shadow-below" style={{backgroundColor: color, flexDirection: "row"}}>
+        <div className="sponsor-card platinum shadow-below plat-flex" style={{backgroundColor: color}}>
             <div className="sponsor-about platinum-about shadow-below">
                 <h2>{tier}</h2>
                 <hr className="line-break" style={{background: color}}/>

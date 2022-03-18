@@ -6,7 +6,7 @@ const About = () => {
     return (
         
         <div className="page-content">
-            <h2 className="section-title">WHO WE ARE</h2>
+            <h1 className="section-title">WHO WE ARE</h1>
             <div id= "about">
                 <p>
                     Gryphhacks is the University of Guelph's first-ever, official hackathon! 
@@ -20,7 +20,7 @@ const About = () => {
                     we are hosting a fully virtual hackathon this year, open for everyone to join!
                 </p>
             </div>
-            <h2 className="section-title">MEET OUR TEAM</h2>
+            <h1 className="section-title">MEET OUR TEAM</h1>
             <TeamMemberList data = {members}/>
         </div>
     )

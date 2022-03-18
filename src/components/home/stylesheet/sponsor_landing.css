@@ -40,9 +40,10 @@
     padding: 10px 30px;
     margin-top: 10px;
     margin-bottom: 40px;
-
     font-size:large;
     transition: all 0.2s ease;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #sponsor-link {
