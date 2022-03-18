@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
     <footer>
-      <div className="wrapper">
+      <div className="flex-container">
           {/* Newsletter Sign Up Column */}
           <div className="col newsletter">
             <h4>Join our Newsletter</h4>
@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Contact Us Column */}
           <div className="col questions">
             <h4>Questions?</h4>
-            <Link to="/contact">Contact us here <FiMail size={15} style={{ marginBottom : '3px' }}/></Link>
+            <Link  to="/contact">Contact us here <FiMail size={15} style={{ marginBottom : '3px' }}/></Link>
           </div>
         </div>
     </footer>

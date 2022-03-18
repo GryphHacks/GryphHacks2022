@@ -1,8 +1,7 @@
-import React from 'react';
-
+import "./stylesheet/speakers.css"
 const SpeakerCard = ({member}) => {
   return (
-    <div style={cardStyle}>
+    <div className="cardStyle">
       <img style={photoStyle} alt={member.name} src={member.image} />
       <div style={infoCardStyle}>
         <div style={layerStyle} />
@@ -16,15 +15,6 @@ const SpeakerCard = ({member}) => {
 }
 
 // main Speakers component content - Speaker Card (photo and info section)
-const cardStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  columnGap: "5%",
-  padding: "5% 5%",
-  marginBottom: "20px"
-}
-
 // image in Speaker Card
 const photoStyle = {
   borderRadius: "50%",
