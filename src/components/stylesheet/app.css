@@ -55,11 +55,10 @@ body::before {
 }
 
 .section-title {
-  font-size: 36px;
   letter-spacing: 10px;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .red-button:hover {

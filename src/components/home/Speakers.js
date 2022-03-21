@@ -16,7 +16,7 @@ const Speakers = () => {
       {/* TODO this separator is part of LogoShowcase background */}
       {/* <hr style={separatorStyle} /> */}
       <div style={contentStyle}>
-        <h1 style={{ "letter-spacing": "10px" }}>KEYNOTE SPEAKERS</h1>
+        <h1 className='section-title'>KEYNOTE SPEAKERS</h1>
         <Carousel
           className="speaker-carousel"
           showArrows={true}
