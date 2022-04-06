@@ -30,6 +30,9 @@ const App = () => {
         <ReactNotification />
         <NavBar />
         <div className="content">
+          <a id="mlh-trust-badge" href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" target="_blank">
+            <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-yellow.svg" alt="Major League Hacking 2022 Hackathon Season"/>
+          </a>
           <Switch>
             <Route path="/" exact component={Landing} />
             <Route path="/about" exact component={About} />
