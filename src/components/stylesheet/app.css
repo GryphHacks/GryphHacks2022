@@ -86,3 +86,23 @@ body::before {
 #mlh-trust-badge img {
   width: 100%;
 }
+
+#typeform-signup {
+  border: none;
+  border-radius: 25px;
+  background-color: var(--rubyred);
+  color: white;
+  font-size: x-large;
+  padding: 10px 30px;
+  text-align: center;
+  transition: background-color 0.1s ease;
+}
+
+#typeform-signup:hover {
+  background-color: var(--redhover);
+}
+
+#typeform-signup:active {
+  background-color: var(--redclick);
+  outline: none;
+}
