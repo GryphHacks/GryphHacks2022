@@ -21,12 +21,14 @@ import About from './about/About';
 import Sponsor from './sponsors/Sponsor';
 import Footer from './footer/Footer';
 import NavBar from './NavBar';
+import ScrollToTop from './ScrollToTop'
 
 const App = () => {
 
   return (
     <div className="page-container">
       <Router history={createBrowserHistory}>
+      <ScrollToTop/>
         <ReactNotification />
         <NavBar />
         <div className="content">
