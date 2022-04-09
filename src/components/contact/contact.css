@@ -7,6 +7,10 @@
   margin-top: 5%;
   gap: 5%
 }
+.contact-title {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
 .contact-text {
   margin-top: 20px;
   display: flex;

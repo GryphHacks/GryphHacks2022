@@ -71,3 +71,38 @@ body::before {
   outline: none;
   transition: ease-in-out 0.2s;
 }
+
+#mlh-trust-badge {
+  display:block;
+  max-width:100px;
+  min-width:60px;
+  position:fixed;
+  right:50px;
+  /* top:0; */
+  width:10%;
+  z-index:10000;
+}
+
+#mlh-trust-badge img {
+  width: 100%;
+}
+
+#typeform-signup {
+  border: none;
+  border-radius: 25px;
+  background-color: var(--rubyred);
+  color: white;
+  font-size: x-large;
+  padding: 10px 30px;
+  text-align: center;
+  transition: background-color 0.1s ease;
+}
+
+#typeform-signup:hover {
+  background-color: var(--redhover);
+}
+
+#typeform-signup:active {
+  background-color: var(--redclick);
+  outline: none;
+}

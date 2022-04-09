@@ -1,4 +1,4 @@
-import Pdf from './Sponsor_Package.pdf';
+import SponsorshipPdf from './GryphHacks_Sponsorship_Package.pdf';
 import { Link } from "react-router-dom";
 import SponsorTier from './SponsorTier';
 import PlatinumSponsorTier from './PlatinumSponsorTier';
@@ -133,7 +133,7 @@ const Sponsor = () => {
                 {sponsorTiers.map(sponsorTier => (<SponsorTier key={sponsorTier.tier}  props = {sponsorTier} />))}
             </div>
             <p className='sponsor-pdf'> Check out our&nbsp; 
-                <Link to = {Pdf} id="sponsors-pdf-link" target = "_blank">Sponsorship Package here</Link>
+                <Link to={SponsorshipPdf} id="sponsors-pdf-link" target="_blank">Sponsorship Package here</Link>
                 &nbsp;to learn more about our mission and what we have to offer!
             </p>
         </div>
