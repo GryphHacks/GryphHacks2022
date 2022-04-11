@@ -56,7 +56,7 @@ body::before {
 @media(max-width:800px){
   .page-content{
     width:100%;
-;  }
+  }
 }
 
 .section-title {
