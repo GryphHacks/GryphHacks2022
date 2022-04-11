@@ -1,7 +1,7 @@
 import SocialBar from "./SocialBar"
 import NewsletterSignUp from "./NewsletterSignUp";
 import './stylesheet/footer.css';
-import CircuitImage from '../../assets/FooterCircuit.svg';
+import { FaAngleRight } from "react-icons/fa";
 import { FiMail } from 'react-icons/fi';
 import { Link } from "react-router-dom";
 
@@ -9,11 +9,16 @@ const Footer = () => {
   return (
     <>
     <footer>
-      <div className="flex-container">
+      <div className="footer-container flex-container">
           {/* Newsletter Sign Up Column */}
-          <div className="col newsletter">
+          <div className="col newsletter newsletter-form">
             <h4>Join our Newsletter</h4>
-            <NewsletterSignUp/>
+            <button id="newsletter-signup" onClick={ (e) => {
+              e.preventDefault();
+              window.open("https://7zz0jrazbwj.typeform.com/to/OQAkDkoX", "_blank");
+            }}>
+              <span>Sign up now<FaAngleRight size={15}/></span>
+            </button>
           </div>
           {/* Socials Column */}
           <div className="col social">
@@ -23,7 +28,7 @@ const Footer = () => {
           {/* Contact Us Column */}
           <div className="col questions">
             <h4>Questions?</h4>
-            <Link  to="/contact">Contact us here <FiMail size={15} style={{ marginBottom : '3px' }}/></Link>
+            <Link  to="/contact">Contact us here &nbsp;<FiMail size={15}/></Link>
           </div>
         </div>
     </footer>

@@ -1,7 +1,7 @@
 /* contains title and layout(for cards) */
 #judgesSection {
     color: white; 
-    background-color: var(--gryphred);
+    background-color: var(--darkred);
     padding: 2% 10%;
     text-align: center;
 }

@@ -1,4 +1,5 @@
 .splash-title {
+    margin-top: 50px;
     text-align: center;
     font-family: 'Fira Code', monospace;
 }
@@ -6,9 +7,10 @@
     display:inline-block;
     font-Style: normal;
     font-Weight: bold;
-    font-Size: 120px;
+    font-size: 110px;
     line-Height: 120%;
     letter-Spacing: 0.05em;
+    text-size-adjust: auto;
 }
 
 .info-div {
@@ -18,7 +20,6 @@
     padding-top: 50px;
 }
 .info-text {
-  
     display : inline-block;
     font-family: Roboto;
     font-style: normal;
@@ -53,8 +54,13 @@
 }
 
 
-@media (max-width: 800px) { 
-    .splash-title h1{
-        font-Size: 21vw;
+@media (max-width: 1000px) { 
+    .splash-title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
     }
-  }
+    .splash-title h1 {
+        font-Size: 10vw;
+    }
+}

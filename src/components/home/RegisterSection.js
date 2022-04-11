@@ -14,13 +14,19 @@ const RegisterSection = () => {
                 <button id = "hackie" onClick = {()=>history.push("/register")}  >Hackie </button>
                 <button id = "mentor" onClick = {()=>history.push("/register")}>Mentor</button>
                 */}
-                <h1 className='register-title'>Registration Coming Soon!</h1>
-                <p>Sign up for our newsletter to be the first to know when applications open!</p>
-                <NewsletterSignUp/>
+                <h1 className='register-title'>Applications are now open!</h1>
+                {/* <p>Apply to be a Hackie at Gryphhacks 2022!</p> */}
+                <button id="typeform-signup" onClick={ (e) => {
+                    e.preventDefault();
+                    window.open("https://7zz0jrazbwj.typeform.com/to/v9Msd4Sj", "_blank");
+                }}>
+                    <span>Apply Now</span>
+                </button>
             </div>
             <div className='sponsor-link-div'>
-                <span>Interested in becoming a Sponsor?&nbsp;</span>
-                <Link to ='/sponsor' className="link">Learn more</Link> 
+                <h6>Interested in becoming a Sponsor?&nbsp;
+                    <Link to ='/sponsor' className="link">Learn more</Link> 
+                </h6>
             </div>
         </>
     )
