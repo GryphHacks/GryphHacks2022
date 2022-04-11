@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     background: var(--midgrey);
-    /* background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(82,82,82,1) 100%); */
     background:  var(--blackfade);
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     border-radius: 10px;
@@ -13,6 +12,11 @@
     width: 60%;
 }
 
+@media (max-width:800px){
+    .sponsor-landing-card{
+        width: 100%;
+    }
+}
 .sponsor-landing-card h1 {
     color: var(--gryphyellow);
     text-shadow: 0px 5px 10px rgba(0,0,0,0.2);
