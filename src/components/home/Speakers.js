@@ -7,7 +7,7 @@ import "./stylesheet/sponsor_carousel.css";
 
 const Speakers = () => {
   return (
-    <div style={{ position: "relative" ,textAlign:'center'}}>
+    <div style={{ position: "relative" ,textAlign:'center',overflow:'hidden'}}>
       <img
         style={{ ...imgStyle, ...{ left: "0", top: "5%" } }}
         src={circuitSVG}
@@ -25,7 +25,6 @@ const Speakers = () => {
           infiniteLoop={true}
           interval={10000}
           autoPlay={true}
-          width={1032}
           emulateTouch={true}
           swipeable={true}
           showIndicators={true}
