@@ -54,13 +54,16 @@
 }
 
 
-@media (max-width: 1000px) { 
+@media (max-width: 800px) { 
     .splash-title {
         display: flex;
         flex-direction: column;
         margin-top: 50px;
     }
     .splash-title h1 {
-        font-Size: 10vw;
+        font-Size: 15vw;
+    }
+    .info-text{
+        font-size: 4.10vw;
     }
 }

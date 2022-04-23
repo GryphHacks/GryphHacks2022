@@ -39,8 +39,7 @@ body::before {
   display: flex;
   flex-direction: column;
   /* May have issues on mobile? html height is alt */
-  min-height: 100vh; 
-  overflow-x: clip;
+  min-height: 100vh;
 }
 
 .content {
@@ -52,6 +51,11 @@ body::before {
   width: 75%;
   background:  rgba(138, 138, 138, 0.3);
   height: 100%;
+}
+@media(max-width:800px){
+  .page-content{
+    width:100%;
+  }
 }
 
 .section-title {
