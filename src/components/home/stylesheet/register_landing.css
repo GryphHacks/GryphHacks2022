@@ -10,33 +10,52 @@
     width: 80%;
 }
 
-#hackie {
-    background-color: #DD1133;
-    border-radius: 20px;
-    color: white;
-    border:none;
-    padding: 10px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: relative;
-    right: 10px;
+.register-buttons {
+    margin-top: 20px;
+    display: flex;
+    font-size: large;
+    gap: 15px;
 }
 
-
-#mentor {
-    background-color: transparent; 
-    border-radius: 20px;
-    border: 2px solid white;
+#hackie-signup {
+    border: none;
+    border-radius: 25px;
+    background-color: var(--rubyred);
     color: white;
-    padding: 10px 40px;
+    padding: 10px 35px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: relative;
-    left: 10px;
+    transition: background-color 0.1s ease;
+}
+
+#hackie-signup:hover {
+    background-color: var(--redhover);
+}
+
+#hackie-signup:active {
+    background-color: var(--redclick);
+    outline: none;
+}
+
+#mentor-signup {
+    background-color: transparent; 
+    border-radius: 25px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.1s ease;
+}
+
+#mentor-signup:hover {
+    background-color: rgba(255, 255, 255, 0.115);
+}
+
+#mentor-signup:active {
+    background-color: white;
+    color: black;
+    outline: none;
 }
 
 .sponsor-link-div {
