@@ -24,6 +24,7 @@ const Speakers = () => {
           showStatus={false}
           infiniteLoop={true}
           interval={10000}
+          width = {1032}
           autoPlay={true}
           emulateTouch={true}
           swipeable={true}
