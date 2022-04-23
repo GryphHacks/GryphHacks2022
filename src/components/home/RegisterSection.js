@@ -1,7 +1,5 @@
-import React from 'react'
 import "./stylesheet/register_landing.css"
 import { Link, useHistory } from "react-router-dom";
-import NewsletterSignUp from '../footer/NewsletterSignUp';
 
 const RegisterSection = () => {
 
@@ -10,18 +8,17 @@ const RegisterSection = () => {
     return (
         <>
             <div className="register">
-                {/* <h6 className = "register-title">Register</h6>
-                <button id = "hackie" onClick = {()=>history.push("/register")}  >Hackie </button>
-                <button id = "mentor" onClick = {()=>history.push("/register")}>Mentor</button>
-                */}
                 <h1 className='register-title'>Applications are now open!</h1>
-                {/* <p>Apply to be a Hackie at Gryphhacks 2022!</p> */}
-                <button id="typeform-signup" onClick={ (e) => {
-                    e.preventDefault();
-                    window.open("https://7zz0jrazbwj.typeform.com/to/v9Msd4Sj", "_blank");
-                }}>
-                    <span>Apply Now</span>
-                </button>
+                <div className="register-buttons">
+                    <button id="hackie-signup" onClick={ (e) => {
+                        e.preventDefault();
+                        window.open("https://7zz0jrazbwj.typeform.com/to/v9Msd4Sj", "_blank");
+                    }}>Hackie</button>
+                    <button id="mentor-signup" onClick = { (e) => {
+                        e.preventDefault();
+                        window.open("https://7zz0jrazbwj.typeform.com/to/Ebv9KUyq", "_blank");
+                    }}>Mentor</button>
+                </div>
             </div>
             <div className='sponsor-link-div'>
                 <h6>Interested in becoming a Sponsor?&nbsp;
