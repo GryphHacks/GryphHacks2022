@@ -35,10 +35,12 @@ const Footer = () => {
     {/* Planned to have an SVG overlay the footer, but i have no idea how to do that lol */}
     {/* <img className="overlay-svg" src={CircuitImage} height="100"/> */}
     <div className="footer-bottom">
-            <a  className="mlhLink" target = "_blank" href="https://mlh.io/code-of-conduct"><h7 className="mlhLink">MLH Code of Conducts</h7></a>
-            <h6> &nbsp; | &nbsp; </h6>
-            <a  className="mlhLink"target = "_blank" href="https://mlh.io/privacy"><h7 className="mlhLink">MLH Privacy Policy</h7></a>
-            <h6> &nbsp; | &nbsp; </h6>
+            <a  className="mlhLink" target = "_blank" href="https://mlh.io/code-of-conduct">
+            <h7 className="mlhLink">MLH Code of Conducts&nbsp; | &nbsp;</h7>
+            </a>
+            <a  className="mlhLink"target = "_blank" href="https://mlh.io/privacy"
+            ><h7 className="mlhLink">MLH Privacy Policy &nbsp; | &nbsp;</h7>
+            </a>
             <a  className="mlhLink"target = "_blank" href="https://github.com/MLH/mlh-policies/blob/master/prize-terms-and-conditions/contest-terms.md"><h7 className="mlhLink">MLH Terms of Service</h7></a>
     </div>
     </>
