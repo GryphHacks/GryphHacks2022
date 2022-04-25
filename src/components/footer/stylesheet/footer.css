@@ -13,7 +13,7 @@ footer {
 }
 
 .footer-container {
-    margin-top: auto;
+    display: flex;
 }
 
 footer .wrapper {
@@ -25,7 +25,7 @@ footer .wrapper {
 .col {
     padding: 20px;
     box-sizing: border-box;
-    flex-basis: 45%;
+    flex-basis: 5%;
 }
 
 footer .newsletter {
