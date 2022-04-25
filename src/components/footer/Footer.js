@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
     <footer>
-      <div className="footer-container flex-container">
+      <div className="footer-container flex-container ">
           {/* Newsletter Sign Up Column */}
           <div className="col newsletter newsletter-form">
             <h4>Join our Newsletter</h4>
@@ -29,6 +29,17 @@ const Footer = () => {
           <div className="col questions">
             <h4>Questions?</h4>
             <Link  to="/contact">Contact us here &nbsp;<FiMail size={15}/></Link>
+          </div>
+        </div>
+        <div className="footer-container flex-container" >
+        <div className="col questions">
+            <a target = "_blank" href="https://mlh.io/code-of-conduct"><h6>MLH Code of Conducts</h6></a>
+          </div>
+          <div className="col questions">
+            <a target = "_blank" href="https://mlh.io/privacy"><h6>MLH Privacy Policy</h6></a>
+          </div>
+          <div className="col questions">
+            <a target = "_blank" href="https://github.com/MLH/mlh-policies/blob/master/prize-terms-and-conditions/contest-terms.md"><h6>MLH Terms and Conditions</h6></a>
           </div>
         </div>
     </footer>
