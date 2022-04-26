@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
     <footer>
-      <div className="footer-container flex-container">
+      <div className="footer-container flex-container ">
           {/* Newsletter Sign Up Column */}
           <div className="col newsletter newsletter-form">
             <h4>Join our Newsletter</h4>
@@ -35,7 +35,13 @@ const Footer = () => {
     {/* Planned to have an SVG overlay the footer, but i have no idea how to do that lol */}
     {/* <img className="overlay-svg" src={CircuitImage} height="100"/> */}
     <div className="footer-bottom">
-      <p>Made with&nbsp; ♡ &nbsp;by the GryphHacks team.</p>
+            <a  className="mlhLink" target = "_blank" href="https://mlh.io/code-of-conduct">
+            <h7 className="mlhLink">MLH Code of Conducts&nbsp; | &nbsp;</h7>
+            </a>
+            <a  className="mlhLink"target = "_blank" href="https://mlh.io/privacy"
+            ><h7 className="mlhLink">MLH Privacy Policy &nbsp; | &nbsp;</h7>
+            </a>
+            <a  className="mlhLink"target = "_blank" href="https://github.com/MLH/mlh-policies/blob/master/prize-terms-and-conditions/contest-terms.md"><h7 className="mlhLink">MLH Terms of Service</h7></a>
     </div>
     </>
   );
