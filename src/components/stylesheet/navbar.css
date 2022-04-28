@@ -24,6 +24,10 @@
     .underline {
         border-bottom: none;
     }
+    .navbar-link-box{
+        display: inline-block;
+        line-height: 38px;
+    }
 }
 
 .navbar-logo {
