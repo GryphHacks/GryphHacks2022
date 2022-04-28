@@ -1,12 +1,20 @@
 .member-picture {
-    width: 175px;
-    height: 175px;
+    max-width: 175px;
+    max-height: 175px;
     border: 8px solid var(--gryphyellow);
     background-color: var(--gryphyellow);
     border-radius: 50%;
     box-shadow: 0 0 2px 1px rgba(160, 160, 160, 0.5);
     transition: ease 0.4s;
 
+}
+@media (max-width: 1000px){
+    .member-picture{
+        min-width: 100px;
+        min-height: 100px;
+        max-width: 130px;
+        max-height: 130px;
+    }
 }
 .member-picture-placeholder {
     /* TODO: adding a border makes this buggy, not enough space around img for it */
