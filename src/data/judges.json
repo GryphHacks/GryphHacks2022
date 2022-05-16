@@ -1,8 +1,26 @@
 [
     {
         "id":1,
-        "name":"This could be YOU!",
+        "name":"Nicholas Wong",
+        "image":"images/judges/Judge-NicholasWong.jpeg",
+        "role":"Software Engineer @ WeFunder"
+    },
+    {
+        "id":2,
+        "name":"Olivia Li",
+        "image":"images/judges/Judge-OliviaLi.jpg",
+        "role":"Software Engineer @ WeFunder"
+    },
+    {
+        "id":3,
+        "name":"Fawziyah Alebiosu",
         "image":"images/GryphMissingPic.png",
-        "role":"If you're interested in judging, contact us now to find our more!"
+        "role":"MLH Coach"
+    },
+    {
+        "id":4,
+        "name":"Stacey Scott",
+        "image":"images/GryphMissingPic.png",
+        "role":"Professor @ University of Guelph"
     }
 ]
