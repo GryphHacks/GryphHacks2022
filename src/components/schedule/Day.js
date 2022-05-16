@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-var DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var DAYS = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
 
 const Day = (props) => {
   const [isSelected, setIsSelected] = useState(false);
@@ -20,9 +20,9 @@ const Day = (props) => {
   }, [props.selected])
 
   return (
-    <div>
-      <div className={`day-button ${isSelected ? 'show' : ''}`} onClick={handleClick}>{`${DAYS[date.getDay()]} ${date.toLocaleString('en-us', { month: 'short' })}, ${date.getDate()} ${date.getUTCFullYear()}`}  </div>
-    </div>
+    <button className={`day-button ${isSelected ? 'show' : ''}`} onClick={handleClick}>
+    {`${DAYS[date.getDay()]} ${date.toLocaleString('en-us', { month: 'short' })}, ${date.getDate()} ${date.getUTCFullYear()}`}
+    </button>
   )
 }
 

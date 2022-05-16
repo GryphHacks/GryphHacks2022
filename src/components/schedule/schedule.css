@@ -1,48 +1,63 @@
+.schedule-wrapper {
+  margin: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.schedule-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5%;
+  gap: 5%;
+}
+
 .divQuestionS  {
-  background-color:#201616;
+  background-color: var(--softblack);
   border-radius:10px;
   color:white;
   padding: 7px 15px;
 }
 
 .divQuestionS.even {
-  background-color:#740909;
+  background-color: var(--redclick);
   border-radius:10px;
   color:white;
   padding: 7px 15px;
 }
 
 .day-button {
+  flex: 1 0 21%;
   border-radius: 30px;
-  padding: 15px 10px 15px 10px;
-  background-color: #f7d520;
+  padding: 10px;
+  /* max-width: 150px; */
+  margin: auto;
+  background-color: var(--gryphyellow);
   color: white;
-  border-color: #f7d520;
+  border-color: var(--gryphyellow);
 }
 
 .day-button.show {
   border-radius: 30px;
-  padding: 15px 10px 15px 10px;
-  background-color: red;
+  background-color: var(--rubyred);
   color: white;
-  border-color: red;
+  border-color: var(--rubyred);
 }
 
 .day-button.show:hover {
   border-radius: 30px;
-  padding: 15px 10px 15px 10px;
-  background-color: red;
+  background-color: var(--redhover);
   color: white;
-  border-color: red;
+  border-color: var(--redhover);
   cursor: pointer;
 }
 
 .day-button:hover {
   border-radius: 30px;
-  padding: 15px 10px 15px 10px;
-  background-color: #f7d520;
+  background-color: var(--darkyellow);
   color: white;
-  border-color: #f7d520;
+  border-color: var(--darkyellow);
   cursor: pointer;
 }
 
@@ -80,3 +95,8 @@
   height: 7em;
   overflow:hidden;
  }
+
+.subtext {
+  margin-bottom: 30px;
+  text-align: center;
+}
