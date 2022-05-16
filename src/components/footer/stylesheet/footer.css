@@ -50,11 +50,16 @@ footer .questions {
 }
 
 .footer-bottom p {
-    margin-top: 20px;
+    margin: 20px;
+}
+.footer-bottom h7 {
+    padding-top: 6px;
 }
 
 .mlhLink{
     color:white;
+    padding: 5px;
+    padding-top: 7px;
     text-decoration: none;
 }
 .mlhLink:hover{
