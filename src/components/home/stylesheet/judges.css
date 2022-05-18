@@ -12,6 +12,7 @@
 
 /* Layout for the guest cards */
 #layout {
+    margin:auto;
     display: flex;
     flex-direction: row;
     justify-content: center;

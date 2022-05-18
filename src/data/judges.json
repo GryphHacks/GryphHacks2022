@@ -1,5 +1,17 @@
 [
     {
+        "id":6,
+        "name":"Hashu Gill",
+        "image":"images/judges/Judge-HashuGill.jpeg",
+        "role":"Software Development Manager @ Amazon"
+    },
+    {
+        "id":7,
+        "name":"Femi Ajayi",
+        "image":"images/judges/Judge-FemiAjayi.jpeg",
+        "role":"Software Engineer @ Roomiez"
+    },
+    {
         "id":1,
         "name":"Nicholas Wong",
         "image":"images/judges/Judge-NicholasWong.jpeg",
@@ -9,18 +21,24 @@
         "id":2,
         "name":"Olivia Li",
         "image":"images/judges/Judge-OliviaLi.jpg",
-        "role":"Software Engineer @ WeFunder"
+        "role":"Software Scientific Technician @ WeFunder"
     },
     {
         "id":3,
         "name":"Fawziyah Alebiosu",
-        "image":"images/GryphMissingPic.png",
-        "role":"MLH Coach"
+        "image":"images/judges/Judge-FawziyahAlebiosu.jpg",
+        "role":"Software Engineering Fellow @ MLH"
     },
     {
         "id":4,
         "name":"Stacey Scott",
-        "image":"images/GryphMissingPic.png",
-        "role":"Professor @ University of Guelph"
+        "image":"images/judges/Judge-StaceyScott.jpg",
+        "role":"Professor & Assistant Director @ University of Guelph"
+    },
+    {
+        "id":5,
+        "name":"Deb Stacey",
+        "image":"images/judges/Judge-DebStacey.jpg",
+        "role":"Professor & Assistant Director @ University of Guelph"
     }
 ]

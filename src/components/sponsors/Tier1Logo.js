@@ -1,8 +1,8 @@
 const Tier1Logo = ({tier1Sponsor}) => {
     const tier1 = {
-        display:"inline-grid",
+        display:"flex",
+        // flexDirection:"column",
         alignItems:"center",
-        gridTemplateColumns:"auto auto auto auto auto",
     }
     const img  = {
         display: "inline",
