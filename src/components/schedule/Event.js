@@ -7,6 +7,7 @@ const Event = (props) => {
   let eDate = new Date(props.event.end_date);
 
   function formatAMPM(date) {
+    if (date == "Invalid Date") return "";
     var hours = date.getHours();
     var minutes = date.getMinutes();
     var ampm = hours >= 12 ? 'pm' : 'am';

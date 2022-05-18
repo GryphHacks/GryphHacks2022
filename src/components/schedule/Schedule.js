@@ -13,11 +13,11 @@ const Schedule = () => {
   }
 
   return (
-    <div class="schedule-wrapper">
+    <div className="schedule-wrapper">
         <h1 className="section-title">SCHEDULE</h1>
         <div id="schedule">
             <Days days={ ScheduleRecords }/>
-            <p class="subtext">Please note that all times are displayed in Eastern Standard Times (EST).</p>
+            <p className="subtext">Please note that all times are displayed in Eastern Standard Times (EST).</p>
         </div>
     </div>
   )

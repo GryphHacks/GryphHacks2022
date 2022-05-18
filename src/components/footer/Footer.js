@@ -36,15 +36,15 @@ const Footer = () => {
     {/* <img className="overlay-svg" src={CircuitImage} height="100"/> */}
       <div className="footer-bottom">
         <a className="mlhLink" target = "_blank" href="https://mlh.io/code-of-conduct">
-          <h7 className="mlhLink">MLH Code of Conduct</h7>
+          <p className="mlhLink">MLH Code of Conduct</p>
         </a>
-        <h7>&nbsp; | &nbsp;</h7>
+        <p>&nbsp; | &nbsp;</p>
         <a className="mlhLink"target = "_blank" href="https://mlh.io/privacy">
-          <h7 className="mlhLink">MLH Privacy Policy</h7>
+          <p className="mlhLink">MLH Privacy Policy</p>
         </a>
-        <h7>&nbsp; | &nbsp;</h7>
+        <p>&nbsp; | &nbsp;</p>
         <a className="mlhLink"target = "_blank" href="https://github.com/MLH/mlh-policies/blob/master/prize-terms-and-conditions/contest-terms.md">
-          <h7 className="mlhLink">MLH Terms of Service</h7>
+          <p className="mlhLink">MLH Terms of Service</p>
         </a>
         {/* <p>Made with&nbsp; ♡ &nbsp;by the GryphHacks team.</p> */}
       </div>

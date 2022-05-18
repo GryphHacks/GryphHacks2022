@@ -8,8 +8,8 @@ const RegisterSection = () => {
     return (
         <>
             <div className="register">
-                <h1 className='register-title'>Applications are now open!</h1>
-                <div className="register-buttons">
+                <h1 className='register-title'>Applications are now closed.</h1>
+                {/* <div className="register-buttons">
                     <button id="hackie-signup" onClick={ (e) => {
                         e.preventDefault();
                         window.open("https://7zz0jrazbwj.typeform.com/to/v9Msd4Sj", "_blank");
@@ -18,7 +18,7 @@ const RegisterSection = () => {
                         e.preventDefault();
                         window.open("https://7zz0jrazbwj.typeform.com/to/Ebv9KUyq", "_blank");
                     }}>Mentor</button>
-                </div>
+                </div> */}
             </div>
             <div className='sponsor-link-div'>
                 <h6>Interested in becoming a Sponsor?&nbsp;
