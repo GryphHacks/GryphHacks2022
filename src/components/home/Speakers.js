@@ -7,7 +7,7 @@ import "./stylesheet/sponsor_carousel.css";
 
 const Speakers = () => {
   return (
-    <div style={{ position: "relative" ,textAlign:'center',overflow:'hidden'}}>
+    <div style={{ position: "relative", textAlign:'center', overflow:'hidden'}}>
       <img
         style={{ ...imgStyle, ...{ left: "0", top: "5%" } }}
         src={circuitSVG}
@@ -16,7 +16,7 @@ const Speakers = () => {
       {/* TODO this separator is part of LogoShowcase background */}
       {/* <hr style={separatorStyle} /> */}
       <div style={contentStyle}>
-        <h1 className='section-title'>KEYNOTE SPEAKERS</h1>
+        <h1 className='section-title'>WORKSHOP SPEAKERS</h1>
         <Carousel
           className="speaker-carousel"
           showArrows={true}
@@ -30,8 +30,8 @@ const Speakers = () => {
           swipeable={true}
           showIndicators={true}
         >
-          {speakers.map((speaker) => (
-            <SpeakerCard member={speaker} />
+          {speakers.map(( speaker ) => (
+            <SpeakerCard key={speaker.id} member={speaker} />
           ))}
         </Carousel>
       </div>
@@ -73,7 +73,7 @@ const contentStyle = {
   alignItems: "center",
   paddingTop: "5%",
   paddingBottom: "5%",
-  fontSize: "large"
+  fontSize: "large",
 };
 
 export default Speakers;
