@@ -1,15 +1,18 @@
-import Tier1Logo from "../sponsors/Tier1Logo"
-import Tier2Logo from "../sponsors/Tier2Logo"
-import Tier3Logo from "../sponsors/Tier3Logo"
+import GoldLogo from "../sponsors/GoldLogo"
+import SilverLogo from "../sponsors/SilverLogo"
+import BronzeLogo from "../sponsors/BronzeLogo"
 import data from "../../data/sponsor.json"
+
+import "./stylesheet/logo_showcase.css";
+
 const LogoShowcase = () => {
     return (
-        <div>
-            <Tier3Logo tier3Sponsor = {data[3]}/>
-            <Tier2Logo tier2Sponsor = {data[2]}/>
-            <Tier1Logo tier1Sponsor = {data[1]}/>
+        <div className="logo-background">
+            {/* <SilverLogo silverLogo = {data[2]}/> */}
+            {/* <GoldLogo goldLogo = {data[1]}/> */}
+            {/* <BronzeLogo bronzeSponsors = {data[3]}/> */}
         </div>
     )
 }
 
-export default LogoShowcase
+export default LogoShowcase;

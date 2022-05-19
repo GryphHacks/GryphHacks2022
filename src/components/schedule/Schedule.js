@@ -17,7 +17,7 @@ const Schedule = () => {
         <h1 className="section-title">SCHEDULE</h1>
         <div id="schedule">
             <Days days={ ScheduleRecords }/>
-            <p className="subtext">Please note that all times are displayed in Eastern Standard Times (EST).</p>
+            <p className="subtext">Please note that all times are displayed in Eastern Daylight Time (EDT).</p>
         </div>
     </div>
   )

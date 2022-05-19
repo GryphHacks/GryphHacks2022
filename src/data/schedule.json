@@ -1,115 +1,115 @@
 [
   {   
     "id":0,
-    "date":"2012-04-23T18:25:43.511Z",
+    "date":"2022-05-20T17:30:00",
     "events": [
       {
-        "start_date": "2012-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "Monday GryphHacks 2020 Opening Ceremony",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-20T17:00:00",
+        "end_date": "2022-05-20T17:30:00",
+        "event_name": "Opening Ceremony",
+        "event_description": "Kick off the Hackathon with us! We'll be introducing our wonderful team of students who made this possible, our industry partners, and go through our various categories and prizes! "
       },
       {
-        "start_date":"2012-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "M Speed Networking",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-20T17:30:00",
+        "end_date": "",
+        "event_name": "Hacking Begins",
+        "event_description": "Hacking starts now! Get programming, you have 48 hours to make something awesome! Be sure to submit your project to our DevPost before 5:30pm on Sunday."
       },
       {
-        "start_date":"2012-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "M Jane Doe - Full Stack Developer at Google",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date":"2022-05-20T18:00:00",
+        "end_date": "2022-05-20T19:00:00",
+        "event_name": "Intro to GitHub with Sooraj Modi",
+        "event_description": "Join Sooraj, a Software Developer at CineSend, for an introduction to Git and GitHub. The workshop will go over what it is, what it does, how to use it, and why its such an important tool. No experience is required, this workshop is suitable to all experience levels."
       },
       {
-        "start_date": "2012-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "M Cybersecurity Workshop by RBC",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date":"2022-05-20T19:00:00",
+        "end_date": "2022-05-20T19:45:00",
+        "event_name": "What They Don't Tell You About Tech Interviews with Fatima Taj",
+        "event_description": "Join Software engineer Fatima Taj as she presents on the often overwhelming and misunderstood world of tech interviews. Tune in on Friday at 7pm to learn tips for getting interviews, how to properly navigate the interview itself, and important steps to take afterwards."
+      },
+      {
+        "start_date": "2022-05-20T20:00:00",
+        "end_date": "2022-05-20T20:45:00",
+        "event_name": "Intro to React with Saqif Abrar",
+        "event_description": "Interested in building your own dream websites? Get started with the React workshop where you'll learn how to use front-end skills to build up your web dev skills and expand your portfolio.\n\nTune is at 8pm on Friday to get started with the basics, learn React hooks and receive some useful tips to build up your React knowledge. All you'll need to know is basic HTML and CSS to get started!"
+      },
+      {
+        "start_date": "2022-05-20T21:15:00",
+        "end_date": "2022-05-20T22:00:00",
+        "event_name": "Wordle Social",
+        "event_description": "Join us on Friday night for a challenging game of team Wordle! We'll be working together to see how well we can do on the popular word guessing game."
+      },
+      {
+        "start_date": "2022-05-20T23:30:00",
+        "end_date": "2022-05-21T03:00:00",
+        "event_name": "Friday Night Radio Show",
+        "event_description": "Every evening our OC team will be staying up all night with you, playing music, answering questions, interviewing guests, and more! Tune in on discord to hear goof, gaffs, laughs, and get a chance to chat with us about whatever is on your mind throughout the late nights!"
       }
     ]
   },
   {   
     "id":1,
-    "date":"2013-04-23T18:25:43.511Z",
+    "date":"2022-05-21T00:00:00",
     "events": [
       {
-        "start_date": "2013-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "Tuesday GryphHacks 2020 Opening Ceremony",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-21T14:00:00",
+        "end_date": "2022-05-21T14:45:00",
+        "event_name": "Intro to Web Development with Juberiya Ajaz",
+        "event_description": "Join Juberiya to get a structured introduction to everything you need to know about becoming a front-end web developer. Front-end web development (also known as client-side development) is the practice of producing HTML, CSS, and JavaScript for a website or Web Application so that a user can see and interact with them directly. This workshop will cover how to get started with HTML, CSS, and JavaScript."
       },
       {
-        "start_date":"2013-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "T Speed Networking",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date":"2022-05-21T15:45:00",
+        "end_date": "2022-05-21T16:30:00",
+        "event_name": "Industry Professionals Q&A Panel",
+        "event_description": "Tune in on Saturday at 3:45pm to learn about the journeys and experiences of several seasoned industry professionals and UofG Graduates who are now working at world-renowned companies from the Fortune 500 including Meta, Apple, Amazon, and Google. Come on out and ask whatever career questions are on your mind and get advice from experienced industry veterans!"
       },
       {
-        "start_date":"2013-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "T Jane Doe - Full Stack Developer at Google",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-      },
-      {
-        "start_date": "2013-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "T Cybersecurity Workshop by RBC",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date":"2022-05-21T20:00:00",
+        "end_date": "2022-05-21T20:45:00",
+        "event_name": "How to Win a Hackathon with Robert Ciborowski",
+        "event_description": "Join computer science student, and hackathon veteren, Robert Ciborowski as he teaches the skills required in order to produce a top hackathon project, including idea, technology & implementation, presentation, and the right teammates!  Tune in on Saturday at 8pm to learn Robert's winning hackathon recipe, including the ideation process, picking the right technologies, how to build your project, creating the best presentation, and forming your hackathon dream team!"
       }
     ]
   },
   {   
     "id":2,
-    "date":"2014-04-23T18:25:43.511Z",
+    "date":"2022-05-22T00:00:00",
     "events": [
       {
-        "start_date": "2014-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "Wednesday GryphHacks 2020 Opening Ceremony",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-22T11:00:00",
+        "end_date": "2022-05-22T11:45:00",
+        "event_name": "Intro to Kotlin with Keefer Rourke",
+        "event_description": "Tune in on Sunday at 11am for a beginner-friendly workshop that will get you started building multi-platform applications with Kotlin. Discover the power of sharing code between back-end, mobile apps, and the web with one of the most fun and expressive programming languages out there!"
       },
       {
-        "start_date":"2014-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "W Speed Networking",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-22T12:00:00",
+        "end_date": "2022-05-22T12:45:00",
+        "event_name": "echo3D AR and VR Workshop with Alon Grinshpoon",
+        "event_description": "Join echo3D's CEO & Founder, Alon Grinshpoon, to learn more about Virtual and Augmented Reality. Tune in to learn how to use echo3D's cloud asset management tool with their tutorial demo! Their 3D-ready cloud platform helps manage & deliver 3D/AR/VR content to apps & devices everywhere."
       },
       {
-        "start_date":"2014-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "W Jane Doe - Full Stack Developer at Google",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-22T13:00:00",
+        "end_date": "2022-05-22T13:45:00",
+        "event_name": "Intro to Python with Julian Dominguez-Schatz",
+        "event_description": "Join Julian for a beginner level introduction to Python and live coding session with walkthroughs of several examples."
       },
       {
-        "start_date": "2014-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "W Cybersecurity Workshop by RBC",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-      }
-    ]
-  },
-  {   
-    "id":3,
-    "date":"2015-04-23T18:25:43.511Z",
-    "events": [
-      {
-        "start_date": "2015-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "Thursday GryphHacks 2020 Opening Ceremony",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-22T17:30:00",
+        "end_date": "",
+        "event_name": "Hacking Ends - SUBMISSIONS DUE",
+        "event_description": "The hacking period is now over! Make sure your DevPost submission is in before this deadline."
       },
       {
-        "start_date":"2015-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "T Speed Networking",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-22T18:00:00",
+        "end_date": "2022-05-22T21:00:00",
+        "event_name": "Judging Period - Public Voting Begins",
+        "event_description": "For the next 3 hours, judges will look through all the submissions and judge them! In the meantime, you will vote for your favourite project on DevPost! That project will win the People's Choice Award."
       },
       {
-        "start_date":"2015-04-23T18:25:43.511Z",
-        "end_date": "2012-04-23T18:25:43.511Z",
-        "event_name": "T Jane Doe - Full Stack Developer at Google",
-        "event_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "start_date": "2022-05-22T21:30:00",
+        "end_date": "2022-05-22T22:00:00",
+        "event_name": "Closing Ceremony",
+        "event_description": "End the Hackathon with us! We will be showcasing our wonderful winners and their projects, as well as highlighting our amazing external partners that made this all possible."
       }
     ]
   }
