@@ -2,80 +2,172 @@
 
 "1":[
     {   "gold_id":1,
-        "name":"Amazon",
+        "name":"Voiceflow",
         "tier":1,
-        "logo":"images/sponsor/amazon.png",
-        "link":"https://www.aboutamazon.com/"
-    },
-    {   "gold_id":2,
-        "name":"Microsoft",
-        "tier":1,
-        "logo":"images/sponsor/microsoft.png",
-        "link":"https://www.microsoft.com/en-ca/about/"
-    },
-    {   "gold_id":3,
-        "name":"Netflix",
-        "tier":1,
-        "logo":"images/sponsor/netflix.png",
-        "link":"https://www.netflix.com/ca/"
-    },
-    {   "gold_id":4,
-        "name":"Scotiabank",
-        "tier":1,
-        "logo":"images/sponsor/scotiabank.png",
-        "link":"https://www.scotiabank.com/ca/en/about.html"
-    },
-    {   "gold_id":5,
-        "name":"CTRL V",
-        "tier":1,
-        "logo":"images/sponsor/ctrlV.png",
-        "link":"https://www.ctrlv.ca/"
+        "logo":"images/sponsors/voiceflow.png",
+        "link":"https://www.voiceflow.com/",
+        "imgStyle": {
+            "width":"625px",
+            "max-width":"100vw",
+            "max-height":"auto"
+        }
     }
 ],
-
 "2":[
     {   "silver_id":1,
-        "name":"Facebook",
+        "name":"FDM Group",
         "tier":2,
-        "logo":"images/sponsor/facebook.png",
-        "link":"https://about.facebook.com/",
-        "sponsorImage":"images/sponsor/facebook2.png",
-        "sponsorMessage":"For people who like to invent, there's no better place to explore opportunities than at Amazon. We're currently hiring for Software Developers (Interns and Full Time - 2022) in Canada. Join our team and help us build the future!"
+        "logo":"images/sponsors/fdm.png",
+        "link":"https://www.fdmgroup.com/",
+        "imgStyle": {
+            "width":"350px",
+            "max-width":"100vw",
+            "max-height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
     },
     {   "silver_id":2,
-        "name":"Arctic Wolf",
+        "name":"Digital Ocean",
         "tier":2,
-        "logo":"images/sponsor/arcticWolf.png",
-        "link":"https://arcticwolf.com/",
-        "sponsorImage":"images/sponsor/arcticWolf2.png",
-        "sponsorMessage":"PagerDuty is the digital operations management platform that empowers the right action, when seconds matter. For teams who build and run the digital systems that power business, PagerDuty is the best way to manage urgent, mission-critical work to keep operations running smoothly, without disruption of customer experiences. Over 40% of the Fortune 500 place PagerDuty at the center of their digital infrastructure to manage unplanned tasks, events, or opportunities. With more than 1,000 employees across offices in San Francisco, Atlanta, Toronto, Sydney, and London, PagerDuty is helping modern enterprises redefine their approach to operations in a digital-first world."
-    },
-    {   "silver_id":3,
-        "name":"Oracle",
-        "tier":2,
-        "logo":"images/sponsor/oracle.png",
-        "link":"https://www.oracle.com/ca-en/corporate/",
-        "sponsorImage":"images/sponsor/oracle2.png",
-        "sponsorMessage":"SPS Commerce is the world's leading retail network, connecting trading partners around the globe to optimize supply chain operations for all retail partners. We support data-driven partnerships with innovative cloud technology, customer-obsessed service and accessible experts so our customers can focus on what they do best. To date, more than 95,000 companies in retail, distribution, grocery and e-commerce have chosen SPS as their retail network. SPS has achieved 82 consecutive quarters of revenue growth and is headquartered in Minneapolis. For additional information, contact SPS at 866-245-8100 or visit \n\n www.spscommerce.com."
+        "logo":"images/sponsors/digitalocean.png",
+        "link":"https://www.digitalocean.com/",
+        "imgStyle": {
+            "max-width":"300px",
+            "max-height":"300px"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
     }
 ],
 "3":[
-    {   "bronze_id":1,
-        "name":"Apple",
-        "tier":3,
-        "logo":"images/sponsor/apple.png",
-        "link":"https://www.apple.com/ca/business/",
-        "sponsorImage":"images/sponsor/apple2.png",
-        "sponsorMessage":"Cockroach Labs is a company building CockroachDB, a distributed SQL database that helps you build cloud-native apps that survive everything and thrive everywhere -- just like a cockroach!"
-    },
     {   "bronze_id":2,
-        "name":"Google",
+        "name":"CockroachDB",
         "tier":3,
-        "logo":"images/sponsor/google.png",
-        "link":"https://about.google/",
-        "sponsorImage":"images/sponsor/google2.png",
-        "sponsorMessage":"Sundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of GoogleSundar Pichai is the CEO of"
-    }     
+        "logo":"images/sponsors/cockroachdb.png",
+        "link":"https://www.cockroachlabs.com/",
+        "imgStyle": {
+            "width":"425px",
+            "max-width":"100vw",
+            "max-height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":3,
+        "name":"Domain.com",
+        "tier":3,
+        "logo":"images/sponsors/domain.png",
+        "link":"https://www.domain.com/",
+        "imgStyle": {
+            "width":"400px",
+            "max-width":"100vw",
+            "height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":4,
+        "name":"echo3d",
+        "tier":3,
+        "logo":"images/sponsors/echo3d.png",
+        "link":"https://www.echo3d.co/",
+        "imgStyle": {
+            "max-width":"400px",
+            "height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":5,
+        "name":"Google Cloud",
+        "tier":3,
+        "logo":"images/sponsors/google_cloud.png",
+        "link":"https://cloud.google.com/",
+        "imgStyle": {
+            "max-width":"400px",
+            "height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":6,
+        "name":"DeSo",
+        "tier":3,
+        "logo":"images/sponsors/deso.png",
+        "link":"https://www.deso.org/",
+        "imgStyle": {
+            "width":"300px",
+            "max-width":"100vw",
+            "height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":7,
+        "name":"MathWorks",
+        "tier":3,
+        "logo":"images/sponsors/mathworks.png",
+        "link":"https://www.mathworks.com/",
+        "imgStyle": {
+            "width":"400px",
+            "max-width":"100vw",
+            "height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":8,
+        "name":"Poke Guys",
+        "tier":3,
+        "logo":"images/sponsors/poke_guys.png",
+        "link":"https://www.pokeguys.ca/",
+        "imgStyle": {
+            "width":"175px",
+            "max-width":"100vw",
+            "height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":1,
+        "name":"CircleCi",
+        "tier":3,
+        "logo":"images/sponsors/circleci.png",
+        "link":"https://circleci.com/",
+        "imgStyle": {
+            "max-height":"200px",
+            "max-width":"200px"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":9,
+        "name":"Roomiez",
+        "tier":3,
+        "logo":"images/sponsors/roomiez.png",
+        "link":"https://www.roomiez.ca/",
+        "imgStyle": {
+            "width":"225px",
+            "max-width":"100vw",
+            "height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    },
+    {   "bronze_id":10,
+        "name":"Twilio",
+        "tier":3,
+        "logo":"images/sponsors/twilio.png",
+        "link":"https://www.twilio.com/",
+        "imgStyle": {
+            "width":"290px",
+            "max-width":"100vw",
+            "height":"auto"
+        },
+        "sponsorImage":"",
+        "sponsorMessage":""
+    }
 ]
     
 }

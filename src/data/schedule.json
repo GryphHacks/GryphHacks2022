@@ -13,7 +13,7 @@
         "start_date": "2022-05-20T17:30:00",
         "end_date": "",
         "event_name": "Hacking Begins",
-        "event_description": "Hacking starts now! Get programming, you have 48 hours to make something awesome! Be sure to submit your project to our DevPost before 5:30pm on Sunday."
+        "event_description": "Hacking starts now! Get programming, you have 48 hours to make something awesome! Be sure to submit your project to our Devpost before 5:30pm on Sunday."
       },
       {
         "start_date":"2022-05-20T18:00:00",
@@ -36,7 +36,7 @@
       {
         "start_date": "2022-05-20T21:00:00",
         "end_date": "2022-05-20T21:45:00",
-        "event_name": "Wireless Intergration for your Hardware Hack",
+        "event_name": "Wireless Integration for your Hardware Hack",
         "event_description": "General overview of tooling and techniques available to add wireless communication capabilities, particularly remote control, data collection and transfer. Content mainly suited for hardware hackers or those versed enough in backend who are curious, but anyone may take inspiration."
       },
       {
@@ -85,7 +85,7 @@
         "start_date": "2022-05-21T11:00:00",
         "end_date": "2022-05-21T12:00:00",
         "event_name": "Murder Mystery!",
-        "event_description": "Interested in building your own dream websites? Get started with the React workshop where you'll learn how to use front-end skills to build up your web dev skills and expand your portfolio. You'll get started with the basics, learn React hooks and receive some useful tips to build up your React knowledge. All you'll need to know is basic HTML and CSS to get started!"
+        "event_description": "Join us for a spirited and goofy murder mystery game! You'll be placed in zoom calls with up to 18 other competitors, given a detailed character profile, and challenged to solve the murder mystery before your time runs out!"
       },
       {
         "start_date": "2022-05-21T14:00:00",
@@ -115,7 +115,7 @@
         "start_date":"2022-05-21T18:45:00",
         "end_date": "2022-05-21T19:30:00",
         "event_name": "GeoGuesser",
-        "event_description": ""
+        "event_description": "We live on a big planet, bigger then we realize sometimes! In this social we'll work together to solve a few instances of the incredibly challenging GeoGuessr! Get dropped on a street view of google maps and try to figure out where exactly you are in the world! We can't promise we'll win, but we're going to try out best and have fun doing it!"
       },
       {
         "start_date":"2022-05-21T20:00:00",
@@ -162,20 +162,26 @@
       {
         "start_date": "2022-05-22T15:00:00",
         "end_date": "2022-05-22T16:00:00",
-        "event_name": "Countdown to Soft Deadline!",
+        "event_name": "Countdown to Soft Deadline Podcast",
         "event_description": "For the last hour that submissions are open, our team will be counting down live on our discord radio channel. Tune in to make sure you don't miss the deadline, and celebrate the end of our hackathon with us."
+      },
+      {
+        "start_date": "2022-05-22T16:00:00",
+        "end_date": "",
+        "event_name": "Devpost Project Draft Submission",
+        "event_description": "At this time, all teams should have made a project on Devpost, added their team members to their project if any, and included drafts for their Project Name, Elevator Pitch, and Project Story (Description). This project with rough first drafts of the above mentioned items MUST be submitted by this deadline but can be continued to be edited, added onto and finalized until the Devpost Project Submission Hard Deadline. Anything not mentioned including code or video demos are not required at this time."
       },
       {
         "start_date": "",
         "end_date": "2022-05-22T17:30:00",
-        "event_name": "Hacking Ends - SUBMISSIONS DUE",
-        "event_description": "The hacking period is now over! Make sure your DevPost submission is in before this deadline."
+        "event_name": "Devpost Project Submission HARD DEADLINE",
+        "event_description": "All Devpost projects must be finalized and submitted by this time. Make sure to add all your team members and their contributions as well as look through the submission requirements on our Devpost home page. A few key required items to look out for are a descriptive Project Story/Name/Elevator Pitch, a link to your project's public Github repo, and a link to your maximum 3 minute video submission outlining the features of your project either uploaded to Youtube, Vimeo or any other appropriate streaming service."
       },
       {
         "start_date": "2022-05-22T18:00:00",
         "end_date": "2022-05-22T21:00:00",
         "event_name": "Judging Period - Public Voting Begins",
-        "event_description": "For the next 3 hours, judges will look through all the submissions and judge them! In the meantime, you will vote for your favourite project on DevPost! That project will win the People's Choice Award."
+        "event_description": "For the next 3 hours, judges will look through all the submissions and judge them! In the meantime, you will vote for your favourite project on Devpost! That project will win the People's Choice Award."
       },
       {
         "start_date": "2022-05-22T21:30:00",

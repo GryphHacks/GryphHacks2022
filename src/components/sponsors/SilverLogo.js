@@ -1,25 +1,14 @@
-const Tier2Logo = ({tier2Sponsor}) => {
-   const tier2 = {
-        display:"inline-grid",
-        alignItems:"center",
-        gridTemplateColumns:"auto auto auto"
-    }
-    const img  = {
-        display: "inline",
-        maxWidth:"100px",
-        maxHeight:"100px",
-        width: "auto",
-        height: "auto",
-      }
+import "./stylesheet/logos.css"
+
+const SilverLogo = ({ silverSponsors }) => {
+
     return (
-        <div>
-            <div style = {tier2}>
-                {tier2Sponsor.map( ({id2,logo}) => (
-                <img  key = {id2} src = {logo} style = {img}/>
-                 ))}
-            </div>
+        <div className="tier">
+            {silverSponsors.map( ({ silver_id, logo, imgStyle }) => (
+                <img className="silver-logo tier-logo" style={ imgStyle } key={ silver_id } src={ logo }/>
+            ))}
         </div>
     )
 }
 
-export default Tier2Logo
+export default SilverLogo;

@@ -13,8 +13,6 @@ const Speakers = () => {
         src={circuitSVG}
         alt="circuit"
       />
-      {/* TODO this separator is part of LogoShowcase background */}
-      {/* <hr style={separatorStyle} /> */}
       <div style={contentStyle}>
         <h1 className='section-title'>WORKSHOP SPEAKERS</h1>
         <Carousel
@@ -28,7 +26,7 @@ const Speakers = () => {
           autoPlay={true}
           emulateTouch={true}
           swipeable={true}
-          showIndicators={true}
+          showIndicators={false}
         >
           {speakers.map(( speaker ) => (
             <SpeakerCard key={speaker.id} member={speaker} />
@@ -56,14 +54,6 @@ const imgStyle = {
   width: "800px",
   zIndex: "-1",
   objectFit: "cover",
-};
-
-// top separator
-const separatorStyle = {
-  backgroundColor: "var(--gryphyellow)",
-  opacity: "1",
-  padding: "2%",
-  width: "100%",
 };
 
 // all text and content within the Keynote Speakers section on Landing
