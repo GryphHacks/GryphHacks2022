@@ -1,16 +1,24 @@
 const BronzeLogo = ({ bronzeSponsors }) => {
     
     const bronze = {
-        display:"inline-grid",
+        display:"flex",
+        // flexDirection:"column",
         alignItems:"center",
-        gridTemplateColumns:"auto auto",
+    }
+
+    const logo = {
+        display: "inline",
+        maxWidth:"100px",
+        maxHeight:"100px",
+        width: "auto",
+        height: "auto",
     }
 
     return (
         <div>
-            <div style = {bronze}>
-                {bronzeSponsors.map( ({ bronze_id, logo }) => (
-                    <img  key={ bronze_id } src={ logo }/>
+            <div style={ bronze }>
+                {bronzeSponsors.map( ({ bronze_id, img }) => (
+                    <img style={logo} key={ bronze_id } src={ img }/>
                 ))}
             </div>
         </div>

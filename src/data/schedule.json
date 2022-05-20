@@ -34,15 +34,27 @@
         "event_description": "Interested in building your own dream websites? Get started with the React workshop where you'll learn how to use front-end skills to build up your web dev skills and expand your portfolio.\n\nTune is at 8pm on Friday to get started with the basics, learn React hooks and receive some useful tips to build up your React knowledge. All you'll need to know is basic HTML and CSS to get started!"
       },
       {
-        "start_date": "2022-05-20T21:15:00",
-        "end_date": "2022-05-20T22:00:00",
-        "event_name": "Wordle Social",
-        "event_description": "Join us on Friday night for a challenging game of team Wordle! We'll be working together to see how well we can do on the popular word guessing game."
+        "start_date": "2022-05-20T21:00:00",
+        "end_date": "2022-05-20T21:45:00",
+        "event_name": "Wireless Intergration for your Hardware Hack",
+        "event_description": "General overview of tooling and techniques available to add wireless communication capabilities, particularly remote control, data collection and transfer. Content mainly suited for hardware hackers or those versed enough in backend who are curious, but anyone may take inspiration."
+      },
+      {
+        "start_date": "2022-05-20T22:00:00",
+        "end_date": "2022-05-20T22:30:00",
+        "event_name": "Scribble.io Competition",
+        "event_description": "Silly Social #1! Tired of staring at your code? Take a break and relax! Join us for a few rounds of scribble.io for some silly doodling fun!"
+      },
+      {
+        "start_date": "2022-05-20T22:00:00",
+        "end_date": "2022-05-20T22:30:00",
+        "event_name": "Among Us Tournament",
+        "event_description": "Not over the space themed imposter game that gripped our attention at the start of this pandemic? Us either! Join in to play a few rounds of the game with other hackies, make friends, and see if you can catch the imposter! (or evade being caught)"
       },
       {
         "start_date": "2022-05-20T23:30:00",
-        "end_date": "2022-05-21T03:00:00",
-        "event_name": "Friday Night Radio Show",
+        "end_date": "",
+        "event_name": "Late Night Radio Show",
         "event_description": "Every evening our OC team will be staying up all night with you, playing music, answering questions, interviewing guests, and more! Tune in on discord to hear goof, gaffs, laughs, and get a chance to chat with us about whatever is on your mind throughout the late nights!"
       }
     ]
@@ -52,22 +64,70 @@
     "date":"2022-05-21T00:00:00",
     "events": [
       {
+        "start_date": "",
+        "end_date": "2022-05-21T03:00:00",
+        "event_name": "Late Night Radio Show",
+        "event_description": "Every evening our OC team will be staying up all night with you, playing music, answering questions, interviewing guests, and more! Tune in on discord to hear goof, gaffs, laughs, and get a chance to chat with us about whatever is on your mind throughout the late nights!"
+      },
+      {
+        "start_date": "2022-05-21T04:00:00",
+        "end_date": "2022-05-21T04:45:00",
+        "event_name": "The Wiki Game",
+        "event_description": "Take a pause, take a breath, and take a chance in a casual race through Wikipedia's hundred of articles to try and find the target page in this social."
+      },
+      {
+        "start_date": "2022-05-21T11:00:00",
+        "end_date": "2022-05-21T12:00:00",
+        "event_name": "Team Trivia",
+        "event_description": "Networking Social #1! Come out and meet some other competitors, judges, OC members, and more in this fun game of general trivia! You'll be assigned to a team of 5 people based on a 'build your own adventure' game, and have a chance to chat, and puzzle over our questions."
+      },
+      {
+        "start_date": "2022-05-21T11:00:00",
+        "end_date": "2022-05-21T12:00:00",
+        "event_name": "Murder Mystery!",
+        "event_description": "Interested in building your own dream websites? Get started with the React workshop where you'll learn how to use front-end skills to build up your web dev skills and expand your portfolio. You'll get started with the basics, learn React hooks and receive some useful tips to build up your React knowledge. All you'll need to know is basic HTML and CSS to get started!"
+      },
+      {
         "start_date": "2022-05-21T14:00:00",
         "end_date": "2022-05-21T14:45:00",
         "event_name": "Intro to Web Development with Juberiya Ajaz",
         "event_description": "Join Juberiya to get a structured introduction to everything you need to know about becoming a front-end web developer. Front-end web development (also known as client-side development) is the practice of producing HTML, CSS, and JavaScript for a website or Web Application so that a user can see and interact with them directly. This workshop will cover how to get started with HTML, CSS, and JavaScript."
       },
       {
+        "start_date":"2022-05-21T15:00:00",
+        "end_date": "2022-05-21T15:30:00",
+        "event_name": "Dictionary Mystery",
+        "event_description": "Think you know the English language? We doubt it! Join members of our organizing committee and try to guess the definitions of this incredibly uncommon words! We guarantee some fun, some confusion, and lots of linguistic challenges."
+      },
+      {
         "start_date":"2022-05-21T15:45:00",
-        "end_date": "2022-05-21T16:30:00",
+        "end_date": "2022-05-21T16:45:00",
         "event_name": "Industry Professionals Q&A Panel",
         "event_description": "Tune in on Saturday at 3:45pm to learn about the journeys and experiences of several seasoned industry professionals and UofG Graduates who are now working at world-renowned companies from the Fortune 500 including Meta, Apple, Amazon, and Google. Come on out and ask whatever career questions are on your mind and get advice from experienced industry veterans!"
+      },
+      {
+        "start_date":"2022-05-21T17:00:00",
+        "end_date": "2022-05-21T18:30:00",
+        "event_name": "LeetCode Night",
+        "event_description": "Join us to enhance your skills, expand your knowledge and prepare for technical interviews as we attempt to solve some famous questions on livestream! We'll be sharing links to all the questions so feel free to attempt the questions on your own and drop screenshots of your code results/efficiency in our #leetcode-stats channel!"
+      },
+      {
+        "start_date":"2022-05-21T18:45:00",
+        "end_date": "2022-05-21T19:30:00",
+        "event_name": "GeoGuesser",
+        "event_description": ""
       },
       {
         "start_date":"2022-05-21T20:00:00",
         "end_date": "2022-05-21T20:45:00",
         "event_name": "How to Win a Hackathon with Robert Ciborowski",
         "event_description": "Join computer science student, and hackathon veteren, Robert Ciborowski as he teaches the skills required in order to produce a top hackathon project, including idea, technology & implementation, presentation, and the right teammates!  Tune in on Saturday at 8pm to learn Robert's winning hackathon recipe, including the ideation process, picking the right technologies, how to build your project, creating the best presentation, and forming your hackathon dream team!"
+      },
+      {
+        "start_date":"2022-05-21T23:30:00",
+        "end_date": "",
+        "event_name": "Late Night Radio Show",
+        "event_description": "Every evening our OC team will be staying up all night with you, playing music, answering questions, interviewing guests, and more! Tune in on discord to hear goof, gaffs, laughs, and get a chance to chat with us about whatever is on your mind throughout the late nights!"
       }
     ]
   },
@@ -75,6 +135,12 @@
     "id":2,
     "date":"2022-05-22T00:00:00",
     "events": [
+      {
+        "start_date":"",
+        "end_date": "2022-05-22T03:00:00",
+        "event_name": "Late Night Radio Show",
+        "event_description": "Every evening our OC team will be staying up all night with you, playing music, answering questions, interviewing guests, and more! Tune in on discord to hear goof, gaffs, laughs, and get a chance to chat with us about whatever is on your mind throughout the late nights!"
+      },
       {
         "start_date": "2022-05-22T11:00:00",
         "end_date": "2022-05-22T11:45:00",
@@ -94,8 +160,14 @@
         "event_description": "Join Julian for a beginner level introduction to Python and live coding session with walkthroughs of several examples."
       },
       {
-        "start_date": "2022-05-22T17:30:00",
-        "end_date": "",
+        "start_date": "2022-05-22T15:00:00",
+        "end_date": "2022-05-22T16:00:00",
+        "event_name": "Countdown to Soft Deadline!",
+        "event_description": "For the last hour that submissions are open, our team will be counting down live on our discord radio channel. Tune in to make sure you don't miss the deadline, and celebrate the end of our hackathon with us."
+      },
+      {
+        "start_date": "",
+        "end_date": "2022-05-22T17:30:00",
         "event_name": "Hacking Ends - SUBMISSIONS DUE",
         "event_description": "The hacking period is now over! Make sure your DevPost submission is in before this deadline."
       },

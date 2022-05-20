@@ -39,7 +39,7 @@ const App = () => {
             <Route path="/" exact component={Landing} />
             <Route path="/about" exact component={About} />
             <Route path="/sponsor" exact component={Sponsor} />
-            {/* <Route path="/schedule" exact component={Schedule} /> */}
+            <Route path="/schedule" exact component={Schedule} />
             <Route path="/faq" exact component={FAQ} />
             <Route path="/contact" exact component={Contact} />
             {/* <Route path="/register" exact component={Register} /> */}

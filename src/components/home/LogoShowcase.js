@@ -8,9 +8,9 @@ import "./stylesheet/logo_showcase.css";
 const LogoShowcase = () => {
     return (
         <div className="logo-background">
-            {/* <SilverLogo silverLogo = {data[2]}/> */}
-            {/* <GoldLogo goldLogo = {data[1]}/> */}
-            {/* <BronzeLogo bronzeSponsors = {data[3]}/> */}
+            {/* <SilverLogo silverLogo = {data[2]}/>
+            <GoldLogo goldLogo = {data[1]}/> */}
+            <BronzeLogo bronzeSponsors = {data[3]}/>
         </div>
     )
 }
