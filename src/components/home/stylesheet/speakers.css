@@ -2,12 +2,9 @@
         display: flex;
         flex-Direction:row;
         justify-Content: center;
-        align-Items: center;
+        align-items: center;
         column-Gap: 5%;
         padding: 5% 5;
-        margin-Bottom: 5%;
-        margin-left: 5%;
-        margin-right: 5%;
 }
 
 @media (max-Width:1000px) {

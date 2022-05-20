@@ -1,31 +1,21 @@
 import "./stylesheet/speakers.css"
 const SpeakerCard = ({member}) => {
   return (
-    <div className="cardStyle">
-      <img style={photoStyle} alt={member.name} src={member.image} />
-      <div style={infoCardStyle}>
-        <div style={layerStyle} />
-        <h4>{member.name}</h4>
-        <h5 style={{fontSize: "15px"}}>{member.role}</h5>
-        <br />
-        <p>{member.description}</p>
+      <div className="cardStyle">
+        {/* <img style={photoStyle} alt={member.name} src={member.image} /> */}
+        <div style={cardInfoStyle}>
+          <div style={layerStyle} />
+          <h4>{member.name}</h4>
+          <h5 style={{fontSize: "15px"}}>{member.role}</h5>
+          <br />
+          <p>{member.description}</p>
+        </div>
       </div>
-    </div>
   );
 }
 
-// main Speakers component content - Speaker Card (photo and info section)
-// image in Speaker Card
-const photoStyle = {
-  borderRadius: "50%",
-  border: "10px solid rgba(221,17,51,.73)",
-  height: "200px",
-  width: "200px",
-  padding: "5px"
-};
-
 // info section in Speaker Card
-const infoCardStyle = {
+const cardInfoStyle = {
   textAlign: "left",
   position: "relative",
   backgroundColor: "#8A8A8A",
