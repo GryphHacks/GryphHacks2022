@@ -3,7 +3,7 @@
 
         {   "idL":1,
             "question":"Am I eligible to participate?",
-            "answer":"This year, GryphHacks will run fully virtually! Although we were super excited to welcome everyone to the University of Guelph to meet and collaborate with everyone in-person, the health and safety of our hackies, mentors, and judges remain our top priority."
+            "answer":"Anyone can participate! As long as you are at least 14 years old, are a student, and are interested in the world of technology, you can apply! Graduates and Industry professionals cannot be hackers, but we welcome you to join us as a Mentor, Judge or Speaker!"            
         },
         {   "idL":2,
             "question":"How many people can be on a team?",
@@ -11,7 +11,7 @@
         },
         {   "idL":3,
             "question":"When and how will I hear back about my application?",
-            "answer":"Sit tight, our team will be reviewing your applications over the next few weeks. Decisions will be sent via email after Round 2 closes. Keep an eye on our Instagram and LinkedIn for updates!"
+            "answer":"All acceptance emails + verification emails have been sent out! Check your spam, trash and all folders if you can’t find it in your inbox."
         }
     
     ],
@@ -22,7 +22,13 @@
         },
         {   "idR":2,
             "question":"How will communication work?",
-            "answer":"Prior to the event, we’ll be sharing updates on our Instagram, Twitter, LinkedIn, and through our mailing list. During the event, you’ll get live updates and announcements through our Discord server."
+            "answer":"Prior to the event, we’ll be sharing updates on our socials! Keep an eye on our Facebook, Instagram, and LinkedIn, and through our mailing list. During the event, you’ll get live updates and announcements through our Discord server. "
+        },
+        {
+            "idR":1,
+            "question":"Is GryphHacks virtual or in-person this year",
+            "answer":"This year, GryphHacks will run fully virtually! Although we were super excited to welcome everyone to the University of Guelph to meet and collaborate with everyone in-person, the health and safety of our hackies, mentors, and judges remain our top priority."
+
         }
     ]
     
