@@ -33,6 +33,42 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 10vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }    
 }
+
+.photoStyle  {
+    border: 7px solid rgba(221,17,51,.73)!important;
+    border-radius: 50%;
+    padding: 1px;
+    max-width: 225px;
+    max-height: 225px;
+  }
+  
+
+  .infoCardStyle  {
+    display: flex;
+    justify-content: center;
+    text-Align: left;
+    position: relative;
+    background-color: #8A8A8A;
+    color: white;
+    padding: 4%;
+    width: 60%;
+    border-Radius: 10px;
+    box-Shadow: -3px 3px 3px rgb(122,122,122);
+    height: 400px;
+ 
+  }
+@media (max-width:800px) {
+    .infoCardStyle{
+        height: 490px;
+    }
+}
+.textStyle{
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+
+  }
