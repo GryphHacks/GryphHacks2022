@@ -46,8 +46,8 @@
         "event_description": "Silly Social #1! Tired of staring at your code? Take a break and relax! Join us for a few rounds of scribble.io for some silly doodling fun!"
       },
       {
-        "start_date": "2022-05-20T22:00:00",
-        "end_date": "2022-05-20T22:30:00",
+        "start_date": "2022-05-20T22:45:00",
+        "end_date": "2022-05-20T23:15:00",
         "event_name": "Among Us Tournament",
         "event_description": "Not over the space themed imposter game that gripped our attention at the start of this pandemic? Us either! Join in to play a few rounds of the game with other hackies, make friends, and see if you can catch the imposter! (or evade being caught)"
       },
@@ -82,8 +82,8 @@
         "event_description": "Networking Social #1! Come out and meet some other competitors, judges, OC members, and more in this fun game of general trivia! You'll be assigned to a team of 5 people based on a 'build your own adventure' game, and have a chance to chat, and puzzle over our questions."
       },
       {
-        "start_date": "2022-05-21T11:00:00",
-        "end_date": "2022-05-21T12:00:00",
+        "start_date": "2022-05-21T12:15:00",
+        "end_date": "2022-05-21T13:50:00",
         "event_name": "Murder Mystery!",
         "event_description": "Join us for a spirited and goofy murder mystery game! You'll be placed in zoom calls with up to 18 other competitors, given a detailed character profile, and challenged to solve the murder mystery before your time runs out!"
       },
@@ -150,8 +150,8 @@
       {
         "start_date": "2022-05-22T12:00:00",
         "end_date": "2022-05-22T12:45:00",
-        "event_name": "echo3D AR and VR Workshop with Alon Grinshpoon",
-        "event_description": "Join echo3D's CEO & Founder, Alon Grinshpoon, to learn more about Virtual and Augmented Reality. Tune in to learn how to use echo3D's cloud asset management tool with their tutorial demo! Their 3D-ready cloud platform helps manage & deliver 3D/AR/VR content to apps & devices everywhere."
+        "event_name": "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
+        "event_description": "This workshop, led by echo3D CEO and Founder Alon Grinshpoon, will show how to quickly create AR/VR apps with no technical skills or coding required and scale existing apps by connecting them to the cloud. Workshop participants will learn how to create real-time cloud-connected augmented and virtual reality (AR/VR) apps using the echo3D platform. Participants are encouraged to bring a laptop and a smartphone, or just follow along the live demonstration. Platforms for experimentation include: Google ARCore, WebXR, Vuforia, Unity-based apps, and more."
       },
       {
         "start_date": "2022-05-22T13:00:00",
