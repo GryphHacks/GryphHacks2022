@@ -10,16 +10,16 @@ const SponsorCarousel = () => {
             <h1 className = "headingCSS">SPONSOR SHOWCASE</h1>
             <div className = "carouselContainer">
               <Carousel 
-              showArrows ={true} 
-              showThumbs = {false} 
-              showStatus = {false} 
-              infiniteLoop = {true} 
-              interval ={10000} 
-              autoPlay = {true}
-              width = {1032}
-              emulateTouch = {true}
-              swipeable = {true}
-              showIndicators={false}
+                showArrows ={true} 
+                showThumbs = {false} 
+                showStatus = {false} 
+                infiniteLoop = {true} 
+                interval ={10000} 
+                autoPlay = {true}
+                width = {1032}
+                emulateTouch = {true}
+                swipeable = {true}
+                showIndicators={false}
               >
 
               {data[2].map(({id2,name,sponsorImage,link,sponsorMessage})=>(

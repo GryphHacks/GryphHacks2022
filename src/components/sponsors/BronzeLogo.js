@@ -6,7 +6,7 @@ const BronzeLogo = ({ bronzeSponsors }) => {
         <div className="tier">
             {bronzeSponsors.map( ({ bronze_id, logo, imgStyle }) => (
 
-                <img className="tier-logo" style={ imgStyle } key={ bronze_id } src={ logo }/>
+                <img className="tier-logo bronze-logo" style={ imgStyle } key={ bronze_id } src={ logo }/>
             ))}
         </div>
     )
