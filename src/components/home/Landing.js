@@ -29,7 +29,7 @@ const Landing = () => {
       <Mission/>
       <SponsorLanding/>
       {/* <SponsorCarousel/> */}
-      {/* <LogoShowcase/> */}
+      <LogoShowcase/>
       <Speakers/>
       <Judges/>
     </div>

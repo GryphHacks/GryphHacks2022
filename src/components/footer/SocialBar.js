@@ -8,7 +8,7 @@ import {
 const SocialBar = () => {
   return (
     <div>
-      {/* <a href="https://discord.gg/JkBSZWY3" target="_blank"><FaDiscord style={iconStyle} size = {28}/></a> */}
+      <a href="https://discord.gg/MRvDuxCjWY" target="_blank"><FaDiscord style={iconStyle} size = {28}/></a>
       <a href="https://www.instagram.com/gryphhacks/" target="_blank"><FaInstagram style={iconStyle} size = {28} textDecoration={'none'}/></a>
       <a href="https://twitter.com/GryphHacks" target="_blank"><FaTwitter style={iconStyle} size = {28} textDecoration={'none'}/></a>
       <a href="https://www.linkedin.com/company/gryphhacks/mycompany/" target="_blank"><FaLinkedin style={iconStyle} size = {28} textDecoration={'none'}/></a>

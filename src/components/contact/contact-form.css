@@ -1,12 +1,18 @@
 /* Contact component - form */
 #contact-form {
-    width: 100%;
+    width:50vw;
+    max-width: 750px;
     padding: 20px;
     background-color: var(--gryphnavy);
     border-radius: 10px;
     text-align: center;
     justify-content: center;
     color: #fff;
+}
+@media (max-width: 1000px) {
+    #contact-form {
+        width: 100%;
+    }
 }
 #contact-form h5 {
     text-align: left;

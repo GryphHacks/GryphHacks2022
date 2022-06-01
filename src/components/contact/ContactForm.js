@@ -18,6 +18,7 @@ const ContactForm = () => {
       document.querySelector("form").reset();
     } catch(e) {
       displayNotification(e.message);
+      // console.log(e.message);
     }
   };
 
@@ -36,6 +37,7 @@ const ContactForm = () => {
     } else if (!email.match(regexEmail)) { // text was entered but is incorrectly formatted
       throw new Error("Enter a valid email address.");
     } else { // no empty fields and no incorrectly formatted email address
+      console.log("empty msg else")
       setMessage(""); //reset message variable after submitted input has been checked
     }
   };

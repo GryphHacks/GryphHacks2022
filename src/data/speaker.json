@@ -1,16 +1,135 @@
 [
     {
         "id":1,
-        "name":"COMING SOON ~",
-        "image":"images/GryphMissingPic.png",
-        "role":"Mentor @ GryphHacks",
-        "description": "This could be you! We're looking for passionate individuals to help inspire and mentor our hackies."
+        "name":"Sooraj Modi",
+        "image":"images/speakers/Speaker-SoorajModi.jpg",
+        "role":"Software Developer @ CineSend",
+        "description": "Sooraj Modi graduated from the University of Guelph with a degree in Computer Science in 2021. He is currently working as a Software Developer at CineSend, and has worked on all sorts of projects from Web Development, Data Science, to Mobile Development.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/soorajmodi/",
+            "github":"https://github.com/SoorajModi"
+        }
     },
     {
         "id":2,
-        "name":"COMING SOON ~",
-        "image":"images/GryphMissingPic.png",
-        "role":"Speaker @ GryphHacks",
-        "description": "If you're interested in participating, contact us now to get started!"
+        "name":"Fatima Taj",
+        "image":"images/speakers/Speaker-Fatima.jpg",
+        "role":"Software Engineer @ Yelp",
+        "description": "Fatima graduated from the University of Waterloo in 2019, she found herself overwhelmed and underprepared for the reality of technical interviews while trying to find a job.  Join Fatima for a talk on how she found success in the field and earned her current position at Yelp as a Software Engineer.  She wants to help others find their footing in the complicated world that is technical interviews. Fatima has since attended over forty hackathons to share her knowledge with students and new grads alike.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/fatima-taj-37363a109/"
+        }
+    },
+    {
+        "id":3,
+        "name":"Saqif Abrar",
+        "image":"images/speakers/Speaker-Saqif.jpeg",
+        "role":"Full-Stack Developer",
+        "description": "From “hello world!” in high school to neural networks in university, exploring the world of technology lead Saqif to love full-stack development and machine learning. As a software engineering co-op student, he found himself enjoying experiences with emerging technologies in the field. The thing Saqif loves most about being an engineer is the satisfaction of solving difficult problems and the impact of his solutions.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/saqifabrar/",
+            "github":"https://github.com/SaqifAbrar"
+        }
+    },
+    {
+        "id":4,
+        "name":"Juberiya Ajaz",
+        "image":"images/speakers/Speaker-Juberiya.jpg",
+        "role":"Electrical & Computer Engineering Student",
+        "description": "Juberiya Ajaz is an ECE Sophomore from Delhi, India. She is a Web-developer, an open-source contributor at GSSoC22, and a part-time volunteer. Thanks to her years of experience, she's become very meticulous in her work and loves helping and mentoring others. Juberiya has mentored over 50 mentees in various hackathons and even won the most committed mentor at the hackathon Creatica.",
+        "social": {
+            "linkedin":" https://www.linkedin.com/in/juberiya-a-5b8b57223/"
+        }
+    },
+    {
+        "id":5,
+        "name":"Robert Ciborowski",
+        "image":"images/speakers/Speaker-Robert.jpg",
+        "role":"Software Engineer Intern @ Meta",
+        "description": "Robert is a Computer Science student at the University of Toronto, set to graduate in 2023, who is currently working as a Software Engineer Intern at Meta in Cambridge, Massachusetts. Robert has worked as a Machine Learning Intern at a startup in Toronto and as an AI Engineer at RBC Capital Market's algo trading development team. He also ran a successful Kickstarter campaign for a (now released) game, Neo-Zero,  which he built on his own game engine.\nRecently, Robert placed first in both the UofT small business challenge and the Google Cloud challenge in at UofT Hacks IX. His team built an AR social network called \"Metagram\". He attributes this win to the experience he gained from attending a number of hackathons, and believes that he has created a formula that anyone can implement to win a hackathon!",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/robert-ciborowski-b11099175/"
+        }
+    },
+    {
+        "id":6,
+        "name":"Keefer Rourke",
+        "image":"images/speakers/Speaker-Keefer.jpg",
+        "role":"Senior Software Engineer @ Cash App",
+        "description": "Keefer Rourke graduated from the University of Guelph with a degree in Computer Science in 2021. Keefer is passionate about digital rights, ethics in technology, and building tools to empower individuals. Currently, he is working as a Senior Software Engineer at Cash App in Toronto.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/keeferrourke",
+            "twitter":"https://twitter.com/keeferrourke?lang=en"
+        }
+    },
+    {
+        "id":7,
+        "name":"Julian Dominguez-Schatz",
+        "image":"images/speakers/Speaker-Julian.jpg",
+        "role":"Software Intern @ Stripe",
+        "description": "Julian is a third year Computer Science student at the University of Waterloo who is currently working as a Software Intern at Stripe.  He has previous development experience from internships with Lyft, Google, and Wish.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/jfdoming/"
+        }
+    },
+    {
+        "id":8,
+        "name":"Alon Grinshpoon",
+        "image":"images/speakers/Speaker-Alon.png",
+        "role":"CEO & Founder @ echo3D",
+        "description": "Alon is a big-believer in 3D, augmented reality (AR), and virtual reality (VR) and is working on building the world's best 3D-first content management system (CMS) and delivery network (CDN) to help companies scale their 3D solutions. Alon is a Java native-speaker with countless hours of programming in Java, Android, Unity, C#, C and Bash. Alon loves to create AR/VR apps, GUI and graphically design applications, open-source programs and API integration alongside his experience and passion for cloud and computer communication networks.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/alongrinshpoon/"
+        }
+    },
+    {
+        "id":9,
+        "name":"Dennis Kao",
+        "image":"images/speakers/Speaker-DennisKao.jpg",
+        "role":"iOS Engineer @ Meta",
+        "description": "Dennis Kao graduated from the University of Guelph in 2018 after 5 years of studying biology and computer science. He has worked at numerous workplaces, from a bioinformatics lab, to a consultancy and now as an iOS Engineer at Meta. He is excited to be back and share his experience with the bright minds at Guelph.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/denkao/"
+        }
+    },
+    {
+        "id":10,
+        "name":"Matt Blatz",
+        "image":"images/speakers/Speaker-MattBlatz.jpeg",
+        "role":"Software Engineer @ Amazon",
+        "description": "Matt Blatz graduated from UoG in 2017, currently living in Vancouver and working as a Software Development Engineer at AWS IQ. Matt has been with Amazon for about a year and a half, before which he was a full-stack developer at a Canadian marketing firm.",
+        "social": {
+            "linkedin":"https://ca.linkedin.com/in/matthewjblatz"
+        }
+    },
+    {
+        "id":11,
+        "name":"Chris Dulhanty",
+        "image":"images/speakers/Speaker-ChrisDulhanty.jpeg",
+        "role":"Machine Learning Engineer @ Apple",
+        "description": "Chris is a Machine Learning Engineer at Apple in California with a Bachelor of Engineering from the University of Guelph and Master of Applied Science & Systems Design Engineering from the University of Waterloo. He's also had prior experience as a Graduate Research Assistant with Vision and Image Processing Group and a Data Scientist at TD Bank.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/chris-dulhanty/"
+        }
+    },
+    {
+        "id":12,
+        "name":"Sawaiba Sial",
+        "image":"images/speakers/Speaker-Sawaiba.png",
+        "role":"Software Engineer @ Google",
+        "description": "Sawaiba Sial graduated last year with a degree in Software Engineering from the University of Guelph. She is currently working as a Software Engineer at Google in Kitchener. Sawaiba loves being a part of a community that is representative and supportive of all people passionate about tech and she is thrilled to be joining everyone at GryphHacks! She hopes to share some insights about navigating the job market as a new grad and starting a career at Google.",
+        "social": {
+            "linkedin":"https://www.linkedin.com/in/sawaibasial/"
+        }
+    },
+    {
+        "id":13,
+        "name":"Charlie Li",
+        "image":"images/speakers/Speaker-Charlie.jpg",
+        "role":"Technical Consultant",
+        "description": "Technical consultant and semi-permanent student, currently studying Electrical Engineering Technology at Penn State University. FreeBSD committer focusing on desktop software, amateur radio software and Python infrastructure. Hacked at too many (in-person) hackathons and won a couple.",
+        "social": {
+            "linkedin":""
+        }
     }
 ]

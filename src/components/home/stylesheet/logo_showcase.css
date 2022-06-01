@@ -1,0 +1,23 @@
+.logo-background {
+    background-color: #FFF2D1;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25), 0px -3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.logo-container {
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 80px;
+    width: 65%;
+}
+
+.yellow-bar {
+    background: #FFF2D1;
+    opacity: 1;
+    padding: 20px;
+    width: 100;
+}
+
+.gold-logo {
+    padding-left: 20px;
+    padding-right: 20px;
+}

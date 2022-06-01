@@ -11,7 +11,7 @@
 }
 @media (max-width:1000px){
     .speaker-carousel .carousel {
-        width: 100vw!important;
+        width: 150vw!important;
     }
 }
 .carousel.carousel-slider {
@@ -30,6 +30,19 @@
     top:0px;
 }
 
+@media (max-width:1000px) {
+    .carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover{
+        background-color: transparent;
+        right: 27.5vw;
+        top: 200px
+    }
+    
+    .carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover {
+        background-color: transparent;
+        left: 27.5vw;
+        top:200px;
+    }
+}
 .carousel .control-arrow, .carousel.carousel-slider .control-arrow{
     opacity: 1;
 }
@@ -54,7 +67,7 @@
 
 /* overriding styling for Keynote Speaker carousel arrows */
 .speaker-carousel .carousel .control-next.control-arrow:before {
-    border: solid rgb(167, 161, 161);
+    border: solid var(--softblack);
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 5px;
@@ -63,7 +76,7 @@
 }
 
 .speaker-carousel .carousel .control-prev.control-arrow:before {
-    border: solid rgb(167, 161, 161);
+    border: solid var(--softblack);
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 5px;

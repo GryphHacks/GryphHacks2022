@@ -57,7 +57,7 @@ const Countdown = () => {
             {/* When list is all zeroes, html will toggle countdown off */}
             {countdownComponents.length ? <h2></h2> : null}
             <ul id="countdown">
-                {countdownComponents.length ? countdownComponents : <h2>Thank you for attending!</h2>}
+                {countdownComponents.length ? countdownComponents : <h2 style={{color:"white"}}>GryphHacks will be back in 2023!</h2>}
             </ul>
         </div>
     )

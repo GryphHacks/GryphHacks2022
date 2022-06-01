@@ -81,7 +81,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         <>
             <form className="newsletter-form" onSubmit={(e) => handleSubscribe(e)}>
                 <label className='custom-field'>
-                    <input type='text' onChange={ e => setEmail(e.target.value), e => setPlaceholderVisible(!e.target.value) }/>
+                    {/* <input type='text' onChange={ e => setEmail(e.target.value), e => setPlaceholderVisible(!e.target.value) }/> */}
                     <span className={`placeholder ${ isPlaceholderVisible ? "" : "hidden" }`}>Enter your email here.</span>
                 </label>
                 <button label="subscribe" type="submit">

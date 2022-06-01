@@ -1,0 +1,105 @@
+.schedule-wrapper {
+  margin: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.schedule-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 5%;
+}
+
+.divQuestionS  {
+  background-color: var(--softblack);
+  border-radius:10px;
+  color:white;
+  padding: 7px 15px;
+}
+
+.divQuestionS.even {
+  background-color: var(--redclick);
+  border-radius:10px;
+  color:white;
+  padding: 7px 15px;
+}
+
+.day-button {
+  flex: 1 0 21%;
+  border-radius: 15px;
+  text-shadow: 3px 2px 3px rgba(255,255,255,.2), -2px 2px 6px rgba(0,0,0,0.4);
+  padding: 10px;
+  margin: auto;
+  background-color: var(--darkyellow);
+  color: white;
+  border-color: var(--darkyellow);
+}
+
+.day-button.show {
+  background-color: var(--rubyred);
+  color: white;
+  border-color: var(--rubyred);
+}
+
+.day-button.show:hover {
+  background-color: var(--redhover);
+  color: white;
+  border-color: var(--redhover);
+  cursor: pointer;
+}
+
+.day-button:hover {
+  background-color: var(--gryphyellow);
+  color: white;
+  border-color: var(--gryphyellow);
+  cursor: pointer;
+}
+
+.answer-collapseS {
+  background-color: transparent;
+  overflow: hidden;
+  font-style: normal;
+  font-weight: normal;
+  font-size:18px;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  transition: height .5s ease-out;
+  height:0; 
+ }
+ 
+.answer-collapseS.show {
+  position: relative;
+  margin-top: -10px;
+  padding: 10px;
+  padding-top: 15px;
+  z-index: -1;
+  overflow: hidden;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  height: inherit;
+  width: inherit;
+  overflow:hidden;
+}
+
+.subtext {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+}

@@ -7,16 +7,14 @@ import "./stylesheet/sponsor_carousel.css";
 
 const Speakers = () => {
   return (
-    <div style={{ position: "relative" ,textAlign:'center',overflow:'hidden'}}>
+    <div style={{ position: "relative", textAlign:'center', overflow:'hidden'}}>
       <img
         style={{ ...imgStyle, ...{ left: "0", top: "5%" } }}
         src={circuitSVG}
         alt="circuit"
       />
-      {/* TODO this separator is part of LogoShowcase background */}
-      {/* <hr style={separatorStyle} /> */}
       <div style={contentStyle}>
-        <h1 className='section-title'>KEYNOTE SPEAKERS</h1>
+        <h1 className='section-title'>WORKSHOP SPEAKERS</h1>
         <Carousel
           className="speaker-carousel"
           showArrows={true}
@@ -28,10 +26,10 @@ const Speakers = () => {
           autoPlay={true}
           emulateTouch={true}
           swipeable={true}
-          showIndicators={true}
+          showIndicators={false}
         >
-          {speakers.map((speaker) => (
-            <SpeakerCard member={speaker} />
+          {speakers.map(( speaker ) => (
+            <SpeakerCard key={speaker.id} member={speaker} />
           ))}
         </Carousel>
       </div>
@@ -58,14 +56,6 @@ const imgStyle = {
   objectFit: "cover",
 };
 
-// top separator
-const separatorStyle = {
-  backgroundColor: "var(--gryphyellow)",
-  opacity: "1",
-  padding: "2%",
-  width: "100%",
-};
-
 // all text and content within the Keynote Speakers section on Landing
 const contentStyle = {
   display: "flex",
@@ -73,7 +63,7 @@ const contentStyle = {
   alignItems: "center",
   paddingTop: "5%",
   paddingBottom: "5%",
-  fontSize: "large"
+  fontSize: "large",
 };
 
 export default Speakers;

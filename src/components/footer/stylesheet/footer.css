@@ -40,7 +40,8 @@ footer .questions {
 }
 
 .footer-bottom {
-    padding: 10px;
+    padding: 20px;
+    padding-bottom: 5px;
     width: 100%;
     color: white;
     background-color: var(--softblack);
@@ -49,15 +50,11 @@ footer .questions {
     text-align: center;
 }
 
-.footer-bottom p {
-    margin-top: 20px;
-}
-
-.mlhLink{
+.mlhLink {
     color:white;
     text-decoration: none;
 }
-.mlhLink:hover{
+.mlhLink:hover {
     color: var(--gryphyellow);
     text-shadow: 0px 3px 15px rgba(0,0,0,0.5);
 }
@@ -77,15 +74,7 @@ footer a {
     transition: 0.2s;
 }
 
-
 footer a:hover {
     color: var(--gryphyellow);
     text-shadow: 0px 3px 15px rgba(0,0,0,0.5);
 }
-
-/* .overlay-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-} */
