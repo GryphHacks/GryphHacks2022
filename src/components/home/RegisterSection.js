@@ -23,12 +23,12 @@ const RegisterSection = () => {
                     <button id="primary-button" onClick={ (e) => {
                         e.preventDefault();
                         window.open("https://gryphhacks-2022.devpost.com/project-gallery", "_blank");
-                    }}>Check out our 2022 submissions!</button>
+                    }}>View 2022 Submissions</button>
                     <br></br>
-                    <button id="secondary-button" onClick = { (e) => {
+                    <button id="primary-button" onClick = { (e) => {
                         e.preventDefault();
                         window.open("https://www.youtube.com/playlist?list=PLS8Z-7tuTIuXisCWYMVe5kIUZw0ciM-Kj", "_blank");
-                    }}>Watch our 2022 workshops and closing ceremony</button>
+                    }}>View 2022 Workshops</button>
                 </div>
             </div>
             <div className='sponsor-link-div'>

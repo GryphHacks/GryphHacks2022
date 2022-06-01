@@ -14,30 +14,29 @@
     margin-top: 20px;
     display: flex;
     font-size: large;
-    gap: 15px;
+    gap: 20px;
 }
 
 .submissions-buttons {
-    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    font-size: large;
-    gap: 5px;
+    font-size: 1.4rem;
+    gap: 20px;
 }
 
 #primary-button {
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: var(--rubyred);
     color: white;
     padding: 10px 35px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.1s ease;
+    transition: all 0.15s ease;
 }
 
 #primary-button:hover {
     background-color: var(--redhover);
+    transform: translateZ(0) scale(1.03);
 }
 
 #primary-button:active {
