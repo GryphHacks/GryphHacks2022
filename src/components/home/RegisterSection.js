@@ -33,7 +33,7 @@ const RegisterSection = () => {
             </div>
             <div className='sponsor-link-div'>
                 <h6>Interested in becoming a Sponsor?&nbsp;
-                    <Link to ='/sponsor' className="link">Learn more</Link> 
+                    <Link to ='/contact' className="link">Contact us</Link> 
                 </h6>
             </div>
         </>
