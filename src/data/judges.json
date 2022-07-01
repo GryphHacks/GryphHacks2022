@@ -15,13 +15,13 @@
         "id":1,
         "name":"Nicholas Wong",
         "image":"images/judges/Judge-NicholasWong.jpeg",
-        "role":"Software Engineer @ WeFunder"
+        "role":"CTO @ Kangaroo OS"
     },
     {
         "id":2,
         "name":"Olivia Li",
         "image":"images/judges/Judge-OliviaLi.jpg",
-        "role":"Software Scientific Technician @ WeFunder"
+        "role":"CEO @ Kangaroo OS"
     },
     {
         "id":3,
